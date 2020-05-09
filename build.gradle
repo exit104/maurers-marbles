@@ -1,0 +1,53 @@
+/*
+ * You may only use this file in accordance with the terms and conditions
+ * outlined in the accompanying LICENSE file.
+ */
+
+plugins {
+  id 'checkstyle'
+  id "com.github.spotbugs" version "4.0.7"
+  id 'jacoco'
+  id 'java-library'
+  id 'pmd'
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+jar {
+  manifest {
+    attributes 'Implementation-Version': '0.0.1'
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+checkstyle {
+  configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+  toolVersion "7.6.1"
+}
+
+pmd {
+  ruleSets = []
+  ruleSetFiles "config/pmd/pmd.xml"
+}
+
+spotbugsMain {
+  reports {
+    xml.enabled = false
+    html.enabled = true
+  }
+}
+
+spotbugsTest {
+  reports {
+    xml.enabled = false
+    html.enabled = true
+  }
+}
+
+dependencies {
+  implementation group: 'com.google.guava', name: 'guava', version: '26.0-jre'
+  testImplementation group: 'junit', name: 'junit', version: '4.10'
+}
