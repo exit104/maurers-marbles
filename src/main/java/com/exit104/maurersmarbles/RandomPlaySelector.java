@@ -7,7 +7,7 @@ package com.exit104.maurersmarbles;
 
 import com.google.common.base.Preconditions;
 
-import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
@@ -19,6 +19,11 @@ import java.util.Set;
  * @since 1.0.0
  */
 public class RandomPlaySelector implements PlaySelector {
+
+  /**
+   * The random object used to select a random play.
+   */
+  protected transient Random random = new Random();
 
   /**
    * Creates a new RandomPlaySelector.
@@ -34,7 +39,12 @@ public class RandomPlaySelector implements PlaySelector {
     Preconditions.checkNotNull(plays, "Null plays");
     Preconditions.checkArgument(!plays.isEmpty(), "Empty plays");
 
-    return new ArrayList<>(plays).get(new Random().nextInt(plays.size()));
+    int randomIndex = random.nextInt(plays.size());
+    Iterator<Play> iterator = plays.iterator();
+    for (int i = 0; i < randomIndex; i++) {
+      iterator.next();
+    }
+    return iterator.next();
 
   }
 
