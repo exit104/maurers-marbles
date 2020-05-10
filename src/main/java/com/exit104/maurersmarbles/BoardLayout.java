@@ -7,7 +7,7 @@ package com.exit104.maurersmarbles;
 
 /**
  * The BoardLayout interface provides the methods to define a layout of a game board. The bounds of
- * the board are defined as a unit square (ranging from 0.0 to 1.0 in both the x and y dimensions).
+ * the board are defined as a unit square (0.0 to 1.0 in both the x and y dimensions).
  *
  * @author Daniel Uppenkamp
  * @since 1.0.0
