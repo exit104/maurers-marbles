@@ -305,8 +305,248 @@ public class BoardTest {
     result = instance.getHomeBoardIndexes(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = new ArrayList<>();
+    expResult.add(140);
+    expResult.add(141);
+    expResult.add(142);
+    expResult.add(143);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = new ArrayList<>();
+    expResult.add(144);
+    expResult.add(145);
+    expResult.add(146);
+    expResult.add(147);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = new ArrayList<>();
+    expResult.add(148);
+    expResult.add(149);
+    expResult.add(150);
+    expResult.add(151);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = new ArrayList<>();
+    expResult.add(152);
+    expResult.add(153);
+    expResult.add(154);
+    expResult.add(155);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = new ArrayList<>();
+    expResult.add(156);
+    expResult.add(157);
+    expResult.add(158);
+    expResult.add(159);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = new ArrayList<>();
+    expResult.add(160);
+    expResult.add(161);
+    expResult.add(162);
+    expResult.add(163);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = new ArrayList<>();
+    expResult.add(164);
+    expResult.add(165);
+    expResult.add(166);
+    expResult.add(167);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = new ArrayList<>();
+    expResult.add(168);
+    expResult.add(169);
+    expResult.add(170);
+    expResult.add(171);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = new ArrayList<>();
+    expResult.add(172);
+    expResult.add(173);
+    expResult.add(174);
+    expResult.add(175);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = new ArrayList<>();
+    expResult.add(176);
+    expResult.add(177);
+    expResult.add(178);
+    expResult.add(179);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = new ArrayList<>();
+    expResult.add(168);
+    expResult.add(169);
+    expResult.add(170);
+    expResult.add(171);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = new ArrayList<>();
+    expResult.add(172);
+    expResult.add(173);
+    expResult.add(174);
+    expResult.add(175);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = new ArrayList<>();
+    expResult.add(176);
+    expResult.add(177);
+    expResult.add(178);
+    expResult.add(179);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = new ArrayList<>();
+    expResult.add(180);
+    expResult.add(181);
+    expResult.add(182);
+    expResult.add(183);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = new ArrayList<>();
+    expResult.add(184);
+    expResult.add(185);
+    expResult.add(186);
+    expResult.add(187);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = new ArrayList<>();
+    expResult.add(188);
+    expResult.add(189);
+    expResult.add(190);
+    expResult.add(191);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = new ArrayList<>();
+    expResult.add(192);
+    expResult.add(193);
+    expResult.add(194);
+    expResult.add(195);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = new ArrayList<>();
+    expResult.add(196);
+    expResult.add(197);
+    expResult.add(198);
+    expResult.add(199);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = new ArrayList<>();
+    expResult.add(200);
+    expResult.add(201);
+    expResult.add(202);
+    expResult.add(203);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = new ArrayList<>();
+    expResult.add(204);
+    expResult.add(205);
+    expResult.add(206);
+    expResult.add(207);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = new ArrayList<>();
+    expResult.add(208);
+    expResult.add(209);
+    expResult.add(210);
+    expResult.add(211);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = new ArrayList<>();
+    expResult.add(212);
+    expResult.add(213);
+    expResult.add(214);
+    expResult.add(215);
+    result = instance.getHomeBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -468,8 +708,160 @@ public class BoardTest {
     result = instance.getHomeEntryBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = 138;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = 12;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = 26;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = 40;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = 54;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = 68;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = 82;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = 96;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = 110;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = 124;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = 166;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = 12;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = 26;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = 40;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = 54;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = 68;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = 82;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = 96;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = 110;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = 124;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = 138;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = 152;
+    result = instance.getHomeEntryBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -631,8 +1023,160 @@ public class BoardTest {
     result = instance.getHomeMaxBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = 143;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = 147;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = 151;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = 155;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = 159;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = 163;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = 167;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = 171;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = 175;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = 179;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = 171;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = 175;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = 179;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = 183;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = 187;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = 191;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = 195;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = 199;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = 203;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = 207;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = 211;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = 215;
+    result = instance.getHomeMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -794,8 +1338,160 @@ public class BoardTest {
     result = instance.getHomeMinBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = 140;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = 144;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = 148;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = 152;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = 156;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = 160;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = 164;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = 168;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = 172;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = 176;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = 168;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = 172;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = 176;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = 180;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = 184;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = 188;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = 192;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = 196;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = 200;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = 204;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = 208;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = 212;
+    result = instance.getHomeMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -945,8 +1641,23 @@ public class BoardTest {
     result = instance.getPerimeterBoardIndexes();
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test with 10 players
+    instance = new Board(10);
+    expResult = new ArrayList<>();
+    for (int i = 0; i < 140; i++) {
+      expResult.add(i);
+    }
+    result = instance.getPerimeterBoardIndexes();
+    assertEquals(expResult, result);
+
+    // test with 12 players
+    instance = new Board(12);
+    expResult = new ArrayList<>();
+    for (int i = 0; i < 168; i++) {
+      expResult.add(i);
+    }
+    result = instance.getPerimeterBoardIndexes();
+    assertEquals(expResult, result);
   }
 
   /**
@@ -1108,8 +1819,160 @@ public class BoardTest {
     result = instance.getSafeBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = 0;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = 14;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = 28;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = 42;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = 56;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = 70;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = 84;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = 98;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = 112;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = 126;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = 0;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = 14;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = 28;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = 42;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = 56;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = 70;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = 84;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = 98;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = 112;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = 126;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = 140;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = 154;
+    result = instance.getSafeBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -1343,8 +2206,248 @@ public class BoardTest {
     result = instance.getStartBoardIndexes(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = new ArrayList<>();
+    expResult.add(180);
+    expResult.add(181);
+    expResult.add(182);
+    expResult.add(183);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = new ArrayList<>();
+    expResult.add(184);
+    expResult.add(185);
+    expResult.add(186);
+    expResult.add(187);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = new ArrayList<>();
+    expResult.add(188);
+    expResult.add(189);
+    expResult.add(190);
+    expResult.add(191);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = new ArrayList<>();
+    expResult.add(192);
+    expResult.add(193);
+    expResult.add(194);
+    expResult.add(195);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = new ArrayList<>();
+    expResult.add(196);
+    expResult.add(197);
+    expResult.add(198);
+    expResult.add(199);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = new ArrayList<>();
+    expResult.add(200);
+    expResult.add(201);
+    expResult.add(202);
+    expResult.add(203);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = new ArrayList<>();
+    expResult.add(204);
+    expResult.add(205);
+    expResult.add(206);
+    expResult.add(207);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = new ArrayList<>();
+    expResult.add(208);
+    expResult.add(209);
+    expResult.add(210);
+    expResult.add(211);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = new ArrayList<>();
+    expResult.add(212);
+    expResult.add(213);
+    expResult.add(214);
+    expResult.add(215);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = new ArrayList<>();
+    expResult.add(216);
+    expResult.add(217);
+    expResult.add(218);
+    expResult.add(219);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = new ArrayList<>();
+    expResult.add(216);
+    expResult.add(217);
+    expResult.add(218);
+    expResult.add(219);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = new ArrayList<>();
+    expResult.add(220);
+    expResult.add(221);
+    expResult.add(222);
+    expResult.add(223);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = new ArrayList<>();
+    expResult.add(224);
+    expResult.add(225);
+    expResult.add(226);
+    expResult.add(227);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = new ArrayList<>();
+    expResult.add(228);
+    expResult.add(229);
+    expResult.add(230);
+    expResult.add(231);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = new ArrayList<>();
+    expResult.add(232);
+    expResult.add(233);
+    expResult.add(234);
+    expResult.add(235);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = new ArrayList<>();
+    expResult.add(236);
+    expResult.add(237);
+    expResult.add(238);
+    expResult.add(239);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = new ArrayList<>();
+    expResult.add(240);
+    expResult.add(241);
+    expResult.add(242);
+    expResult.add(243);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = new ArrayList<>();
+    expResult.add(244);
+    expResult.add(245);
+    expResult.add(246);
+    expResult.add(247);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = new ArrayList<>();
+    expResult.add(248);
+    expResult.add(249);
+    expResult.add(250);
+    expResult.add(251);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = new ArrayList<>();
+    expResult.add(252);
+    expResult.add(253);
+    expResult.add(254);
+    expResult.add(255);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = new ArrayList<>();
+    expResult.add(256);
+    expResult.add(257);
+    expResult.add(258);
+    expResult.add(259);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = new ArrayList<>();
+    expResult.add(260);
+    expResult.add(261);
+    expResult.add(262);
+    expResult.add(263);
+    result = instance.getStartBoardIndexes(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -1506,8 +2609,160 @@ public class BoardTest {
     result = instance.getStartMaxBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = 183;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = 187;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = 191;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = 195;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = 199;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = 203;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = 207;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = 211;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = 215;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = 219;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = 219;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = 223;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = 227;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = 231;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = 235;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = 239;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = 243;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = 247;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = 251;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = 255;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = 259;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = 263;
+    result = instance.getStartMaxBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -1669,8 +2924,160 @@ public class BoardTest {
     result = instance.getStartMinBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test player 0, 10 players
+    instance = new Board(10);
+    playerNumber = 0;
+    expResult = 180;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Board(10);
+    playerNumber = 1;
+    expResult = 184;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Board(10);
+    playerNumber = 2;
+    expResult = 188;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Board(10);
+    playerNumber = 3;
+    expResult = 192;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Board(10);
+    playerNumber = 4;
+    expResult = 196;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Board(10);
+    playerNumber = 5;
+    expResult = 200;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Board(10);
+    playerNumber = 6;
+    expResult = 204;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Board(10);
+    playerNumber = 7;
+    expResult = 208;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Board(10);
+    playerNumber = 8;
+    expResult = 212;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Board(10);
+    playerNumber = 9;
+    expResult = 216;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 0, 12 players
+    instance = new Board(12);
+    playerNumber = 0;
+    expResult = 216;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Board(12);
+    playerNumber = 1;
+    expResult = 220;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Board(12);
+    playerNumber = 2;
+    expResult = 224;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Board(12);
+    playerNumber = 3;
+    expResult = 228;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Board(12);
+    playerNumber = 4;
+    expResult = 232;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Board(12);
+    playerNumber = 5;
+    expResult = 236;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Board(12);
+    playerNumber = 6;
+    expResult = 240;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Board(12);
+    playerNumber = 7;
+    expResult = 244;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Board(12);
+    playerNumber = 8;
+    expResult = 248;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Board(12);
+    playerNumber = 9;
+    expResult = 252;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Board(12);
+    playerNumber = 10;
+    expResult = 256;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Board(12);
+    playerNumber = 11;
+    expResult = 260;
+    result = instance.getStartMinBoardIndex(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**

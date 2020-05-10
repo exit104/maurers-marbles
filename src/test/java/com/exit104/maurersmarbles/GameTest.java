@@ -1190,8 +1190,180 @@ public class GameTest {
     result = instance.getPartnerPlayerNumber(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO test with 10 players
-    // TODO test with 12 players
+    // test invalid player number, 10 players
+    instance = new Game(10);
+    playerNumber = 10;
+    try {
+      instance.getPartnerPlayerNumber(playerNumber);
+      fail("Illegal argument exception not thrown");
+    } catch (IllegalArgumentException ex) {
+      // do nothing
+    }
+
+    // test player 0, 10 players
+    instance = new Game(10);
+    playerNumber = 0;
+    expResult = 5;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 10 players
+    instance = new Game(10);
+    playerNumber = 1;
+    expResult = 6;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 10 players
+    instance = new Game(10);
+    playerNumber = 2;
+    expResult = 7;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 10 players
+    instance = new Game(10);
+    playerNumber = 3;
+    expResult = 8;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 10 players
+    instance = new Game(10);
+    playerNumber = 4;
+    expResult = 9;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 10 players
+    instance = new Game(10);
+    playerNumber = 5;
+    expResult = 0;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 10 players
+    instance = new Game(10);
+    playerNumber = 6;
+    expResult = 1;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 10 players
+    instance = new Game(10);
+    playerNumber = 7;
+    expResult = 2;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 10 players
+    instance = new Game(10);
+    playerNumber = 8;
+    expResult = 3;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 10 players
+    instance = new Game(10);
+    playerNumber = 9;
+    expResult = 4;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test invalid player number, 10 players
+    instance = new Game(10);
+    playerNumber = 10;
+    try {
+      instance.getPartnerPlayerNumber(playerNumber);
+      fail("Illegal argument exception not thrown");
+    } catch (IllegalArgumentException ex) {
+      // do nothing
+    }
+
+    // test player 0, 12 players
+    instance = new Game(12);
+    playerNumber = 0;
+    expResult = 6;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 1, 12 players
+    instance = new Game(12);
+    playerNumber = 1;
+    expResult = 7;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 2, 12 players
+    instance = new Game(12);
+    playerNumber = 2;
+    expResult = 8;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 3, 12 players
+    instance = new Game(12);
+    playerNumber = 3;
+    expResult = 9;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 4, 12 players
+    instance = new Game(12);
+    playerNumber = 4;
+    expResult = 10;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 5, 12 players
+    instance = new Game(12);
+    playerNumber = 5;
+    expResult = 11;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 6, 12 players
+    instance = new Game(12);
+    playerNumber = 6;
+    expResult = 0;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 7, 12 players
+    instance = new Game(12);
+    playerNumber = 7;
+    expResult = 1;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 8, 12 players
+    instance = new Game(12);
+    playerNumber = 8;
+    expResult = 2;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 9, 12 players
+    instance = new Game(12);
+    playerNumber = 9;
+    expResult = 3;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 10, 12 players
+    instance = new Game(12);
+    playerNumber = 10;
+    expResult = 4;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test player 11, 12 players
+    instance = new Game(12);
+    playerNumber = 11;
+    expResult = 5;
+    result = instance.getPartnerPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -3929,7 +4101,7 @@ public class GameTest {
     result = instance.getPreviousPlayerNumber(playerNumber);
     assertEquals(expResult, result);
 
-// test invalid player number, 8 players
+    // test invalid player number, 8 players
     instance = new Game(8);
     playerNumber = 8;
     try {
@@ -3995,8 +4167,179 @@ public class GameTest {
     result = instance.getPreviousPlayerNumber(playerNumber);
     assertEquals(expResult, result);
 
-    // TODO add tests for 10 players
-    // TODO add tests for 12 players
+    // test invalid player number, 10 players
+    instance = new Game(10);
+    playerNumber = 10;
+    try {
+      instance.getPreviousPlayerNumber(playerNumber);
+      fail("Illegal argument exception not thrown");
+    } catch (IllegalArgumentException ex) {
+      // do nothing
+    }
+
+    // test with player 0, 10 players
+    instance = new Game(10);
+    playerNumber = 0;
+    expResult = 9;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 1, 10 players
+    instance = new Game(10);
+    playerNumber = 1;
+    expResult = 0;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 2, 10 players
+    instance = new Game(10);
+    playerNumber = 2;
+    expResult = 1;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 3, 10 players
+    instance = new Game(10);
+    playerNumber = 3;
+    expResult = 2;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 4, 10 players
+    instance = new Game(10);
+    playerNumber = 4;
+    expResult = 3;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 5, 10 players
+    instance = new Game(10);
+    playerNumber = 5;
+    expResult = 4;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 6, 10 players
+    instance = new Game(10);
+    playerNumber = 6;
+    expResult = 5;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 7, 10 players
+    instance = new Game(10);
+    playerNumber = 7;
+    expResult = 6;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 8, 10 players
+    instance = new Game(10);
+    playerNumber = 8;
+    expResult = 7;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 9, 10 players
+    instance = new Game(10);
+    playerNumber = 9;
+    expResult = 8;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test invalid player number, 12 players
+    instance = new Game(12);
+    playerNumber = 12;
+    try {
+      instance.getPreviousPlayerNumber(playerNumber);
+      fail("Illegal argument exception not thrown");
+    } catch (IllegalArgumentException ex) {
+      // do nothing
+    }
+
+    // test with player 0, 12 players
+    instance = new Game(12);
+    playerNumber = 0;
+    expResult = 11;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 1, 12 players
+    instance = new Game(12);
+    playerNumber = 1;
+    expResult = 0;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 2, 12 players
+    instance = new Game(12);
+    playerNumber = 2;
+    expResult = 1;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 3, 12 players
+    instance = new Game(12);
+    playerNumber = 3;
+    expResult = 2;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 4, 12 players
+    instance = new Game(12);
+    playerNumber = 4;
+    expResult = 3;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 5, 12 players
+    instance = new Game(12);
+    playerNumber = 5;
+    expResult = 4;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 6, 12 players
+    instance = new Game(12);
+    playerNumber = 6;
+    expResult = 5;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 7, 12 players
+    instance = new Game(12);
+    playerNumber = 7;
+    expResult = 6;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 8, 12 players
+    instance = new Game(12);
+    playerNumber = 8;
+    expResult = 7;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 9, 12 players
+    instance = new Game(12);
+    playerNumber = 9;
+    expResult = 8;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 10, 12 players
+    instance = new Game(12);
+    playerNumber = 10;
+    expResult = 9;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+    // test with player 11, 12 players
+    instance = new Game(12);
+    playerNumber = 11;
+    expResult = 10;
+    result = instance.getPreviousPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
   }
 
   /**

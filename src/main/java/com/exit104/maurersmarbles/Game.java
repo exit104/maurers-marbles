@@ -73,7 +73,6 @@ public class Game {
   /**
    * The set that contains the valid number of players in a game.
    */
-  // TODO Maybe an enum instead?
   protected static final Set<Integer> VALID_NUMBER_OF_PLAYERS;
 
   static {
