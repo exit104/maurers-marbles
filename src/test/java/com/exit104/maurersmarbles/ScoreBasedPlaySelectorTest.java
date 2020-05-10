@@ -91,7 +91,7 @@ public class ScoreBasedPlaySelectorTest {
       // do nothing
     }
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       int expResult;
       int result;
@@ -217,7 +217,7 @@ public class ScoreBasedPlaySelectorTest {
       // do nothing
     }
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       int expResult;
       int result;
@@ -311,7 +311,7 @@ public class ScoreBasedPlaySelectorTest {
       // do nothing
     }
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       int expResult;
       int result;
@@ -372,7 +372,7 @@ public class ScoreBasedPlaySelectorTest {
       // do nothing
     }
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       int expResult;
       int result;

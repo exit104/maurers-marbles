@@ -69,10 +69,10 @@ public class GameTest {
     }
 
     // test new game state
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       // make sure the players and player's marbles were properly initialized
-      Game instance = new Game(4);
+      Game instance = new Game(numberOfPlayers);
       assertEquals(instance.getNumberOfPlayers(), instance.players.size());
       for (int i = 0; i < instance.getNumberOfPlayers(); i++) {
         assertEquals(i, instance.players.get(i).getPlayerNumber());
@@ -752,14 +752,6 @@ public class GameTest {
     result = instance.getNumberOfCardsToDeal();
     assertEquals(expResult, result);
 
-    // test with not full card deck, 6 players
-    instance = new Game(6);
-    instance.cardDeck.reset();
-    instance.cardDeck.dealCard();
-    expResult = 4;
-    result = instance.getNumberOfCardsToDeal();
-    assertEquals(expResult, result);
-
     // test with full card deck, 8 players
     instance = new Game(8);
     instance.cardDeck.reset();
@@ -767,11 +759,17 @@ public class GameTest {
     result = instance.getNumberOfCardsToDeal();
     assertEquals(expResult, result);
 
-    // test with not full card deck, 8 players
-    instance = new Game(8);
+    // test with full card deck, 10 players
+    instance = new Game(10);
     instance.cardDeck.reset();
-    instance.cardDeck.dealCard();
     expResult = 5;
+    result = instance.getNumberOfCardsToDeal();
+    assertEquals(expResult, result);
+
+    // test with full card deck, 12 players
+    instance = new Game(12);
+    instance.cardDeck.reset();
+    expResult = 4;
     result = instance.getNumberOfCardsToDeal();
     assertEquals(expResult, result);
 
@@ -851,6 +849,18 @@ public class GameTest {
     // test with 8 players
     instance = new Game(8);
     expResult = 8;
+    result = instance.getNumberOfPlayers();
+    assertEquals(expResult, result);
+
+    // test with 10 players
+    instance = new Game(10);
+    expResult = 10;
+    result = instance.getNumberOfPlayers();
+    assertEquals(expResult, result);
+
+    // test with 12 players
+    instance = new Game(12);
+    expResult = 12;
     result = instance.getNumberOfPlayers();
     assertEquals(expResult, result);
 
@@ -989,6 +999,18 @@ public class GameTest {
     // test with 8 players
     instance = new Game(8);
     expResult = 4;
+    result = instance.getNumberOfTeams();
+    assertEquals(expResult, result);
+
+    // test with 10 players
+    instance = new Game(10);
+    expResult = 5;
+    result = instance.getNumberOfTeams();
+    assertEquals(expResult, result);
+
+    // test with 12 players
+    instance = new Game(12);
+    expResult = 6;
     result = instance.getNumberOfTeams();
     assertEquals(expResult, result);
 
@@ -1168,6 +1190,8 @@ public class GameTest {
     result = instance.getPartnerPlayerNumber(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO test with 10 players
+    // TODO test with 12 players
   }
 
   /**
@@ -3971,6 +3995,8 @@ public class GameTest {
     result = instance.getPreviousPlayerNumber(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -4400,7 +4426,7 @@ public class GameTest {
 
     System.out.println("play");
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       Game game = new Game(numberOfPlayers);
       game.play();
       assertEquals(true, game.isGameOver());

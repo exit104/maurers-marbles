@@ -67,8 +67,8 @@ public class BoardTest {
       // do nothing
     }
 
-    // test with 4, 6, and 8 players
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    // test with valid number of players
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       new Board(numberOfPlayers);
     }
 
@@ -85,7 +85,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -305,6 +305,8 @@ public class BoardTest {
     result = instance.getHomeBoardIndexes(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -318,7 +320,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -466,6 +468,8 @@ public class BoardTest {
     result = instance.getHomeEntryBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -479,7 +483,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -627,6 +631,8 @@ public class BoardTest {
     result = instance.getHomeMaxBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -640,7 +646,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -788,6 +794,8 @@ public class BoardTest {
     result = instance.getHomeMinBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -798,7 +806,7 @@ public class BoardTest {
 
     System.out.println("getNumberOfHomeSpacesPerPlayer");
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       Board instance = new Board(numberOfPlayers);
       int expResult = 4;
       int result = instance.getNumberOfHomeSpacesPerPlayer();
@@ -833,6 +841,18 @@ public class BoardTest {
     result = instance.getNumberOfPerimeterSpaces();
     assertEquals(expResult, result);
 
+    // test with 10 players
+    instance = new Board(10);
+    expResult = 140;
+    result = instance.getNumberOfPerimeterSpaces();
+    assertEquals(expResult, result);
+
+    // test with 12 players
+    instance = new Board(12);
+    expResult = 168;
+    result = instance.getNumberOfPerimeterSpaces();
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -861,6 +881,18 @@ public class BoardTest {
     result = instance.getNumberOfPlayableSpaces();
     assertEquals(expResult, result);
 
+    // test with 10 players
+    instance = new Board(10);
+    expResult = 220;
+    result = instance.getNumberOfPlayableSpaces();
+    assertEquals(expResult, result);
+
+    // test with 12 players
+    instance = new Board(12);
+    expResult = 264;
+    result = instance.getNumberOfPlayableSpaces();
+    assertEquals(expResult, result);
+
   }
 
   /**
@@ -871,7 +903,7 @@ public class BoardTest {
 
     System.out.println("getNumberOfPlayers");
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       Board instance = new Board(numberOfPlayers);
       assertEquals(numberOfPlayers, instance.getNumberOfPlayers());
     }
@@ -913,6 +945,8 @@ public class BoardTest {
     result = instance.getPerimeterBoardIndexes();
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -926,7 +960,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -1074,6 +1108,8 @@ public class BoardTest {
     result = instance.getSafeBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -1087,7 +1123,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -1307,6 +1343,8 @@ public class BoardTest {
     result = instance.getStartBoardIndexes(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -1320,7 +1358,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -1468,6 +1506,8 @@ public class BoardTest {
     result = instance.getStartMaxBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -1481,7 +1521,7 @@ public class BoardTest {
     // test with invalid player number
     Board instance;
     int playerNumber;
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
 
       instance = new Board(numberOfPlayers);
       playerNumber = -1;
@@ -1629,6 +1669,8 @@ public class BoardTest {
     result = instance.getStartMinBoardIndex(playerNumber);
     assertEquals(expResult, result);
 
+    // TODO add tests for 10 players
+    // TODO add tests for 12 players
   }
 
   /**
@@ -1639,7 +1681,7 @@ public class BoardTest {
 
     System.out.println("getNumberOfStartSpacesPerPlayer");
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       Board instance = new Board(numberOfPlayers);
       int expResult = 4;
       int result = instance.getNumberOfStartSpacesPerPlayer();
@@ -1686,7 +1728,7 @@ public class BoardTest {
     assertEquals(expResult, result);
 
     // test equal objects
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       obj = new Board(numberOfPlayers);
       instance = new Board(numberOfPlayers);
       expResult = true;
@@ -1704,7 +1746,7 @@ public class BoardTest {
 
     System.out.println("hashCode");
 
-    for (int numberOfPlayers = 4; numberOfPlayers <= 8; numberOfPlayers += 2) {
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       Board instance1 = new Board(numberOfPlayers);
       Board instance2 = new Board(numberOfPlayers);
       assertEquals(instance1.hashCode(), instance2.hashCode());

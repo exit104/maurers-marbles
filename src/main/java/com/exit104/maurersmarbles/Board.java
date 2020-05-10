@@ -71,14 +71,14 @@ public class Board {
   /**
    * Creates a new Board using the given number of players.
    *
-   * @param numberOfPlayers the number of players (4, 6, or 8)
+   * @param numberOfPlayers the number of players (4, 6, 8, 10, or 12)
    * @throws IllegalArgumentException if the given number of players is invalid
    */
   @SuppressWarnings("PMD.UselessParentheses")
   public Board(int numberOfPlayers) {
 
-    Preconditions.checkArgument(numberOfPlayers == 4 || numberOfPlayers == 6
-        || numberOfPlayers == 8, "Invalid number of players");
+    Preconditions.checkArgument(Game.VALID_NUMBER_OF_PLAYERS.contains(numberOfPlayers),
+        "Invalid number of players");
 
     this.numberOfPlayers = numberOfPlayers;
 

@@ -19,10 +19,12 @@ import com.exit104.maurersmarbles.event.ShuffledCardDeckGameEvent;
 import com.exit104.maurersmarbles.event.StateChangeGameEvent;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * The Game class is used to play a game of Maurer's Marbles.
@@ -68,17 +70,32 @@ public class Game {
    * The list of players in the game.
    */
   protected final transient List<Player> players = new ArrayList<>();
+  /**
+   * The set that contains the valid number of players in a game.
+   */
+  // TODO Maybe an enum instead?
+  protected static final Set<Integer> VALID_NUMBER_OF_PLAYERS;
+
+  static {
+
+    Set<Integer> validNumberOfPlayers = new TreeSet<>();
+    for (int numberOfPlayers = 4; numberOfPlayers <= 12; numberOfPlayers += 2) {
+      validNumberOfPlayers.add(numberOfPlayers);
+    }
+    VALID_NUMBER_OF_PLAYERS = Collections.unmodifiableSet(validNumberOfPlayers);
+
+  }
 
   /**
    * Creates a new Game with the given number of players.
    *
-   * @param numberOfPlayers of players the number of players in the game (4, 6, or 8)
+   * @param numberOfPlayers the number of players in the game (4, 6, 8, 10, or 12)
    * @throws IllegalArgumentException if the given number of players is invalid
    */
   public Game(int numberOfPlayers) {
 
-    Preconditions.checkArgument(numberOfPlayers == 4 || numberOfPlayers == 6
-        || numberOfPlayers == 8, "Invalid number of players");
+    Preconditions.checkArgument(VALID_NUMBER_OF_PLAYERS.contains(numberOfPlayers),
+        "Invalid number of players");
 
     this.numberOfPlayers = numberOfPlayers;
 
@@ -430,6 +447,10 @@ public class Game {
         return MIN_NUMBER_OF_CARDS_TO_DEAL;
       case 8:
         return MIN_NUMBER_OF_CARDS_TO_DEAL + 1;
+      case 10:
+        return MIN_NUMBER_OF_CARDS_TO_DEAL + 1;
+      case 12:
+        return MIN_NUMBER_OF_CARDS_TO_DEAL;
       default:
         throw new IllegalStateException("Invalid number of players");
     }

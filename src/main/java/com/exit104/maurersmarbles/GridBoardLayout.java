@@ -134,6 +134,7 @@ public class GridBoardLayout implements BoardLayout {
                     (spaceY - (j * gridSize) * componentY2) - (gridSize / 2.0f), gridSize,
                     gridSize);
 
+                // TODO cannot test default
                 switch (i) {
                   case -2:
                     // left side
@@ -180,7 +181,6 @@ public class GridBoardLayout implements BoardLayout {
   @SuppressWarnings("PMD.ShortVariable")
   public Rectangle getBoundsForMarble(int boardIndex) {
 
-    // TODO Need to decide if we want to precompute these once or always compute on the fly
     Rectangle rectangle = getBoundsForBoardIndex(boardIndex);
     float width = rectangle.getWidth() * MARBLE_SCALE_FACTOR;
     float height = rectangle.getHeight() * MARBLE_SCALE_FACTOR;
@@ -195,7 +195,6 @@ public class GridBoardLayout implements BoardLayout {
   @SuppressWarnings("PMD.ShortVariable")
   public Rectangle getBoundsForSpace(int boardIndex) {
 
-    // TODO Need to decide if we want to precompute these once or always compute on the fly
     Rectangle rectangle = getBoundsForBoardIndex(boardIndex);
     float width = rectangle.getWidth() * SPACE_SCALE_FACTOR;
     float height = rectangle.getHeight() * SPACE_SCALE_FACTOR;
