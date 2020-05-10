@@ -24,6 +24,13 @@ public interface BoardLayout {
   Rectangle getBoundsForBoardIndex(int boardIndex);
 
   /**
+   * Returns the bounds of the discard pile on the board.
+   *
+   * @return the bounds of the discard pile on the board
+   */
+  Rectangle getBoundsForDiscardPile();
+
+  /**
    * Returns the bounds of a marble in the given board index.
    *
    * @param boardIndex the board index
