@@ -8,24 +8,33 @@ plugins {
   id "com.github.spotbugs" version "4.0.7"
   id 'jacoco'
   id 'java-library'
+  id 'maven-publish'
   id 'pmd'
 }
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
+group = 'com.exit104.maurersmarbles'
+version = '0.0.1'
 jar {
   manifest {
-    attributes 'Implementation-Version': '0.0.1'
+    attributes 'Implementation-Version': version
   }
 }
 
 repositories {
+  mavenLocal()
   mavenCentral()
 }
 
 checkstyle {
   configFile = rootProject.file('config/checkstyle/checkstyle.xml')
   toolVersion "7.6.1"
+}
+
+java {
+  withJavadocJar()
+  withSourcesJar()
 }
 
 pmd {
@@ -50,4 +59,13 @@ spotbugsTest {
 dependencies {
   implementation group: 'com.google.guava', name: 'guava', version: '26.0-jre'
   testImplementation group: 'junit', name: 'junit', version: '4.10'
+}
+
+publishing {
+  publications {
+    mavenJava(MavenPublication) {
+      artifactId 'maurers-marbles'
+      from components.java
+    }
+  }
 }
