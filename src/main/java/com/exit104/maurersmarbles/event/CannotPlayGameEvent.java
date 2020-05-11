@@ -42,7 +42,8 @@ public class CannotPlayGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return String.format("Player %d cannot play", playerNumber);
+    return new StringBuilder().append("Player ").append(playerNumber).append(" cannot play")
+        .toString();
   }
 
 }

@@ -58,7 +58,8 @@ public class ExecutedPlayGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return String.format("Player %d executed play with card %s", playerNumber, play.getCard());
+    return new StringBuilder("Player ").append(playerNumber).append(" executed play with card ")
+        .append(play.getCard()).toString();
   }
 
 }

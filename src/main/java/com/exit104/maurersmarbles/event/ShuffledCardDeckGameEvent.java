@@ -42,7 +42,8 @@ public class ShuffledCardDeckGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return String.format("Player %d shuffled the card deck", playerNumber);
+    return new StringBuilder("Player ").append(playerNumber).append(" shuffled the card deck")
+        .toString();
   }
 
 }

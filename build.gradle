@@ -57,7 +57,7 @@ spotbugsTest {
 }
 
 dependencies {
-  implementation group: 'com.google.guava', name: 'guava', version: '26.0-jre'
+  implementation group: 'com.google.guava', name: 'guava', version: '26.0-android'
   testImplementation group: 'junit', name: 'junit', version: '4.10'
 }
 

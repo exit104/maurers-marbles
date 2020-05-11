@@ -43,7 +43,7 @@ public class StateChangeGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return String.format("Entering state %s", state);
+    return new StringBuilder("Entering state ").append(state).toString();
   }
 
 }

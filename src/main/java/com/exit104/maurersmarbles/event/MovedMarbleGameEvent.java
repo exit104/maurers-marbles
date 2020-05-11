@@ -88,8 +88,9 @@ public class MovedMarbleGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return String.format("Moved player %d marble %d from board index %d to board index %d",
-        playerNumber, marbleNumber, oldBoardIndex, newBoardIndex);
+    return new StringBuilder("Moved player ").append(playerNumber).append(" marble ")
+        .append(marbleNumber).append(" from board index ").append(oldBoardIndex)
+        .append(" to board index ").append(newBoardIndex).toString();
   }
 
 }

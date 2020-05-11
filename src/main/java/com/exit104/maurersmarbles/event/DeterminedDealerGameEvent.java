@@ -43,7 +43,8 @@ public class DeterminedDealerGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return String.format("Player %d is the first dealer", playerNumber);
+    return new StringBuilder("Player ").append(playerNumber).append(" is the first dealer")
+        .toString();
   }
 
 }

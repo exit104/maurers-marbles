@@ -74,8 +74,8 @@ public class DealtCardGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return String.format("Player %d dealt card %s to player %d", dealerPlayerNumber, card,
-        recipientPlayerNumber);
+    return new StringBuilder("Player ").append(dealerPlayerNumber).append(" dealt card ")
+        .append(card).append(" to player ").append(recipientPlayerNumber).toString();
   }
 
 }
