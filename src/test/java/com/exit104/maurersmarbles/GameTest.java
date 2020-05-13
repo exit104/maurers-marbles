@@ -156,6 +156,52 @@ public class GameTest {
   }
 
   /**
+   * Test of advance method, of class Game.
+   */
+  @Test
+  public void testAdvance() {
+
+    System.out.println("advance");
+
+    // test with determine dealer state
+    Game game = new Game(4);
+    game.nextState = State.DETERMINE_DEALER;
+    State expResult = State.DEAL_CARDS;
+    State result = game.advance();
+    assertEquals(expResult, result);
+
+    // test with deal cards state
+    game = new Game(4);
+    game.nextState = State.DEAL_CARDS;
+    expResult = State.PLAYER_TURN;
+    result = game.advance();
+    assertEquals(expResult, result);
+
+    // test with player turn state with no player cards
+    game = new Game(4);
+    game.nextState = State.PLAYER_TURN;
+    expResult = State.DEAL_CARDS;
+    result = game.advance();
+    assertEquals(expResult, result);
+
+    // test with player turn state when a player can play
+    game = new Game(4);
+    game.getPlayers().get(0).getCards().add(new Card(Rank.ACE, Suit.CLUBS));
+    game.nextState = State.PLAYER_TURN;
+    expResult = State.PLAYER_TURN;
+    result = game.advance();
+    assertEquals(expResult, result);
+
+    // test with game over state
+    game = new Game(4);
+    game.nextState = State.GAME_OVER;
+    expResult = State.GAME_OVER;
+    result = game.advance();
+    assertEquals(expResult, result);
+
+  }
+
+  /**
    * Test of dealCards method, of class Game.
    */
   @Test
@@ -233,6 +279,15 @@ public class GameTest {
     assertTrue(game.currentDealer >= -1 && game.currentDealer <= 3);
     assertEquals(CardDeck.NUMBER_OF_CARDS_IN_FULL_DECK, game.cardDeck.getUndealtCards().size());
     assertEquals(0, game.cardDeck.getDealtCards().size());
+
+    // test with a corrupt card deck
+    game = new Game(4);
+    game.cardDeck.dealtCards.clear();
+    game.cardDeck.undealtCards.clear();
+    expResult = State.DEAL_CARDS;
+    result = game.determineDealer();
+    assertEquals(expResult, result);
+    assertTrue(game.currentDealer == 3);
 
   }
 
@@ -718,6 +773,21 @@ public class GameTest {
     playerNumber = 7;
     expResult = 0;
     result = instance.getNextPlayerNumber(playerNumber);
+    assertEquals(expResult, result);
+
+  }
+
+  /**
+   * Test of getNextState method, of class Game.
+   */
+  @Test
+  public void testGetNextState() {
+
+    System.out.println("getNextState");
+
+    Game game = new Game(4);
+    State expResult = State.DETERMINE_DEALER;
+    State result = game.getNextState();
     assertEquals(expResult, result);
 
   }

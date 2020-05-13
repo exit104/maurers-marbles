@@ -9,33 +9,33 @@ import com.exit104.maurersmarbles.Game;
 import com.exit104.maurersmarbles.Game.State;
 
 /**
- * The StateChangeGameEvent class represents an event when the state in the game changes.
+ * The ExitedStateGameEvent class represents an event when a state in the game is exited.
  *
  * @author Daniel Uppenkamp
  * @since 1.0.0
  */
-public class StateChangeGameEvent extends GameEvent {
+public class ExitedStateGameEvent extends GameEvent {
 
   /**
-   * The game state.
+   * The game state exited.
    */
   protected transient State state;
 
   /**
-   * Creates a new StateChangeGameEvent.
+   * Creates a new ExitedStateGameEvent.
    *
    * @param game the game for the event
-   * @param state the game state
+   * @param state the game state exited
    */
-  public StateChangeGameEvent(Game game, State state) {
+  public ExitedStateGameEvent(Game game, State state) {
     super(game);
     this.state = state;
   }
 
   /**
-   * Returns the game state.
+   * Returns the game state exited.
    *
-   * @return the game state
+   * @return the game state exited
    */
   public State getState() {
     return state;
@@ -43,7 +43,7 @@ public class StateChangeGameEvent extends GameEvent {
 
   @Override
   public String toString() {
-    return new StringBuilder("Entering state ").append(state).toString();
+    return new StringBuilder("Exited state ").append(state).toString();
   }
 
 }

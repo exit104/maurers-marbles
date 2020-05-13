@@ -13,10 +13,10 @@ import com.exit104.maurersmarbles.Card.Rank;
 import com.exit104.maurersmarbles.Card.Suit;
 import com.exit104.maurersmarbles.event.CannotPlayGameEvent;
 import com.exit104.maurersmarbles.event.DealtCardGameEvent;
+import com.exit104.maurersmarbles.event.EnteringStateGameEvent;
 import com.exit104.maurersmarbles.event.Event;
 import com.exit104.maurersmarbles.event.ExecutedPlayGameEvent;
 import com.exit104.maurersmarbles.event.ShuffledCardDeckGameEvent;
-import com.exit104.maurersmarbles.event.StateChangeGameEvent;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -630,10 +630,10 @@ public class GameStatsTest {
 
     // handle an event that we don't care about
     Game game = new Game(4);
-    Event event = new StateChangeGameEvent(game, Game.State.DEAL_CARDS);
+    Event event = new EnteringStateGameEvent(game, Game.State.DEAL_CARDS);
     GameStats instance = new GameStats(game);
     instance.handleEvent(event);
-    
+
   }
 
   /**
@@ -641,14 +641,14 @@ public class GameStatsTest {
    */
   @Test
   public void testToString() {
-    
+
     System.out.println("toString");
-    
+
     Game game = new Game(4);
     GameStats instance = new GameStats(game);
     String result = instance.toString();
-    assertTrue(result != null && !result.isEmpty());    
-    
+    assertTrue(result != null && !result.isEmpty());
+
   }
 
 }

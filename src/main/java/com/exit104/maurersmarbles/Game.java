@@ -10,13 +10,14 @@ import com.google.common.base.Preconditions;
 import com.exit104.maurersmarbles.event.CannotPlayGameEvent;
 import com.exit104.maurersmarbles.event.DealtCardGameEvent;
 import com.exit104.maurersmarbles.event.DeterminedDealerGameEvent;
+import com.exit104.maurersmarbles.event.EnteringStateGameEvent;
 import com.exit104.maurersmarbles.event.Event;
 import com.exit104.maurersmarbles.event.EventListener;
 import com.exit104.maurersmarbles.event.ExecutedPlayGameEvent;
+import com.exit104.maurersmarbles.event.ExitedStateGameEvent;
 import com.exit104.maurersmarbles.event.MovedMarbleGameEvent;
 import com.exit104.maurersmarbles.event.PlayedCardGameEvent;
 import com.exit104.maurersmarbles.event.ShuffledCardDeckGameEvent;
-import com.exit104.maurersmarbles.event.StateChangeGameEvent;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -41,7 +42,7 @@ public class Game {
   /**
    * The number of marbles each player has.
    */
-  protected static final int NUMBER_OF_MARBLES_PER_PLAYER = 4;
+  public static final int NUMBER_OF_MARBLES_PER_PLAYER = 4;
   /**
    * The board for the game.
    */
@@ -74,6 +75,10 @@ public class Game {
    * The set that contains the valid number of players in a game.
    */
   protected static final Set<Integer> VALID_NUMBER_OF_PLAYERS;
+  /**
+   * The state the game will execute next.
+   */
+  protected transient State nextState = State.DETERMINE_DEALER;
 
   static {
 
@@ -155,6 +160,38 @@ public class Game {
   public void addEventListener(EventListener eventListener) {
     Preconditions.checkNotNull(eventListener, "Null event listener");
     eventListeners.add(eventListener);
+  }
+
+  /**
+   * Advances the game by executing the next game state.
+   *
+   * @return the next game state after advancing the game
+   */
+  public State advance() {
+
+    State currentState = nextState;
+
+    fireEvent(new EnteringStateGameEvent(this, currentState));
+
+    switch (currentState) {
+      case DETERMINE_DEALER:
+        nextState = determineDealer();
+        break;
+      case DEAL_CARDS:
+        nextState = dealCards();
+        break;
+      case PLAYER_TURN:
+        nextState = playerTurn();
+        break;
+      default:
+        // do nothing
+        break;
+    }
+
+    fireEvent(new ExitedStateGameEvent(this, currentState));
+
+    return nextState;
+
   }
 
   /**
@@ -431,6 +468,15 @@ public class Game {
     Preconditions.checkArgument(playerNumber >= 0 && playerNumber < numberOfPlayers,
         "Invalid player number");
     return (playerNumber + 1) % numberOfPlayers;
+  }
+
+  /**
+   * Returns the state the game will execute next.
+   *
+   * @return the state the game will execute next
+   */
+  public State getNextState() {
+    return nextState;
   }
 
   /**
@@ -1269,7 +1315,7 @@ public class Game {
    *
    * @return whether or not the game is over
    */
-  protected boolean isGameOver() {
+  public boolean isGameOver() {
     return getWinningPlayerNumber() != -1;
   }
 
@@ -1325,36 +1371,12 @@ public class Game {
   }
 
   /**
-   * Plays the game.
+   * Plays the game by repeatedly advancing the game state until the game is over.
    */
   public void play() {
-
-    State state = State.DETERMINE_DEALER;
-
-    boolean continuePlaying = true;
-    while (continuePlaying) {
-
-      fireEvent(new StateChangeGameEvent(this, state));
-
-      switch (state) {
-        case DETERMINE_DEALER:
-          state = determineDealer();
-          break;
-        case DEAL_CARDS:
-          state = dealCards();
-          break;
-        case PLAYER_TURN:
-          state = playerTurn();
-          break;
-        case GAME_OVER:
-          continuePlaying = false;
-          break;
-        default:
-          throw new IllegalStateException("Unknown game state: " + state);
-      }
-
+    while (nextState != State.GAME_OVER) {
+      advance();
     }
-
   }
 
   /**

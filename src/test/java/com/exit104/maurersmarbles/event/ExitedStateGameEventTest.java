@@ -16,13 +16,13 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * The StateChangeGameEventTest class contains the unit tests for the StateChangeGameEvent class.
+ * The ExitedStateGameEventTest class contains the unit tests for the ExitedStateGameEvent class.
  *
  * @author Daniel Uppenkamp
  */
-public class StateChangeGameEventTest {
+public class ExitedStateGameEventTest {
 
-  public StateChangeGameEventTest() {
+  public ExitedStateGameEventTest() {
   }
 
   @BeforeClass
@@ -42,7 +42,7 @@ public class StateChangeGameEventTest {
   }
 
   /**
-   * Test of getState method, of class StateChangeGameEvent.
+   * Test of getState method, of class ExitedStateGameEvent.
    */
   @Test
   public void testGetState() {
@@ -50,7 +50,7 @@ public class StateChangeGameEventTest {
     System.out.println("getState");
 
     Game game = new Game(4);
-    StateChangeGameEvent instance = new StateChangeGameEvent(game, Game.State.DEAL_CARDS);
+    ExitedStateGameEvent instance = new ExitedStateGameEvent(game, Game.State.DEAL_CARDS);
     Game.State expResult = Game.State.DEAL_CARDS;
     Game.State result = instance.getState();
     assertEquals(expResult, result);
@@ -58,7 +58,7 @@ public class StateChangeGameEventTest {
   }
 
   /**
-   * Test of toString method, of class StateChangeGameEvent.
+   * Test of toString method, of class ExitedStateGameEvent.
    */
   @Test
   public void testToString() {
@@ -66,8 +66,8 @@ public class StateChangeGameEventTest {
     System.out.println("toString");
 
     Game game = new Game(4);
-    StateChangeGameEvent instance = new StateChangeGameEvent(game, Game.State.DEAL_CARDS);
-    String expResult = "Entering state " + Game.State.DEAL_CARDS.name();
+    ExitedStateGameEvent instance = new ExitedStateGameEvent(game, Game.State.DEAL_CARDS);
+    String expResult = "Exited state " + Game.State.DEAL_CARDS.name();
     String result = instance.toString();
     assertEquals(expResult, result);
 
