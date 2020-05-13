@@ -11,12 +11,14 @@ import static org.junit.Assert.fail;
 
 import com.exit104.maurersmarbles.Card.Rank;
 import com.exit104.maurersmarbles.Card.Suit;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -55,65 +57,128 @@ public class VariableScoreBasedPlaySelectorTest {
 
     System.out.println("constructor");
 
-    // test with invalid random
+    // test with null game
+    Game game = null;
     int playerNumber = 0;
-    float random = -1.0f;
+    float random = 0.0f;
     try {
-      new VariableScoreBasedPlaySelector(playerNumber, random);
+      new VariableScoreBasedPlaySelector(game, playerNumber, random);
+      fail("Null pointer exception not thrown");
+    } catch (NullPointerException ex) {
+      // do nothing
+    }
+
+    // test with invalid player number
+    game = new Game(4);
+    playerNumber = -1;
+    random = 0.0f;
+    try {
+      new VariableScoreBasedPlaySelector(game, playerNumber, random);
+      fail("Illegal argument exception not thrown");
+    } catch (IllegalArgumentException ex) {
+      // do nothing
+    }
+
+    // test with invalid player number
+    game = new Game(4);
+    playerNumber = 4;
+    random = 0.0f;
+    try {
+      new VariableScoreBasedPlaySelector(game, playerNumber, random);
       fail("Illegal argument exception not thrown");
     } catch (IllegalArgumentException ex) {
       // do nothing
     }
 
     // test with invalid random
+    game = new Game(4);
+    playerNumber = 0;
+    random = -1.0f;
+    try {
+      new VariableScoreBasedPlaySelector(game, playerNumber, random);
+      fail("Illegal argument exception not thrown");
+    } catch (IllegalArgumentException ex) {
+      // do nothing
+    }
+
+    // test with invalid random
+    game = new Game(4);
     playerNumber = 0;
     random = 2.0f;
     try {
-      new VariableScoreBasedPlaySelector(playerNumber, random);
+      new VariableScoreBasedPlaySelector(game, playerNumber, random);
       fail("Illegal argument exception not thrown");
     } catch (IllegalArgumentException ex) {
       // do nothing
     }
 
+    // test with valid values
+    game = new Game(4);
     playerNumber = 0;
     random = 1.0f;
-    new VariableScoreBasedPlaySelector(playerNumber, random);
+    new VariableScoreBasedPlaySelector(game, playerNumber, random);
 
   }
 
   /**
-   * Test of select method, of class VariableScoreBasedPlaySelector.
+   * Test of setAvailablePlays method, of class VariableScoreBasedPlaySelector.
    */
   @Test
-  public void testSelect() {
+  @SuppressWarnings("PMD.NullAssignment")
+  public void testSetAvailablePlays() {
 
-    System.out.println("select");
+    System.out.println("setAvailablePlays");
 
-    // test with two plays to select from, always select based on score
+    // test with null
+    Game game = new Game(4);
     int playerNumber = 0;
     float random = 0.0f;
-    Game game = new Game(4);
-    game.getPlayers().get(0).getMarbles().get(0).setBoardIndex(0);
-    VariableScoreBasedPlaySelector instance = new VariableScoreBasedPlaySelector(playerNumber,
+    VariableScoreBasedPlaySelector instance = new VariableScoreBasedPlaySelector(game, playerNumber,
         random);
-    Set<Play> plays = new LinkedHashSet<>();
-    plays.add(new Play(new Card(Rank.TWO, Suit.CLUBS), new Move(0, 0, 2)));
-    plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(0, 0, 1)));
-    Play expResult = plays.iterator().next();
-    Play result = instance.select(game, plays);
-    assertEquals(expResult, result);
+    Set<Play> plays = null;
+    try {
+      instance.setAvailablePlays(plays);
+      fail("Null pointer exception not thrown");
+    } catch (NullPointerException ex) {
+      // do nothing
+    }
 
-    // test with two plays to select from, always select randomly
+    // test with empty set
+    game = new Game(4);
     playerNumber = 0;
-    random = 1.0f;
-    instance = new VariableScoreBasedPlaySelector(playerNumber, random);
+    random = 0.0f;
+    instance = new VariableScoreBasedPlaySelector(game, playerNumber, random);
+    plays = Collections.emptySet();
+    try {
+      instance.setAvailablePlays(plays);
+      fail("Illegal argument exception not thrown");
+    } catch (IllegalArgumentException ex) {
+      // do nothing
+    }
+
+    // test with two plays to select from, always select based on score
     game = new Game(4);
     game.getPlayers().get(0).getMarbles().get(0).setBoardIndex(0);
+    playerNumber = 0;
+    random = 0.0f;
+    instance = new VariableScoreBasedPlaySelector(game, playerNumber, random);
     plays = new LinkedHashSet<>();
     plays.add(new Play(new Card(Rank.TWO, Suit.CLUBS), new Move(0, 0, 2)));
     plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(0, 0, 1)));
-    result = instance.select(game, plays);
-    assertTrue(plays.contains(result));
+    instance.setAvailablePlays(plays);
+    assertEquals(plays.iterator().next(), instance.selectedPlay);
+
+    // test with two plays to select from, always select randomly
+    game = new Game(4);
+    game.getPlayers().get(0).getMarbles().get(0).setBoardIndex(0);
+    playerNumber = 0;
+    random = 1.0f;
+    instance = new VariableScoreBasedPlaySelector(game, playerNumber, random);
+    plays = new LinkedHashSet<>();
+    plays.add(new Play(new Card(Rank.TWO, Suit.CLUBS), new Move(0, 0, 2)));
+    plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(0, 0, 1)));
+    instance.setAvailablePlays(plays);
+    assertTrue(plays.contains(instance.selectedPlay));
 
   }
 

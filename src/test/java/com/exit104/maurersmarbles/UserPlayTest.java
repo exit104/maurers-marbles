@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 import com.exit104.maurersmarbles.Card.Rank;
 import com.exit104.maurersmarbles.Card.Suit;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

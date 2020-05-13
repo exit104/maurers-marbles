@@ -1400,17 +1400,46 @@ public class Game {
     // get the list of valid plays for the current player
     Set<Play> plays = getPlays(currentPlayer);
     if (plays.isEmpty()) {
+
       // throw in the player's cards
       players.get(currentPlayer).getCards().clear();
       fireEvent(new CannotPlayGameEvent(this, currentPlayer));
+
     } else {
-      // select play to execute
-      Play play = players.get(currentPlayer).getPlaySelector().select(this, plays);
+
+      /**
+       * Check to see if a play has been selected. This happens when the playerTurn method is called
+       * and the play selector does not select a play automatically (checked in the logic below). In
+       * this case, the playerTurn method returns to stay in the same state. Once the play selector
+       * is updated externally to set the selected play, the playerTurn method is called again and
+       * the selected play will be found in this first check.
+       */
+      PlaySelector playSelector = players.get(currentPlayer).getPlaySelector();
+      Play play = playSelector.getSelectedPlay();
+      if (play == null) {
+
+        // set the avaiable plays in the play selector
+        playSelector.setAvailablePlays(Collections.unmodifiableSet(plays));
+
+        // check to see if a play was selected automatically
+        play = playSelector.getSelectedPlay();
+        if (play == null) {
+          // no play selected, return to stay in the same state so the play can be set externally
+          return State.PLAYER_TURN;
+        }
+
+      }
+
+      // clear the selected play in the play selector (resetting for next iteration)
+      playSelector.setSelectedPlay(null);
+
       if (!plays.contains(play)) {
         throw new IllegalStateException("Player " + currentPlayer
             + " play selector returned invalid play");
       }
+
       executePlay(currentPlayer, play);
+
     }
 
     // move to the next player

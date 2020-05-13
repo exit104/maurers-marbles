@@ -4882,10 +4882,34 @@ public class GameTest {
     assertEquals(expResult, result);
     assertEquals(1, instance.currentPlayer);
 
-    // test when there is a valid play
+    // test when there is a valid play, play selector did not automatically select play
     instance = new Game(4);
     instance.currentPlayer = 0;
     instance.players.get(0).getCards().add(new Card(Rank.KING, Suit.CLUBS));
+    instance.players.get(0).setPlaySelector(new PlaySelector());
+    expResult = State.PLAYER_TURN;
+    result = instance.playerTurn();
+    assertEquals(expResult, result);
+    assertEquals(0, instance.currentPlayer);
+
+    // test when there is a valid play, play selector automatically selected play
+    instance = new Game(4);
+    instance.currentPlayer = 0;
+    instance.players.get(0).getCards().add(new Card(Rank.KING, Suit.CLUBS));
+    expResult = State.PLAYER_TURN;
+    result = instance.playerTurn();
+    assertEquals(expResult, result);
+    assertEquals(0, instance.players.get(0).getCards().size());
+    assertEquals(0, instance.players.get(0).getMarbles().get(0).getBoardIndex());
+    assertEquals(1, instance.currentPlayer);
+
+    // test when there is a valid play, play selector selected play externally
+    instance = new Game(4);
+    instance.currentPlayer = 0;
+    instance.players.get(0).getCards().add(new Card(Rank.KING, Suit.CLUBS));
+    instance.players.get(0).setPlaySelector(new PlaySelector());
+    instance.players.get(0).getPlaySelector().setSelectedPlay(
+        new Play(instance.players.get(0).getCards().get(0), new Move(0, 0, 0)));
     expResult = State.PLAYER_TURN;
     result = instance.playerTurn();
     assertEquals(expResult, result);
@@ -4897,9 +4921,9 @@ public class GameTest {
     instance = new Game(4);
     instance.currentPlayer = 0;
     instance.players.get(0).getCards().add(new Card(Rank.KING, Suit.CLUBS));
-    instance.players.get(0).setPlaySelector((Game game, Set<Play> plays) -> {
-      return new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(0, 0, 0));
-    });
+    instance.players.get(0).setPlaySelector(new PlaySelector());
+    instance.players.get(0).getPlaySelector().setSelectedPlay(
+        new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(0, 0, 0)));
     try {
       result = instance.playerTurn();
       fail("Illegal state exception not thrown");

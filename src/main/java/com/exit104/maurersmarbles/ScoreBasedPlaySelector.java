@@ -10,14 +10,18 @@ import com.google.common.base.Preconditions;
 import java.util.Set;
 
 /**
- * The ScoreBasedPlaySelector class implements the PlaySelector interface to select the best play by
+ * The ScoreBasedPlaySelector class extends the PlaySelector class to select the best play by
  * calculating a score for each possible play.
  *
  * @author Daniel Uppenkamp
  * @since 1.0.0
  */
-public class ScoreBasedPlaySelector implements PlaySelector {
+public class ScoreBasedPlaySelector extends PlaySelector {
 
+  /**
+   * The game for the play selector.
+   */
+  protected final transient Game game;
   /**
    * The player number selecting plays for.
    */
@@ -26,9 +30,17 @@ public class ScoreBasedPlaySelector implements PlaySelector {
   /**
    * Creates a new ScoreBasedPlaySelector.
    *
+   * @param game the game for the play selector
    * @param playerNumber the player number selecting plays for
+   * @throws IllegalArgumentException if the given player number is invalid
+   * @throws NullPointerException if the given game is null
    */
-  public ScoreBasedPlaySelector(int playerNumber) {
+  public ScoreBasedPlaySelector(Game game, int playerNumber) {
+    super();
+    Preconditions.checkNotNull(game, "Null game");
+    Preconditions.checkArgument(playerNumber >= 0 && playerNumber < game.getNumberOfPlayers(),
+        "Invalid player number");
+    this.game = game;
     this.playerNumber = playerNumber;
   }
 
@@ -40,7 +52,7 @@ public class ScoreBasedPlaySelector implements PlaySelector {
    * @return the score for the given marble
    * @throws NullPointerException if the given game or marble is null
    */
-  public int getScoreForMarble(Game game, Marble marble) {
+  public static int getScoreForMarble(Game game, Marble marble) {
 
     Preconditions.checkNotNull(game, "Null game");
     Preconditions.checkNotNull(marble, "Null marble");
@@ -118,7 +130,7 @@ public class ScoreBasedPlaySelector implements PlaySelector {
    * @throws IllegalArgumentException if the given player number is invalid
    * @throws NullPointerException if the given game or play is null
    */
-  public int getScoreForPlay(Game game, int playerNumber, Play play) {
+  public static int getScoreForPlay(Game game, int playerNumber, Play play) {
 
     Preconditions.checkNotNull(game, "Null game");
     Preconditions.checkArgument(playerNumber >= 0 && playerNumber < game.getPlayers().size(),
@@ -162,7 +174,7 @@ public class ScoreBasedPlaySelector implements PlaySelector {
    * @throws IllegalArgumentException if the given player number is invalid
    * @throws NullPointerException if the given game is null
    */
-  public int getScoreForPlayer(Game game, int playerNumber) {
+  public static int getScoreForPlayer(Game game, int playerNumber) {
 
     Preconditions.checkNotNull(game, "Null game");
     Preconditions.checkArgument(playerNumber >= 0 && playerNumber < game.getPlayers().size(),
@@ -186,7 +198,7 @@ public class ScoreBasedPlaySelector implements PlaySelector {
    * @throws IllegalArgumentException if the given player number is invalid
    * @throws NullPointerException if the given game is null
    */
-  public int getScoreForTeam(Game game, int playerNumber) {
+  public static int getScoreForTeam(Game game, int playerNumber) {
 
     Preconditions.checkNotNull(game, "Null game");
     Preconditions.checkArgument(playerNumber >= 0 && playerNumber < game.getPlayers().size(),
@@ -198,11 +210,9 @@ public class ScoreBasedPlaySelector implements PlaySelector {
   }
 
   @Override
-  public Play select(Game game, Set<Play> plays) {
+  public void setAvailablePlays(Set<Play> plays) {
 
-    Preconditions.checkNotNull(game, "Null game");
-    Preconditions.checkNotNull(plays, "Null plays");
-    Preconditions.checkArgument(!plays.isEmpty(), "Empty plays");
+    super.setAvailablePlays(plays);
 
     int maxScore = Integer.MIN_VALUE;
     Play bestPlay = null;
@@ -214,7 +224,7 @@ public class ScoreBasedPlaySelector implements PlaySelector {
       }
     }
 
-    return bestPlay;
+    setSelectedPlay(bestPlay);
 
   }
 

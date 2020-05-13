@@ -19,7 +19,6 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  * The PlayerTest class contains the unit tests for the Player class.
@@ -67,9 +66,7 @@ public class PlayerTest {
 
     // test with play selector
     playerNumber = 1;
-    playSelector = (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    };
+    playSelector = new PlaySelector();
     Player player = new Player(playerNumber, playSelector);
     assertEquals(1, player.getPlayerNumber());
     assertEquals(playSelector, player.getPlaySelector());
@@ -94,9 +91,7 @@ public class PlayerTest {
     }
 
     // test with player
-    player = new Player(1, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    player = new Player(1, new PlaySelector());
     player.getCards().add(new Card(Rank.ACE, Suit.CLUBS));
     player.getMarbles().add(new Marble(1, 0, 0));
     Player instance = new Player(player);
@@ -112,9 +107,7 @@ public class PlayerTest {
 
     System.out.println("getPlayerNumber");
 
-    Player instance = new Player(1, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    Player instance = new Player(1, new PlaySelector());
     int expResult = 1;
     int result = instance.getPlayerNumber();
     assertEquals(expResult, result);
@@ -130,9 +123,7 @@ public class PlayerTest {
     System.out.println("setPlayerNumber");
 
     int playerNumber = 3;
-    Player instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    Player instance = new Player(0, new PlaySelector());
     instance.setPlayerNumber(playerNumber);
     int expResult = 3;
     int result = instance.getPlayerNumber();
@@ -147,9 +138,7 @@ public class PlayerTest {
 
     System.out.println("getCards");
 
-    Player instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    Player instance = new Player(0, new PlaySelector());
     List<Card> expResult = new ArrayList<>();
     List<Card> result = instance.getCards();
     assertEquals(expResult, result);
@@ -164,9 +153,7 @@ public class PlayerTest {
 
     System.out.println("getMarbles");
 
-    Player instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    Player instance = new Player(0, new PlaySelector());
     List<Marble> expResult = new ArrayList<>();
     List<Marble> result = instance.getMarbles();
     assertEquals(expResult, result);
@@ -182,9 +169,7 @@ public class PlayerTest {
     System.out.println("getPlaySelector");
 
     int playerNumber = 0;
-    PlaySelector playSelector = (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    };
+    PlaySelector playSelector = new PlaySelector();
     Player instance = new Player(playerNumber, playSelector);
     PlaySelector expResult = playSelector;
     PlaySelector result = instance.getPlaySelector();
@@ -202,9 +187,7 @@ public class PlayerTest {
     System.out.println("setPlaySelector");
 
     // test with null
-    Player instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    Player instance = new Player(0, new PlaySelector());
     PlaySelector playSelector = null;
     try {
       instance.setPlaySelector(playSelector);
@@ -214,12 +197,8 @@ public class PlayerTest {
     }
 
     // test with play selector
-    instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
-    playSelector = (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    };
+    instance = new Player(0, new PlaySelector());
+    playSelector = new PlaySelector();
     instance.setPlaySelector(playSelector);
     PlaySelector expResult = playSelector;
     PlaySelector result = instance.getPlaySelector();
@@ -237,9 +216,7 @@ public class PlayerTest {
     System.out.println("equals");
 
     // test same object
-    Object obj = new Player(1, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    Object obj = new Player(1, new PlaySelector());
     Player instance = (Player) obj;
     boolean expResult = true;
     boolean result = instance.equals(obj);
@@ -247,26 +224,20 @@ public class PlayerTest {
 
     // test with null
     obj = null;
-    instance = new Player(1, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    instance = new Player(1, new PlaySelector());
     expResult = false;
     result = instance.equals(obj);
     assertEquals(expResult, result);
 
     // test with different class
     obj = new Object();
-    instance = new Player(1, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    instance = new Player(1, new PlaySelector());
     expResult = false;
     result = instance.equals(obj);
     assertEquals(expResult, result);
 
     // test equal objects
-    PlaySelector playSelector = (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    };
+    PlaySelector playSelector = new PlaySelector();
     obj = new Player(1, playSelector);
     instance = new Player(1, playSelector);
     expResult = true;
@@ -274,47 +245,31 @@ public class PlayerTest {
     assertEquals(expResult, result);
 
     // test different player numbers
-    obj = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
-    instance = new Player(1, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    obj = new Player(0, new PlaySelector());
+    instance = new Player(1, new PlaySelector());
     expResult = false;
     result = instance.equals(obj);
     assertEquals(expResult, result);
 
     // test different cards
-    obj = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
-    instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    obj = new Player(0, new PlaySelector());
+    instance = new Player(0, new PlaySelector());
     instance.getCards().add(new Card(Rank.ACE, Suit.CLUBS));
     expResult = false;
     result = instance.equals(obj);
     assertEquals(expResult, result);
 
     // test different marbles
-    obj = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
-    instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    obj = new Player(0, new PlaySelector());
+    instance = new Player(0, new PlaySelector());
     instance.getMarbles().add(new Marble(0, 0, 0));
     expResult = false;
     result = instance.equals(obj);
     assertEquals(expResult, result);
 
     // test different play selectors
-    obj = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
-    instance = new Player(0, (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    });
+    obj = new Player(0, new PlaySelector());
+    instance = new Player(0, new PlaySelector());
     expResult = true;
     result = instance.equals(obj);
     assertEquals(expResult, result);
@@ -329,9 +284,7 @@ public class PlayerTest {
 
     System.out.println("hashCode");
 
-    PlaySelector playSelector = (Game game, Set<Play> plays) -> {
-      return plays.iterator().next();
-    };
+    PlaySelector playSelector = new PlaySelector();
     Player instance1 = new Player(0, playSelector);
     Player instance2 = new Player(0, playSelector);
     assertEquals(instance1.hashCode(), instance2.hashCode());

@@ -17,6 +17,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -50,7 +51,7 @@ public class RandomPlaySelectorTest {
    * Test of constructor method, of class RandomPlaySelector.
    */
   @Test
-  public void testFirstPlaySelector() {
+  public void testRandomPlaySelector() {
 
     System.out.println("constructor");
 
@@ -59,55 +60,45 @@ public class RandomPlaySelectorTest {
   }
 
   /**
-   * Test of select method, of class RandomPlaySelector.
+   * Test of setAvailablePlays method, of class RandomPlaySelector.
    */
   @Test
   @SuppressWarnings("PMD.NullAssignment")
-  public void testSelect() {
+  public void testSetAvailablePlays() {
 
-    System.out.println("select");
+    System.out.println("setAvailablePlays");
 
-    // test with null game
+    // test with null
     RandomPlaySelector instance = new RandomPlaySelector();
-    Game game = null;
     Set<Play> plays = null;
     try {
-      instance.select(game, plays);
+      instance.setAvailablePlays(plays);
       fail("Null pointer exception not thrown");
     } catch (NullPointerException ex) {
       // do nothing
     }
 
-    // test with null plays
+    // test with empty set
     instance = new RandomPlaySelector();
-    game = new Game(4);
-    plays = null;
+    plays = Collections.emptySet();
     try {
-      instance.select(game, plays);
-      fail("Null pointer exception not thrown");
-    } catch (NullPointerException ex) {
-      // do nothing
-    }
-
-    // test with empty plays
-    instance = new RandomPlaySelector();
-    game = new Game(4);
-    plays = new LinkedHashSet<>();
-    try {
-      instance.select(game, plays);
+      instance.setAvailablePlays(plays);
       fail("Illegal argument exception not thrown");
     } catch (IllegalArgumentException ex) {
       // do nothing
     }
 
-    // test with game and plays
-    instance = new RandomPlaySelector();
-    game = new Game(4);
-    plays = new LinkedHashSet<>();
-    plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(0, 1, 2)));
-    plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(1, 2, 3)));
-    Play play = instance.select(game, plays);
-    assertTrue(plays.contains(play));
+    // test with populated set, test multiple times to increase likelyhood of executing iterator
+    for (int i = 0; i < 10; i++) {
+      instance = new RandomPlaySelector();
+      plays = new LinkedHashSet<>();
+      plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(0, 0, 0)));
+      plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(1, 0, 0)));
+      plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(2, 0, 0)));
+      plays.add(new Play(new Card(Rank.ACE, Suit.CLUBS), new Move(3, 0, 0)));
+      instance.setAvailablePlays(plays);
+      assertTrue(plays.contains(instance.selectedPlay));
+    }
 
   }
 

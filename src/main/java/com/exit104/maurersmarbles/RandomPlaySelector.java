@@ -5,23 +5,21 @@
 
 package com.exit104.maurersmarbles;
 
-import com.google.common.base.Preconditions;
-
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
 /**
- * The RandomPlaySelector class implements the PlaySelector interface to select a random play from
- * the set of valid plays.
+ * The RandomPlaySelector class extends the PlaySelector class to select a random play from the set
+ * of available plays.
  *
  * @author Daniel Uppenkamp
  * @since 1.0.0
  */
-public class RandomPlaySelector implements PlaySelector {
+public class RandomPlaySelector extends PlaySelector {
 
   /**
-   * The random object used to select a random play.
+   * The random used to select a random play.
    */
   protected transient Random random = new Random();
 
@@ -29,22 +27,20 @@ public class RandomPlaySelector implements PlaySelector {
    * Creates a new RandomPlaySelector.
    */
   public RandomPlaySelector() {
-    // do nothing
+    super();
   }
 
   @Override
-  public Play select(Game game, Set<Play> plays) {
+  public void setAvailablePlays(Set<Play> plays) {
 
-    Preconditions.checkNotNull(game, "Null game");
-    Preconditions.checkNotNull(plays, "Null plays");
-    Preconditions.checkArgument(!plays.isEmpty(), "Empty plays");
+    super.setAvailablePlays(plays);
 
     int randomIndex = random.nextInt(plays.size());
     Iterator<Play> iterator = plays.iterator();
     for (int i = 0; i < randomIndex; i++) {
       iterator.next();
     }
-    return iterator.next();
+    setSelectedPlay(iterator.next());
 
   }
 

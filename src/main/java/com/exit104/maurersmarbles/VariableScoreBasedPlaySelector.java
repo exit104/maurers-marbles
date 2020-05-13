@@ -33,22 +33,26 @@ public class VariableScoreBasedPlaySelector extends ScoreBasedPlaySelector {
    * A random value of 0.0 means a play is always selected based on the score. A random value of 1.0
    * means a play is always randomly selected.
    *
+   * @param game the game for the play selector
    * @param playerNumber the player number selecting plays for
    * @param random a value between 0.0 and 1.0 defining how often a play is chosen at random
-   * @throws IllegalArgumentException if the given random is invalid
+   * @throws IllegalArgumentException if the given player number or random is invalid
+   * @throws NullPointerException if the given game is null
    */
-  public VariableScoreBasedPlaySelector(int playerNumber, float random) {
-    super(playerNumber);
+  public VariableScoreBasedPlaySelector(Game game, int playerNumber, float random) {
+    super(game, playerNumber);
     Preconditions.checkArgument(random >= 0.0 && random <= 1.0, "Invalid random");
     this.random = random;
   }
 
   @Override
-  public Play select(Game game, Set<Play> plays) {
+  public void setAvailablePlays(Set<Play> plays) {
     if (Math.random() < random) {
-      return RANDOM_PLAY_SELECTOR.select(game, plays);
+      RANDOM_PLAY_SELECTOR.setAvailablePlays(plays);
+      setSelectedPlay(RANDOM_PLAY_SELECTOR.getSelectedPlay());
+    } else {
+      super.setAvailablePlays(plays);
     }
-    return super.select(game, plays);
   }
 
 }
