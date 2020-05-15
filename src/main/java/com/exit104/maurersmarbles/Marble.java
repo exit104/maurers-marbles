@@ -16,6 +16,10 @@ import com.google.common.base.Preconditions;
 public class Marble {
 
   /**
+   * A standard shooter marble is 3/4" in diameter.
+   */
+  public static final float DIAMETER = 0.75f;
+  /**
    * The previous board index value when there is no previous spot the marble was in.
    */
   public static final int NO_PREVIOUS_BOARD_INDEX = -1;

@@ -25,10 +25,6 @@ public class GridBoardLayout implements BoardLayout {
    */
   protected final transient Board board;
   /**
-   * The card scale factor relative to the inner size of the board.
-   */
-  protected static final float CARD_SCALE_FACTOR = 0.1f;
-  /**
    * The inner size of the board where the spaces are drawn (this creates a buffer around the
    * outside of the board.
    */
@@ -176,10 +172,9 @@ public class GridBoardLayout implements BoardLayout {
 
     }
 
-    // calculate the size of the discard pile
-    // TODO should this be a fixed size on the board or scale up/down based on the grid size
-    float cardWidth = INNER_SIZE * CARD_SCALE_FACTOR;
-    float cardHeight = cardWidth / Card.WIDTH_TO_HEIGHT_RATIO;
+    // calculate the size of a card on the board based using the size of the marbles
+    float cardWidth = (Card.WIDTH / Marble.DIAMETER) * (gridSize * MARBLE_SCALE_FACTOR);
+    float cardHeight = (Card.HEIGHT / Marble.DIAMETER) * (gridSize * MARBLE_SCALE_FACTOR);
     discardPileRectangle = new Rectangle(0.5f - (cardWidth / 2.0f), 0.5f - (cardHeight / 2.0f),
         cardWidth, cardHeight);
 

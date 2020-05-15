@@ -18,9 +18,13 @@ import java.util.Objects;
 public class Card {
 
   /**
-   * A standard playing card is 2.5" x 3.5".
+   * A standard playing card is 3.5" tall.
    */
-  public static final float WIDTH_TO_HEIGHT_RATIO = 2.5f / 3.5f;
+  public static final float HEIGHT = 3.5f;
+  /**
+   * A standard playing card is 2.5" wide.
+   */
+  public static final float WIDTH = 2.5f;
   /**
    * The card rank.
    */
