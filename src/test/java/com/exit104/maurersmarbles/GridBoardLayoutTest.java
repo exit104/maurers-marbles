@@ -2774,6 +2774,25 @@ public class GridBoardLayoutTest {
   }
 
   /**
+   * Test of getBoundsForDiscardPile method, of class GridBoardLayout.
+   */
+  @Test
+  @SuppressWarnings("PMD.UseUnderscoresInNumericLiterals")
+  public void testGetBoundsForDiscardPile() {
+
+    System.out.println("getBoundsForDiscardPile");
+
+    Board board = new Board(4);
+    GridBoardLayout instance = new GridBoardLayout(board);
+    Rectangle expResult = new Rectangle(Float.intBitsToFloat(1055035228),
+        Float.intBitsToFloat(1054263476), Float.intBitsToFloat(1038845215),
+        Float.intBitsToFloat(1042603311));
+    Rectangle result = instance.getBoundsForDiscardPile();
+    assertEquals(expResult, result);
+
+  }
+
+  /**
    * Test of getBoundsForMarble method, of class GridBoardLayout.
    */
   @Test
@@ -2781,7 +2800,7 @@ public class GridBoardLayoutTest {
 
     System.out.println("getBoundsForMarble");
 
-// test with invalid board index
+    // test with invalid board index
     Board board = new Board(4);
     GridBoardLayout instance = new GridBoardLayout(board);
     int boardIndex = -1;
@@ -2818,7 +2837,7 @@ public class GridBoardLayoutTest {
 
     System.out.println("getBoundsForSpace");
 
-// test with invalid board index
+    // test with invalid board index
     Board board = new Board(4);
     GridBoardLayout instance = new GridBoardLayout(board);
     int boardIndex = -1;

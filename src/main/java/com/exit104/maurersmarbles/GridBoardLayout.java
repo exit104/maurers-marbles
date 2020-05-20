@@ -142,26 +142,18 @@ public class GridBoardLayout implements BoardLayout {
                     (spaceY - (j * gridSize) * componentY2) - (gridSize / 2.0f), gridSize,
                     gridSize);
 
-                // TODO cannot test default
-                switch (i) {
-                  case -2:
-                    // left side
-                    boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + j,
-                        rectangle);
-                    break;
-                  case 0:
-                    // home spaces
-                    boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
-                        rectangle);
-                    break;
-                  case 2:
-                    // right side
-                    boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
-                        rectangle);
-                    break;
-                  default:
-                    // do nothing
-                    break;
+                if (i == -2) {
+                  // left side
+                  boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + j,
+                      rectangle);
+                } else if (i == 0) {
+                  // home spaces
+                  boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
+                      rectangle);
+                } else {
+                  // right side
+                  boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
+                      rectangle);
                 }
 
               }
