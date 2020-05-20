@@ -15,6 +15,15 @@ package com.exit104.maurersmarbles;
 public interface BoardLayout {
 
   /**
+   * Returns the angle (in radians) of the given board index on the board.
+   *
+   * @param boardIndex the board index
+   * @return the angle (in radians) of the given board index on the board
+   * @throws IllegalArgumentException if the given board index is invalid
+   */
+  float getAngleForBoardIndex(int boardIndex);
+
+  /**
    * Returns the bounds of the given board index.
    *
    * @param boardIndex the board index

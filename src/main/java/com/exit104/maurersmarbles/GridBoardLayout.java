@@ -47,6 +47,11 @@ public class GridBoardLayout implements BoardLayout {
    */
   protected static final Map<Integer, Float> GRID_SIZES;
   /**
+   * The map that contains the angles for each board index. The key into the map is the board index
+   * and the value is the angle.
+   */
+  protected final transient Map<Integer, Float> boardIndexToAngleMap = new TreeMap<>();
+  /**
    * The map that contains the bounds for each board index. The key into the map is the board index
    * and the value is the bounds.
    */
@@ -75,6 +80,7 @@ public class GridBoardLayout implements BoardLayout {
    * @param board the board
    * @throws NullPointerException if the given board is null
    */
+  @SuppressWarnings("PMD.AvoidLiteralsInIfCondition")
   public GridBoardLayout(Board board) {
 
     Preconditions.checkNotNull(board, "Null board");
@@ -86,25 +92,26 @@ public class GridBoardLayout implements BoardLayout {
 
     for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
 
-      float vertex = (float) playerNumber / (float) board.getNumberOfPlayers();
+      float playerAngle = (float) (2.0 * Math.PI
+          * ((double) playerNumber / (double) board.getNumberOfPlayers()) + Math.PI / 2.0);
 
       // use and outer ring for the start spaces and an inner ring for the remaining spaces
       for (int ring = 0; ring <= 1; ring++) {
 
         // calculate the center x and y of this vertex
-        float gridCellCenterX = (radius - gridSize * ring)
-            * (float) Math.cos(2.0 * Math.PI * vertex + Math.PI / 2.0) + 0.5f;
-        float gridCellCenterY = (radius - gridSize * ring)
-            * (float) Math.sin(2.0 * Math.PI * vertex + Math.PI / 2.0) + 0.5f;
+        float gridCellCenterX = (radius - gridSize * ring) * (float) Math.cos(playerAngle) + 0.5f;
+        float gridCellCenterY = (radius - gridSize * ring) * (float) Math.sin(playerAngle) + 0.5f;
 
         // calculate the angle for this vertex (perpindicular to the player's home spaces)
-        float componentX = (float) Math.cos(2.0 * Math.PI * vertex + Math.PI);
-        float componentY = (float) Math.sin(2.0 * Math.PI * vertex + Math.PI);
+        float componentX = (float) Math.cos(playerAngle + Math.PI / 2.0);
+        float componentY = (float) Math.sin(playerAngle + Math.PI / 2.0);
 
         if (ring == 0) {
 
           // start spaces
           for (int i = 0; i < 4; i++) {
+            boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + i,
+                playerAngle - (float) Math.PI);
             boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + i,
                 new Rectangle(
                     gridCellCenterX - ((i - 1.5f) * gridSize) * componentX - (gridSize / 2.0f),
@@ -123,19 +130,23 @@ public class GridBoardLayout implements BoardLayout {
 
             if (i == -2) {
               // safe space
+              boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber),
+                  playerAngle - (float) Math.PI);
               boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber), rectangle);
             } else {
               // home entry
+              boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - i,
+                  playerAngle - (float) Math.PI);
               boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - i,
                   rectangle);
             }
 
             if (i == 2 || i == 0 || i == -2) {
 
-              float componentX2 = (float) Math.cos(2.0 * Math.PI * vertex + Math.PI / 2.0);
-              float componentY2 = (float) Math.sin(2.0 * Math.PI * vertex + Math.PI / 2.0);
+              float componentX2 = (float) Math.cos(playerAngle);
+              float componentY2 = (float) Math.sin(playerAngle);
 
-              for (int j = 1; j <= (i == 2 ? 5 : 4); j++) {
+              for (int j = 1; j <= (i == -2 || i == 2 ? 5 : 4); j++) {
 
                 rectangle = new Rectangle(
                     (spaceX - (j * gridSize) * componentX2) - (gridSize / 2.0f),
@@ -144,14 +155,46 @@ public class GridBoardLayout implements BoardLayout {
 
                 if (i == -2) {
                   // left side
+                  if (j != 5) {
+                    boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber) + j,
+                        playerAngle - (float) Math.PI);
+                  }
+                  Rectangle rectangleBefore = boardIndexToBoundsMap.get(
+                      board.getSafeBoardIndex(playerNumber) + j);
+                  if (rectangleBefore != null) {
+                    // for the transition spaces, average the location to make it look smoother
+                    rectangle = new Rectangle((rectangle.getX() + rectangleBefore.getX()) / 2.0f,
+                        (rectangle.getY() + rectangleBefore.getY()) / 2.0f, rectangle.getWidth(),
+                        rectangle.getHeight());
+                  }
                   boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + j,
                       rectangle);
                 } else if (i == 0) {
                   // home spaces
+                  boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
+                      playerAngle - (float) Math.PI);
                   boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
                       rectangle);
                 } else {
                   // right side
+                  if (j == 5) {
+                    float transitionAngle = (float) (2.0 * Math.PI
+                        * ((double) (playerNumber - 0.5) / (double) board.getNumberOfPlayers())
+                        - Math.PI / 2.0);
+                    boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
+                        transitionAngle);
+                  } else {
+                    boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
+                        playerAngle - (float) Math.PI);
+                  }
+                  Rectangle rectangleBefore = boardIndexToBoundsMap.get(
+                      board.getHomeEntryBoardIndex(playerNumber) - 2 - j);
+                  if (rectangleBefore != null) {
+                    // for the transition spaces, average the location to make it look smoother
+                    rectangle = new Rectangle((rectangle.getX() + rectangleBefore.getX()) / 2.0f,
+                        (rectangle.getY() + rectangleBefore.getY()) / 2.0f, rectangle.getWidth(),
+                        rectangle.getHeight());
+                  }
                   boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
                       rectangle);
                 }
@@ -174,6 +217,13 @@ public class GridBoardLayout implements BoardLayout {
     discardPileRectangle = new Rectangle(0.5f - (cardWidth / 2.0f), 0.5f - (cardHeight / 2.0f),
         cardWidth, cardHeight);
 
+  }
+
+  @Override
+  public float getAngleForBoardIndex(int boardIndex) {
+    Preconditions.checkArgument(boardIndex >= 0
+        && boardIndex < board.getNumberOfPlayableSpaces(), "Invalid board index");
+    return boardIndexToAngleMap.get(boardIndex);
   }
 
   @Override
