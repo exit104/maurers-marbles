@@ -1401,9 +1401,11 @@ public class Game {
     Set<Play> plays = getPlays(currentPlayer);
     if (plays.isEmpty()) {
 
+      // fire event before clearing cards
+      fireEvent(new CannotPlayGameEvent(this, currentPlayer));
+
       // throw in the player's cards
       players.get(currentPlayer).getCards().clear();
-      fireEvent(new CannotPlayGameEvent(this, currentPlayer));
 
     } else {
 

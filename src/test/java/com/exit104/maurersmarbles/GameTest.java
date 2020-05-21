@@ -14,6 +14,7 @@ import com.exit104.maurersmarbles.Card.Rank;
 import com.exit104.maurersmarbles.Card.Suit;
 import com.exit104.maurersmarbles.Game.SplitCard;
 import com.exit104.maurersmarbles.Game.State;
+import com.exit104.maurersmarbles.event.CannotPlayGameEvent;
 import com.exit104.maurersmarbles.event.Event;
 import com.exit104.maurersmarbles.event.EventListener;
 
@@ -24,6 +25,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -4930,6 +4932,17 @@ public class GameTest {
     } catch (IllegalStateException ex) {
       // do nothing
     }
+
+    // test cannot play event to make sure cards are cleared after event
+    instance = new Game(4);
+    instance.currentPlayer = 0;
+    instance.getPlayers().get(0).getCards().add(new Card(Rank.EIGHT, Suit.CLUBS));
+    instance.addEventListener((Event event) -> {
+      CannotPlayGameEvent cannotPlayGameEvent = (CannotPlayGameEvent) event;
+      assertFalse(cannotPlayGameEvent.getSource().getPlayers().get(
+          cannotPlayGameEvent.getPlayerNumber()).getCards().isEmpty());
+    });
+    instance.playerTurn();
 
   }
 
