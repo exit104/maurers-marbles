@@ -488,16 +488,12 @@ public class Game {
     switch (numberOfPlayers) {
       case 4:
         return MIN_NUMBER_OF_CARDS_TO_DEAL + (cardDeck.getDealtCards().isEmpty() ? 1 : 0);
-      case 6:
-        return MIN_NUMBER_OF_CARDS_TO_DEAL;
       case 8:
         return MIN_NUMBER_OF_CARDS_TO_DEAL + 1;
       case 10:
         return MIN_NUMBER_OF_CARDS_TO_DEAL + 1;
-      case 12:
-        return MIN_NUMBER_OF_CARDS_TO_DEAL;
       default:
-        throw new IllegalStateException("Invalid number of players");
+        return MIN_NUMBER_OF_CARDS_TO_DEAL;
     }
   }
 
