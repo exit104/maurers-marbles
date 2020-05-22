@@ -483,13 +483,13 @@ public class GameStatsTest {
     game = new Game(4);
     instance = new GameStats(game);
     instance.handleEvent(new ExecutedPlayGameEvent(game, 0, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(0)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 1, new Play(new Card(Rank.ACE, Suit.CLUBS),
         new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 2, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(2)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 3, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(3)))));
     expResult = 4;
     result = instance.getTotalCardsPlayed();
     assertEquals(expResult, result);
@@ -513,15 +513,18 @@ public class GameStatsTest {
 
     // test after event
     game = new Game(4);
+    game.getPlayers().get(0).getMarbles().get(1).setBoardIndex(0);
     instance = new GameStats(game);
     instance.handleEvent(new ExecutedPlayGameEvent(game, 0, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(0)))));
+    instance.handleEvent(new ExecutedPlayGameEvent(game, 0, new Play(new Card(Rank.ACE, Suit.CLUBS),
+        new Move(0, 1, 1))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 1, new Play(new Card(Rank.ACE, Suit.CLUBS),
         new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 2, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(2)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 3, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(3)))));
     expResult = 4;
     result = instance.getTotalMarblesKnocked();
     assertEquals(expResult, result);
@@ -547,13 +550,13 @@ public class GameStatsTest {
     game = new Game(4);
     instance = new GameStats(game);
     instance.handleEvent(new ExecutedPlayGameEvent(game, 0, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(0)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 1, new Play(new Card(Rank.ACE, Suit.CLUBS),
         new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 2, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(2)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 3, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(3)))));
     expResult = 4;
     result = instance.getTotalMarblesMoved();
     assertEquals(expResult, result);
@@ -607,13 +610,13 @@ public class GameStatsTest {
     game = new Game(4);
     instance = new GameStats(game);
     instance.handleEvent(new ExecutedPlayGameEvent(game, 0, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(0)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 1, new Play(new Card(Rank.ACE, Suit.CLUBS),
         new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 2, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(2)))));
     instance.handleEvent(new ExecutedPlayGameEvent(game, 3, new Play(new Card(Rank.ACE, Suit.CLUBS),
-        new Move(0, 0, game.getBoard().getStartMinBoardIndex(1)))));
+        new Move(0, 0, game.getBoard().getStartMinBoardIndex(3)))));
     expResult = 4;
     result = instance.getTotalPlaysExecuted();
     assertEquals(expResult, result);
