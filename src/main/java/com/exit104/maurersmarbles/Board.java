@@ -90,7 +90,7 @@ public class Board {
     for (int i = 0; i < numberOfPerimeterSpaces; i++) {
       boardIndexes.add(i);
     }
-    perimeterBoardIndexes = Collections.unmodifiableList(boardIndexes)
+    perimeterBoardIndexes = Collections.unmodifiableList(boardIndexes);
 
     // calculate the number of playable spaces
     numberOfPlayableSpaces = numberOfPerimeterSpaces
