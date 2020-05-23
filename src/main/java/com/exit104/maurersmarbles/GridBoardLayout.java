@@ -27,7 +27,7 @@ public class GridBoardLayout implements BoardLayout {
   /**
    * The card scale factor relative to the size of a grid cell.
    */
-  protected static final float CARD_SCALE_FACTOR = 0.8f;
+  protected static final float CARD_SCALE_FACTOR = 1.0f;
   /**
    * The inner size of the board where the spaces are drawn (this creates a buffer around the
    * outside of the board.
