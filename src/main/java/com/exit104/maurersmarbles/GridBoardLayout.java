@@ -32,11 +32,11 @@ public class GridBoardLayout implements BoardLayout {
    * The inner size of the board where the spaces are drawn (this creates a buffer around the
    * outside of the board.
    */
-  protected static final float INNER_SIZE = 0.92f;
+  protected static final float INNER_SIZE = 0.95f;
   /**
    * The marble scale factor relative to the size of a grid cell.
    */
-  protected static final float MARBLE_SCALE_FACTOR = 0.85f;
+  protected static final float MARBLE_SCALE_FACTOR = 0.90f;
   /**
    * The space scale factor relative to the size of a grid cell.
    */

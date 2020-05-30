@@ -1054,2662 +1054,2662 @@ public class GridBoardLayoutTest {
     // test with 4 players
     board = new Board(4);
     instance = new GridBoardLayout(board);
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141157), Float.intBitsToFloat(1063235093),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(0));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141157), Float.intBitsToFloat(1062270403),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(1));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141157), Float.intBitsToFloat(1061305713),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(2));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141157), Float.intBitsToFloat(1060341023),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(3));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141157), Float.intBitsToFloat(1059376333),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(4));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141158), Float.intBitsToFloat(1058411642),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(5));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050211778), Float.intBitsToFloat(1058411642),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(6));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047988796), Float.intBitsToFloat(1058411642),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(7));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044130037), Float.intBitsToFloat(1058411642),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(8));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040271277), Float.intBitsToFloat(1058411642),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(9));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032637643), Float.intBitsToFloat(1058411642),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(10));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032637643), Float.intBitsToFloat(1057446952),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(11));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032637644), Float.intBitsToFloat(1055999917),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(12));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032637645), Float.intBitsToFloat(1054070537),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(13));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032637645), Float.intBitsToFloat(1052141157),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(14));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040271278), Float.intBitsToFloat(1052141157),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(15));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044130038), Float.intBitsToFloat(1052141157),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(16));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047988798), Float.intBitsToFloat(1052141158),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(17));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050211779), Float.intBitsToFloat(1052141158),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(18));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141158), Float.intBitsToFloat(1052141158),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(19));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141158), Float.intBitsToFloat(1050211778),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(20));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141158), Float.intBitsToFloat(1047988796),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(21));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141158), Float.intBitsToFloat(1044130038),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(22));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141158), Float.intBitsToFloat(1040271278),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(23));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052141158), Float.intBitsToFloat(1032637644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(24));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054070538), Float.intBitsToFloat(1032637644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(25));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999918), Float.intBitsToFloat(1032637644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(26));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057446953), Float.intBitsToFloat(1032637644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(27));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411643), Float.intBitsToFloat(1032637644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(28));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411643), Float.intBitsToFloat(1040271278),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(29));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411643), Float.intBitsToFloat(1044130038),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(30));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411643), Float.intBitsToFloat(1047988796),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(31));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411643), Float.intBitsToFloat(1050211778),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(32));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411643), Float.intBitsToFloat(1052141158),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(33));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059376333), Float.intBitsToFloat(1052141159),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(34));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060341023), Float.intBitsToFloat(1052141159),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(35));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061305713), Float.intBitsToFloat(1052141159),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(36));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062270403), Float.intBitsToFloat(1052141160),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(37));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063235093), Float.intBitsToFloat(1052141160),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(38));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063235093), Float.intBitsToFloat(1054070540),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(39));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063235093), Float.intBitsToFloat(1055999920),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(40));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063235093), Float.intBitsToFloat(1057446954),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(41));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063235093), Float.intBitsToFloat(1058411644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(42));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062270403), Float.intBitsToFloat(1058411644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(43));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061305713), Float.intBitsToFloat(1058411644),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(44));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060341023), Float.intBitsToFloat(1058411643),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(45));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059376333), Float.intBitsToFloat(1058411643),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(46));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411642), Float.intBitsToFloat(1058411643),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(47));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411642), Float.intBitsToFloat(1059376333),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(48));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411642), Float.intBitsToFloat(1060341023),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(49));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411642), Float.intBitsToFloat(1061305713),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(50));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411642), Float.intBitsToFloat(1062270403),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(51));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058411642), Float.intBitsToFloat(1063235093),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(52));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057446952), Float.intBitsToFloat(1063235093),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(53));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999917), Float.intBitsToFloat(1063235093),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(54));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054070537), Float.intBitsToFloat(1063235093),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(55));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999917), Float.intBitsToFloat(1062270403),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(56));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999917), Float.intBitsToFloat(1061305713),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(57));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999917), Float.intBitsToFloat(1060341023),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(58));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999917), Float.intBitsToFloat(1059376333),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(59));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040271278), Float.intBitsToFloat(1055999917),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(60));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044130038), Float.intBitsToFloat(1055999917),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(61));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047988796), Float.intBitsToFloat(1055999918),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(62));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050211778), Float.intBitsToFloat(1055999918),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(63));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999918), Float.intBitsToFloat(1040271278),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(64));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999918), Float.intBitsToFloat(1044130038),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(65));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999918), Float.intBitsToFloat(1047988796),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(66));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055999918), Float.intBitsToFloat(1050211778),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(67));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062270403), Float.intBitsToFloat(1055999920),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(68));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061305713), Float.intBitsToFloat(1055999920),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(69));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060341023), Float.intBitsToFloat(1055999918),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(70));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059376333), Float.intBitsToFloat(1055999918),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(71));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053105847), Float.intBitsToFloat(1064199783),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(72));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055035227), Float.intBitsToFloat(1064199783),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(73));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964606), Float.intBitsToFloat(1064199783),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(74));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057929297), Float.intBitsToFloat(1064199783),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(75));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1010323946), Float.intBitsToFloat(1053105847),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(76));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1010323942), Float.intBitsToFloat(1055035227),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(77));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1010323934), Float.intBitsToFloat(1056964606),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(78));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1010323930), Float.intBitsToFloat(1057929297),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(79));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057929298), Float.intBitsToFloat(1010323938),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(80));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(1010323938),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(81));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055035228), Float.intBitsToFloat(1010323938),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(82));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053105848), Float.intBitsToFloat(1010323938),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(83));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064199783), Float.intBitsToFloat(1057929299),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(84));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064199783), Float.intBitsToFloat(1056964609),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(85));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064199783), Float.intBitsToFloat(1055035230),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(86));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064199783), Float.intBitsToFloat(1053105850),
-        Float.intBitsToFloat(1030456607), Float.intBitsToFloat(1030456607)),
-        instance.getBoundsForBoardIndex(87));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983871), Float.intBitsToFloat(1063439564),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(0));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983871), Float.intBitsToFloat(1062443417),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(1));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983871), Float.intBitsToFloat(1061447270),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(2));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983871), Float.intBitsToFloat(1060451122),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(3));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983871), Float.intBitsToFloat(1059454975),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(4));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983872), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(5));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049991577), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(6));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047422566), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(7));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043437977), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(8));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038719383), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(9));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1029701628), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(10));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1029701628), Float.intBitsToFloat(1057462681),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(11));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1029701630), Float.intBitsToFloat(1055968460),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(12));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1029701632), Float.intBitsToFloat(1053976166),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(13));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1029701632), Float.intBitsToFloat(1051983871),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(14));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038719385), Float.intBitsToFloat(1051983871),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(15));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043437978), Float.intBitsToFloat(1051983871),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(16));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047422566), Float.intBitsToFloat(1051983872),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(17));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049991578), Float.intBitsToFloat(1051983872),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(18));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983872), Float.intBitsToFloat(1051983872),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(19));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983872), Float.intBitsToFloat(1049991577),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(20));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983872), Float.intBitsToFloat(1047422566),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(21));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983872), Float.intBitsToFloat(1043437978),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(22));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983872), Float.intBitsToFloat(1038719385),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(23));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051983872), Float.intBitsToFloat(1029701630),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(24));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053976167), Float.intBitsToFloat(1029701630),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(25));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968461), Float.intBitsToFloat(1029701630),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(26));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057462681), Float.intBitsToFloat(1029701630),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(27));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1029701630),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(28));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1038719385),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(29));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1043437978),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(30));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1047422566),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(31));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1049991577),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(32));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1051983872),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(33));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059454975), Float.intBitsToFloat(1051983873),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(34));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060451122), Float.intBitsToFloat(1051983873),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(35));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061447270), Float.intBitsToFloat(1051983873),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(36));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062443417), Float.intBitsToFloat(1051983874),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(37));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063439564), Float.intBitsToFloat(1051983874),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(38));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063439564), Float.intBitsToFloat(1053976169),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(39));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063439564), Float.intBitsToFloat(1055968463),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(40));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063439564), Float.intBitsToFloat(1057462682),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(41));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063439564), Float.intBitsToFloat(1058458829),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(42));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062443417), Float.intBitsToFloat(1058458829),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(43));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061447270), Float.intBitsToFloat(1058458829),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(44));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060451122), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(45));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059454975), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(46));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1058458828),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(47));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1059454975),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(48));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1060451122),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(49));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1061447270),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(50));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1062443417),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(51));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058458828), Float.intBitsToFloat(1063439564),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(52));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057462681), Float.intBitsToFloat(1063439564),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(53));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968460), Float.intBitsToFloat(1063439564),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(54));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053976166), Float.intBitsToFloat(1063439564),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(55));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968460), Float.intBitsToFloat(1062443417),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(56));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968460), Float.intBitsToFloat(1061447270),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(57));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968460), Float.intBitsToFloat(1060451122),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(58));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968460), Float.intBitsToFloat(1059454975),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(59));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038719385), Float.intBitsToFloat(1055968460),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(60));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043437978), Float.intBitsToFloat(1055968460),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(61));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047422566), Float.intBitsToFloat(1055968461),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(62));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049991577), Float.intBitsToFloat(1055968461),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(63));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968461), Float.intBitsToFloat(1038719385),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(64));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968461), Float.intBitsToFloat(1043437978),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(65));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968461), Float.intBitsToFloat(1047422566),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(66));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055968461), Float.intBitsToFloat(1049991577),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(67));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062443417), Float.intBitsToFloat(1055968463),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(68));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061447270), Float.intBitsToFloat(1055968463),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(69));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060451122), Float.intBitsToFloat(1055968461),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(70));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059454975), Float.intBitsToFloat(1055968461),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(71));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052980019), Float.intBitsToFloat(1064435712),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(72));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054972313), Float.intBitsToFloat(1064435712),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(73));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1064435712),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(74));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057960754), Float.intBitsToFloat(1064435712),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(75));
+    assertEquals(new Rectangle(Float.intBitsToFloat(-1147561604), Float.intBitsToFloat(1052980019),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(76));
+    assertEquals(new Rectangle(Float.intBitsToFloat(-1147561592), Float.intBitsToFloat(1054972313),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(77));
+    assertEquals(new Rectangle(Float.intBitsToFloat(-1147561584), Float.intBitsToFloat(1056964607),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(78));
+    assertEquals(new Rectangle(Float.intBitsToFloat(-1147561572), Float.intBitsToFloat(1057960754),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(79));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057960755), Float.intBitsToFloat(-1147561592),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(80));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(-1147561588),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(81));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054972314), Float.intBitsToFloat(-1147561588),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(82));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052980019), Float.intBitsToFloat(-1147561584),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(83));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064435712), Float.intBitsToFloat(1057960756),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(84));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064435712), Float.intBitsToFloat(1056964609),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(85));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064435712), Float.intBitsToFloat(1054972316),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(86));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064435712), Float.intBitsToFloat(1052980021),
+        Float.intBitsToFloat(1030959923), Float.intBitsToFloat(1030959923)),
+        instance.boardIndexToBoundsMap.get(87));
 
     // test with 6 players
     board = new Board(6);
     instance = new GridBoardLayout(board);
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902754), Float.intBitsToFloat(1063463572),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(0));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902754), Float.intBitsToFloat(1062651201),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(1));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902754), Float.intBitsToFloat(1061838831),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(2));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902754), Float.intBitsToFloat(1061026461),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(3));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902754), Float.intBitsToFloat(1060214090),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(4));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052877499), Float.intBitsToFloat(1059394429),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(5));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051445178), Float.intBitsToFloat(1059793324),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(6));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050038110), Float.intBitsToFloat(1060199509),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(7));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048631044), Float.intBitsToFloat(1060605694),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(8));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045871953), Float.intBitsToFloat(1061011880),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(9));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043057819), Float.intBitsToFloat(1061418065),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(10));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041433078), Float.intBitsToFloat(1060714531),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(11));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1039429282), Float.intBitsToFloat(1060010998),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(12));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1036179800), Float.intBitsToFloat(1059307465),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(13));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032930317), Float.intBitsToFloat(1058603931),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(14));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038558586), Float.intBitsToFloat(1058197746),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(15));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042187123), Float.intBitsToFloat(1057791560),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(16));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045001257), Float.intBitsToFloat(1057385375),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(17));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047815391), Float.intBitsToFloat(1056979190),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(18));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049602762), Float.intBitsToFloat(1056152239),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(19));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047815391), Float.intBitsToFloat(1055310706),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(20));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045001257), Float.intBitsToFloat(1054498334),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(21));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042187123), Float.intBitsToFloat(1053685964),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(22));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038558586), Float.intBitsToFloat(1052873594),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(23));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032930318), Float.intBitsToFloat(1052061224),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(24));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1036179800), Float.intBitsToFloat(1050654156),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(25));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1039429282), Float.intBitsToFloat(1049247090),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(26));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041433078), Float.intBitsToFloat(1047104045),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(27));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043057819), Float.intBitsToFloat(1044289911),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(28));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045871953), Float.intBitsToFloat(1045914652),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(29));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048631044), Float.intBitsToFloat(1047539393),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(30));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050038110), Float.intBitsToFloat(1048870066),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(31));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051445178), Float.intBitsToFloat(1049682438),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(32));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052877500), Float.intBitsToFloat(1050480226),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(33));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902756), Float.intBitsToFloat(1048840904),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(34));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902756), Float.intBitsToFloat(1045856325),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(35));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902756), Float.intBitsToFloat(1042606843),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(36));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902756), Float.intBitsToFloat(1038527330),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(37));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052902756), Float.intBitsToFloat(1032028366),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(38));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054527496), Float.intBitsToFloat(1032028366),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(39));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152238), Float.intBitsToFloat(1032028366),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(40));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057370793), Float.intBitsToFloat(1032028366),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(41));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183164), Float.intBitsToFloat(1032028366),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(42));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183164), Float.intBitsToFloat(1038527330),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(43));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183164), Float.intBitsToFloat(1042606843),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(44));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183164), Float.intBitsToFloat(1045856325),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(45));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183164), Float.intBitsToFloat(1048840904),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(46));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058195792), Float.intBitsToFloat(1050480225),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(47));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058911952), Float.intBitsToFloat(1049682434),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(48));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059615486), Float.intBitsToFloat(1048870064),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(49));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060319019), Float.intBitsToFloat(1047539387),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(50));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061022553), Float.intBitsToFloat(1045914645),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(51));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061726086), Float.intBitsToFloat(1044289903),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(52));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062132272), Float.intBitsToFloat(1047104037),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(53));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062538457), Float.intBitsToFloat(1049247086),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(54));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062944642), Float.intBitsToFloat(1050654152),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(55));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063350828), Float.intBitsToFloat(1052061220),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(56));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062647295), Float.intBitsToFloat(1052873590),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(57));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061943761), Float.intBitsToFloat(1053685962),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(58));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061240228), Float.intBitsToFloat(1054498332),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(59));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060536694), Float.intBitsToFloat(1055310702),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(60));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059833161), Float.intBitsToFloat(1056152238),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(61));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060536694), Float.intBitsToFloat(1056979190),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(62));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061240227), Float.intBitsToFloat(1057385375),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(63));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061943761), Float.intBitsToFloat(1057791560),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(64));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062647295), Float.intBitsToFloat(1058197746),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(65));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063350828), Float.intBitsToFloat(1058603931),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(66));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062944642), Float.intBitsToFloat(1059307465),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(67));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062538457), Float.intBitsToFloat(1060010998),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(68));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062132272), Float.intBitsToFloat(1060714531),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(69));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061726086), Float.intBitsToFloat(1061418065),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(70));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061022553), Float.intBitsToFloat(1061011880),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(71));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060319019), Float.intBitsToFloat(1060605694),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(72));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059615485), Float.intBitsToFloat(1060199509),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(73));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058911952), Float.intBitsToFloat(1059793324),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(74));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058195791), Float.intBitsToFloat(1059394429),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(75));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183163), Float.intBitsToFloat(1060214090),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(76));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183163), Float.intBitsToFloat(1061026461),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(77));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183163), Float.intBitsToFloat(1061838831),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(78));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183163), Float.intBitsToFloat(1062651201),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(79));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058183163), Float.intBitsToFloat(1063463572),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(80));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057370793), Float.intBitsToFloat(1063463572),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(81));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152236), Float.intBitsToFloat(1063463572),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(82));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054527496), Float.intBitsToFloat(1063463572),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(83));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152236), Float.intBitsToFloat(1062651201),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(84));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152236), Float.intBitsToFloat(1061838831),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(85));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152236), Float.intBitsToFloat(1061026461),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(86));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152236), Float.intBitsToFloat(1060214090),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(87));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042622471), Float.intBitsToFloat(1059604813),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(88));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045436605), Float.intBitsToFloat(1059198627),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(89));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048250739), Float.intBitsToFloat(1058792442),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(90));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049820436), Float.intBitsToFloat(1058386257),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(91));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042622471), Float.intBitsToFloat(1050059460),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(92));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045436605), Float.intBitsToFloat(1050871830),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(93));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048250739), Float.intBitsToFloat(1051684200),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(94));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049820436), Float.intBitsToFloat(1052496572),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(95));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152238), Float.intBitsToFloat(1038527330),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(96));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152238), Float.intBitsToFloat(1042606843),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(97));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152238), Float.intBitsToFloat(1045856325),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(98));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056152238), Float.intBitsToFloat(1048840904),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(99));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061834924), Float.intBitsToFloat(1050059456),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(100));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061131390), Float.intBitsToFloat(1050871828),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(101));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060427857), Float.intBitsToFloat(1051684198),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(102));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059724323), Float.intBitsToFloat(1052496568),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(103));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061834923), Float.intBitsToFloat(1059604813),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(104));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061131390), Float.intBitsToFloat(1059198627),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(105));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060427857), Float.intBitsToFloat(1058792442),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(106));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059724323), Float.intBitsToFloat(1058386257),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(107));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053715126), Float.intBitsToFloat(1064275943),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(108));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055339866), Float.intBitsToFloat(1064275943),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(109));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(1064275943),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(110));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057776978), Float.intBitsToFloat(1064275943),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(111));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1026054796), Float.intBitsToFloat(1059361883),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(112));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032176273), Float.intBitsToFloat(1060065416),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(113));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035425755), Float.intBitsToFloat(1060768950),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(114));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038675238), Float.intBitsToFloat(1061472483),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(115));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038675236), Float.intBitsToFloat(1044072236),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(116));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035425755), Float.intBitsToFloat(1046886370),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(117));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032176273), Float.intBitsToFloat(1049138252),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(118));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1026054800), Float.intBitsToFloat(1050545320),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(119));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057776979), Float.intBitsToFloat(1015109864),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(120));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(1015109864),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(121));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055339868), Float.intBitsToFloat(1015109864),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(122));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053715126), Float.intBitsToFloat(1015109864),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(123));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063851269), Float.intBitsToFloat(1050545316),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(124));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063445084), Float.intBitsToFloat(1049138248),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(125));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063038898), Float.intBitsToFloat(1046886364),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(126));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062632713), Float.intBitsToFloat(1044072231),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(127));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062632713), Float.intBitsToFloat(1061472483),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(128));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063038898), Float.intBitsToFloat(1060768950),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(129));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063445084), Float.intBitsToFloat(1060065416),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(130));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063851269), Float.intBitsToFloat(1059361883),
-        Float.intBitsToFloat(1028019496), Float.intBitsToFloat(1028019496)),
-        instance.getBoundsForBoardIndex(131));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770303), Float.intBitsToFloat(1063675494),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(0));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770303), Float.intBitsToFloat(1062836633),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(1));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770303), Float.intBitsToFloat(1061997772),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(2));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770303), Float.intBitsToFloat(1061158912),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(3));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770303), Float.intBitsToFloat(1060320051),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(4));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052744225), Float.intBitsToFloat(1059473662),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(5));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051265197), Float.intBitsToFloat(1059885564),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(6));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049812247), Float.intBitsToFloat(1060304995),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(7));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048142596), Float.intBitsToFloat(1060724425),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(8));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045236697), Float.intBitsToFloat(1061143856),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(9));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042330798), Float.intBitsToFloat(1061563286),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(10));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040653076), Float.intBitsToFloat(1060836812),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(11));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1037763317), Float.intBitsToFloat(1060110337),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(12));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1034407873), Float.intBitsToFloat(1059383862),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(13));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1030306074), Float.intBitsToFloat(1058657388),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(14));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036864227), Float.intBitsToFloat(1058237958),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(15));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041431708), Float.intBitsToFloat(1057818527),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(16));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044337607), Float.intBitsToFloat(1057399097),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(17));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047243506), Float.intBitsToFloat(1056979666),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(18));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049362703), Float.intBitsToFloat(1056125748),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(19));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047243506), Float.intBitsToFloat(1055256773),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(20));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044337608), Float.intBitsToFloat(1054417912),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(21));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041431709), Float.intBitsToFloat(1053579051),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(22));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036864229), Float.intBitsToFloat(1052740191),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(23));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1030306078), Float.intBitsToFloat(1051901330),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(24));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1034407874), Float.intBitsToFloat(1050448381),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(25));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1037763317), Float.intBitsToFloat(1048995431),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(26));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040653076), Float.intBitsToFloat(1046508963),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(27));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042330797), Float.intBitsToFloat(1043603064),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(28));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045236696), Float.intBitsToFloat(1045280786),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(29));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048142594), Float.intBitsToFloat(1046958506),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(30));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049812247), Float.intBitsToFloat(1048606114),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(31));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051265197), Float.intBitsToFloat(1049444975),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(32));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052744225), Float.intBitsToFloat(1050268779),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(33));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770304), Float.intBitsToFloat(1048576001),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(34));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770304), Float.intBitsToFloat(1045220558),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(35));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770304), Float.intBitsToFloat(1041865114),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(36));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770304), Float.intBitsToFloat(1036831951),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(37));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052770304), Float.intBitsToFloat(1028443346),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(38));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054448025), Float.intBitsToFloat(1028443346),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(39));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125747), Float.intBitsToFloat(1028443346),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(40));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057384039), Float.intBitsToFloat(1028443346),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(41));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222900), Float.intBitsToFloat(1028443346),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(42));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222900), Float.intBitsToFloat(1036831951),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(43));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222900), Float.intBitsToFloat(1041865114),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(44));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222900), Float.intBitsToFloat(1045220558),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(45));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222900), Float.intBitsToFloat(1048576001),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(46));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058235939), Float.intBitsToFloat(1050268778),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(47));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058975452), Float.intBitsToFloat(1049444973),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(48));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059701927), Float.intBitsToFloat(1048606113),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(49));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060428402), Float.intBitsToFloat(1046958502),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(50));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061154876), Float.intBitsToFloat(1045280780),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(51));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061881351), Float.intBitsToFloat(1043603058),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(52));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062300781), Float.intBitsToFloat(1046508957),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(53));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062720212), Float.intBitsToFloat(1048995428),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(54));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063139643), Float.intBitsToFloat(1050448377),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(55));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063559073), Float.intBitsToFloat(1051901327),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(56));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062832598), Float.intBitsToFloat(1052740188),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(57));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062106124), Float.intBitsToFloat(1053579049),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(58));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061379649), Float.intBitsToFloat(1054417911),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(59));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060653174), Float.intBitsToFloat(1055256771),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(60));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059926700), Float.intBitsToFloat(1056125748),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(61));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060653175), Float.intBitsToFloat(1056979666),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(62));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061379650), Float.intBitsToFloat(1057399097),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(63));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062106124), Float.intBitsToFloat(1057818527),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(64));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062832599), Float.intBitsToFloat(1058237958),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(65));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063559074), Float.intBitsToFloat(1058657388),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(66));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063139643), Float.intBitsToFloat(1059383862),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(67));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062720213), Float.intBitsToFloat(1060110337),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(68));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062300783), Float.intBitsToFloat(1060836812),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(69));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061881352), Float.intBitsToFloat(1061563286),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(70));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061154877), Float.intBitsToFloat(1061143856),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(71));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060428402), Float.intBitsToFloat(1060724425),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(72));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059701928), Float.intBitsToFloat(1060304995),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(73));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058975453), Float.intBitsToFloat(1059885564),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(74));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058235938), Float.intBitsToFloat(1059473662),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(75));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222899), Float.intBitsToFloat(1060320051),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(76));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222899), Float.intBitsToFloat(1061158912),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(77));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222899), Float.intBitsToFloat(1061997772),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(78));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222899), Float.intBitsToFloat(1062836633),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(79));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058222899), Float.intBitsToFloat(1063675494),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(80));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057384038), Float.intBitsToFloat(1063675494),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(81));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125746), Float.intBitsToFloat(1063675494),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(82));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054448024), Float.intBitsToFloat(1063675494),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(83));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125746), Float.intBitsToFloat(1062836633),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(84));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125746), Float.intBitsToFloat(1061997772),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(85));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125746), Float.intBitsToFloat(1061158912),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(86));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125746), Float.intBitsToFloat(1060320051),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(87));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041881253), Float.intBitsToFloat(1059690907),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(88));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044787152), Float.intBitsToFloat(1059271476),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(89));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047693050), Float.intBitsToFloat(1058852046),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(90));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049587475), Float.intBitsToFloat(1058432615),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(91));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041881253), Float.intBitsToFloat(1049834292),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(92));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044787152), Float.intBitsToFloat(1050673153),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(93));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047693050), Float.intBitsToFloat(1051512013),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(94));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049587475), Float.intBitsToFloat(1052350874),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(95));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125747), Float.intBitsToFloat(1036831951),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(96));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125747), Float.intBitsToFloat(1041865114),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(97));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125747), Float.intBitsToFloat(1045220558),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(98));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056125747), Float.intBitsToFloat(1048576001),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(99));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061993737), Float.intBitsToFloat(1049834289),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(100));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061267263), Float.intBitsToFloat(1050673150),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(101));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060540788), Float.intBitsToFloat(1051512011),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(102));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059814313), Float.intBitsToFloat(1052350873),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(103));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061993738), Float.intBitsToFloat(1059690907),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(104));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061267264), Float.intBitsToFloat(1059271476),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(105));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060540789), Float.intBitsToFloat(1058852046),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(106));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059814314), Float.intBitsToFloat(1058432615),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(107));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053609163), Float.intBitsToFloat(1064514356),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(108));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055286885), Float.intBitsToFloat(1064514356),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(109));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1064514356),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(110));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057803469), Float.intBitsToFloat(1064514356),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(111));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1020665661), Float.intBitsToFloat(1059440055),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(112));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1028748806), Float.intBitsToFloat(1060166530),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(113));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033629239), Float.intBitsToFloat(1060893004),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(114));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036984683), Float.intBitsToFloat(1061619479),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(115));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036984681), Float.intBitsToFloat(1043378292),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(116));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033629239), Float.intBitsToFloat(1046284190),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(117));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1028748806), Float.intBitsToFloat(1048883045),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(118));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1020665665), Float.intBitsToFloat(1050335994),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(119));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057803469), Float.intBitsToFloat(834666496),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(120));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(834666496),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(121));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055286886), Float.intBitsToFloat(834666496),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(122));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053609165), Float.intBitsToFloat(834666496),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(123));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064075834), Float.intBitsToFloat(1050335991),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(124));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063656403), Float.intBitsToFloat(1048883042),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(125));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063236973), Float.intBitsToFloat(1046284185),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(126));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062817542), Float.intBitsToFloat(1043378286),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(127));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062817542), Float.intBitsToFloat(1061619479),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(128));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063236973), Float.intBitsToFloat(1060893004),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(129));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063656403), Float.intBitsToFloat(1060166530),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(130));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064075834), Float.intBitsToFloat(1059440055),
+        Float.intBitsToFloat(1028443341), Float.intBitsToFloat(1028443341)),
+        instance.boardIndexToBoundsMap.get(131));
 
     // test with 8 players
     board = new Board(8);
     instance = new GridBoardLayout(board);
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456643), Float.intBitsToFloat(1063629739),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(0));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456643), Float.intBitsToFloat(1062928146),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(1));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456643), Float.intBitsToFloat(1062226554),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(2));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456643), Float.intBitsToFloat(1061524961),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(3));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456643), Float.intBitsToFloat(1060823368),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(4));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053371526), Float.intBitsToFloat(1060104148),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(5));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052294207), Float.intBitsToFloat(1060582620),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(6));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051302005), Float.intBitsToFloat(1061078721),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(7));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050309804), Float.intBitsToFloat(1061574822),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(8));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049317602), Float.intBitsToFloat(1062070923),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(9));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048074801), Float.intBitsToFloat(1062567024),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(10));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046090397), Float.intBitsToFloat(1062070923),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(11));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044105993), Float.intBitsToFloat(1061574822),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(12));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042121589), Float.intBitsToFloat(1061078721),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(13));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040086977), Float.intBitsToFloat(1060582620),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(14));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042121589), Float.intBitsToFloat(1060086519),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(15));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044105993), Float.intBitsToFloat(1059590418),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(16));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046090396), Float.intBitsToFloat(1059094317),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(17));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048074799), Float.intBitsToFloat(1058598216),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(18));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049282344), Float.intBitsToFloat(1058059556),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(19));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047111805), Float.intBitsToFloat(1058016997),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(20));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044305435), Float.intBitsToFloat(1058016997),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(21));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041499064), Float.intBitsToFloat(1058016997),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(22));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1037197993), Float.intBitsToFloat(1058016997),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(23));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031371720), Float.intBitsToFloat(1058016997),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(24));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031371722), Float.intBitsToFloat(1057315404),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(25));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031371722), Float.intBitsToFloat(1056263014),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(26));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031371722), Float.intBitsToFloat(1054859829),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(27));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031371724), Float.intBitsToFloat(1053456643),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(28));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1037197995), Float.intBitsToFloat(1053456643),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(29));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041499065), Float.intBitsToFloat(1053456643),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(30));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044305435), Float.intBitsToFloat(1053456643),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(31));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047111807), Float.intBitsToFloat(1053456643),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(32));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049282344), Float.intBitsToFloat(1053371527),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(33));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048074799), Float.intBitsToFloat(1052294208),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(34));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046090395), Float.intBitsToFloat(1051302006),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(35));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044105992), Float.intBitsToFloat(1050309805),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(36));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042121588), Float.intBitsToFloat(1049317603),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(37));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040086975), Float.intBitsToFloat(1048074803),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(38));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042121587), Float.intBitsToFloat(1046090399),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(39));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044105991), Float.intBitsToFloat(1044105995),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(40));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046090395), Float.intBitsToFloat(1042121591),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(41));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048074799), Float.intBitsToFloat(1040086981),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(42));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049317601), Float.intBitsToFloat(1042121591),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(43));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050309803), Float.intBitsToFloat(1044105994),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(44));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051302005), Float.intBitsToFloat(1046090397),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(45));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052294207), Float.intBitsToFloat(1048074801),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(46));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053371526), Float.intBitsToFloat(1049282345),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(47));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456644), Float.intBitsToFloat(1047111806),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(48));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456644), Float.intBitsToFloat(1044305435),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(49));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456644), Float.intBitsToFloat(1041499065),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(50));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456644), Float.intBitsToFloat(1037197995),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(51));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053456644), Float.intBitsToFloat(1031371722),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(52));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054859830), Float.intBitsToFloat(1031371722),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(53));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263015), Float.intBitsToFloat(1031371722),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(54));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057315405), Float.intBitsToFloat(1031371722),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(55));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1031371722),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(56));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1037197995),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(57));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1041499065),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(58));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1044305435),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(59));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1047111806),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(60));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058059556), Float.intBitsToFloat(1049282344),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(61));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058598215), Float.intBitsToFloat(1048074799),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(62));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059094316), Float.intBitsToFloat(1046090394),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(63));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059590416), Float.intBitsToFloat(1044105990),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(64));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060086517), Float.intBitsToFloat(1042121586),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(65));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060582618), Float.intBitsToFloat(1040086971),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(66));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061078719), Float.intBitsToFloat(1042121586),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(67));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061574820), Float.intBitsToFloat(1044105989),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(68));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062070921), Float.intBitsToFloat(1046090392),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(69));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062567022), Float.intBitsToFloat(1048074795),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(70));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062070921), Float.intBitsToFloat(1049317599),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(71));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061574820), Float.intBitsToFloat(1050309801),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(72));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061078720), Float.intBitsToFloat(1051302003),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(73));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060582619), Float.intBitsToFloat(1052294205),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(74));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060104147), Float.intBitsToFloat(1053371526),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(75));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060823368), Float.intBitsToFloat(1053456645),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(76));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061524961), Float.intBitsToFloat(1053456645),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(77));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062226554), Float.intBitsToFloat(1053456646),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(78));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062928146), Float.intBitsToFloat(1053456646),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(79));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063629739), Float.intBitsToFloat(1053456646),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(80));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063629739), Float.intBitsToFloat(1054859832),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(81));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063629739), Float.intBitsToFloat(1056263017),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(82));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063629739), Float.intBitsToFloat(1057315406),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(83));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063629739), Float.intBitsToFloat(1058016998),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(84));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062928146), Float.intBitsToFloat(1058016998),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(85));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062226554), Float.intBitsToFloat(1058016998),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(86));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061524961), Float.intBitsToFloat(1058016998),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(87));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060823368), Float.intBitsToFloat(1058016998),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(88));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060104148), Float.intBitsToFloat(1058059556),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(89));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060582620), Float.intBitsToFloat(1058598216),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(90));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061078721), Float.intBitsToFloat(1059094317),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(91));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061574822), Float.intBitsToFloat(1059590418),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(92));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062070923), Float.intBitsToFloat(1060086519),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(93));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062567024), Float.intBitsToFloat(1060582620),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(94));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062070923), Float.intBitsToFloat(1061078721),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(95));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061574822), Float.intBitsToFloat(1061574822),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(96));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061078721), Float.intBitsToFloat(1062070923),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(97));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060582620), Float.intBitsToFloat(1062567024),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(98));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060086519), Float.intBitsToFloat(1062070923),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(99));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059590418), Float.intBitsToFloat(1061574822),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(100));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059094317), Float.intBitsToFloat(1061078721),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(101));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058598216), Float.intBitsToFloat(1060582620),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(102));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058059556), Float.intBitsToFloat(1060104148),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(103));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1060823368),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(104));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1061524961),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(105));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1062226554),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(106));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1062928146),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(107));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058016997), Float.intBitsToFloat(1063629739),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(108));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057315404), Float.intBitsToFloat(1063629739),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(109));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263014), Float.intBitsToFloat(1063629739),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(110));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054859829), Float.intBitsToFloat(1063629739),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(111));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263014), Float.intBitsToFloat(1062928146),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(112));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263014), Float.intBitsToFloat(1062226554),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(113));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263014), Float.intBitsToFloat(1061524961),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(114));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263014), Float.intBitsToFloat(1060823368),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(115));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046090397), Float.intBitsToFloat(1061078721),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(116));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048074801), Float.intBitsToFloat(1060582620),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(117));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049317601), Float.intBitsToFloat(1060086519),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(118));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050309803), Float.intBitsToFloat(1059590418),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(119));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1037197995), Float.intBitsToFloat(1056263014),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(120));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041499065), Float.intBitsToFloat(1056263014),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(121));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044305435), Float.intBitsToFloat(1056263014),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(122));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047111806), Float.intBitsToFloat(1056263014),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(123));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046090395), Float.intBitsToFloat(1046090399),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(124));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048074799), Float.intBitsToFloat(1048074803),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(125));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049317601), Float.intBitsToFloat(1049317602),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(126));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050309803), Float.intBitsToFloat(1050309804),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(127));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263015), Float.intBitsToFloat(1037197995),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(128));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263015), Float.intBitsToFloat(1041499065),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(129));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263015), Float.intBitsToFloat(1044305435),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(130));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056263015), Float.intBitsToFloat(1047111806),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(131));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061078719), Float.intBitsToFloat(1046090393),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(132));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060582618), Float.intBitsToFloat(1048074797),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(133));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060086518), Float.intBitsToFloat(1049317600),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(134));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059590417), Float.intBitsToFloat(1050309802),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(135));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062928146), Float.intBitsToFloat(1056263017),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(136));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062226554), Float.intBitsToFloat(1056263017),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(137));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061524961), Float.intBitsToFloat(1056263017),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(138));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060823368), Float.intBitsToFloat(1056263017),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(139));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061078721), Float.intBitsToFloat(1061078721),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(140));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060582620), Float.intBitsToFloat(1060582620),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(141));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060086519), Float.intBitsToFloat(1060086519),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(142));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059590418), Float.intBitsToFloat(1059590418),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(143));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054158236), Float.intBitsToFloat(1064331332),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(144));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055561421), Float.intBitsToFloat(1064331332),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(145));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1064331332),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(146));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057666200), Float.intBitsToFloat(1064331332),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(147));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038102573), Float.intBitsToFloat(1061326771),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(148));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041129387), Float.intBitsToFloat(1061822872),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(149));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043113791), Float.intBitsToFloat(1062318972),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(150));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045098195), Float.intBitsToFloat(1062815073),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(151));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1016882311), Float.intBitsToFloat(1054158236),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(152));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1016882309), Float.intBitsToFloat(1055561421),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(153));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1016882309), Float.intBitsToFloat(1056964607),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(154));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1016882307), Float.intBitsToFloat(1057666200),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(155));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045098194), Float.intBitsToFloat(1038102577),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(156));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043113791), Float.intBitsToFloat(1041129389),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(157));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041129387), Float.intBitsToFloat(1043113793),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(158));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038102575), Float.intBitsToFloat(1045098197),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(159));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057666201), Float.intBitsToFloat(1016882309),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(160));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1016882309),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(161));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055561422), Float.intBitsToFloat(1016882309),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(162));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054158237), Float.intBitsToFloat(1016882309),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(163));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062815074), Float.intBitsToFloat(1045098192),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(164));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062318973), Float.intBitsToFloat(1043113789),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(165));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061822871), Float.intBitsToFloat(1041129385),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(166));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061326770), Float.intBitsToFloat(1038102571),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(167));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064331332), Float.intBitsToFloat(1057666202),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(168));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064331332), Float.intBitsToFloat(1056964609),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(169));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064331332), Float.intBitsToFloat(1055561424),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(170));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064331332), Float.intBitsToFloat(1054158239),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(171));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061326771), Float.intBitsToFloat(1062815073),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(172));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061822872), Float.intBitsToFloat(1062318972),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(173));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062318972), Float.intBitsToFloat(1061822872),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(174));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062815073), Float.intBitsToFloat(1061326771),
-        Float.intBitsToFloat(1026247051), Float.intBitsToFloat(1026247051)),
-        instance.getBoundsForBoardIndex(175));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342253), Float.intBitsToFloat(1063847080),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(0));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342253), Float.intBitsToFloat(1063122609),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(1));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342253), Float.intBitsToFloat(1062398139),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(2));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342253), Float.intBitsToFloat(1061673668),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(3));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342253), Float.intBitsToFloat(1060949197),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(4));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053254361), Float.intBitsToFloat(1060206524),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(5));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052141912), Float.intBitsToFloat(1060700599),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(6));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051117356), Float.intBitsToFloat(1061212877),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(7));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050092799), Float.intBitsToFloat(1061725155),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(8));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049068243), Float.intBitsToFloat(1062237433),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(9));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047511375), Float.intBitsToFloat(1062749711),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(10));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045462261), Float.intBitsToFloat(1062237433),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(11));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043413149), Float.intBitsToFloat(1061725155),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(12));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041364037), Float.intBitsToFloat(1061212877),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(13));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038442455), Float.intBitsToFloat(1060700599),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(14));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041364037), Float.intBitsToFloat(1060188321),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(15));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043413149), Float.intBitsToFloat(1059676043),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(16));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045462261), Float.intBitsToFloat(1059163765),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(17));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047511375), Float.intBitsToFloat(1058651487),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(18));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049031836), Float.intBitsToFloat(1058095261),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(19));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046516977), Float.intBitsToFloat(1058051314),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(20));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043619095), Float.intBitsToFloat(1058051314),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(21));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040721212), Float.intBitsToFloat(1058051314),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(22));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1035459265), Float.intBitsToFloat(1058051314),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(23));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027528216), Float.intBitsToFloat(1058051314),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(24));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027528216), Float.intBitsToFloat(1057326843),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(25));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027528218), Float.intBitsToFloat(1056240136),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(26));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027528220), Float.intBitsToFloat(1054791195),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(27));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027528220), Float.intBitsToFloat(1053342253),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(28));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1035459267), Float.intBitsToFloat(1053342253),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(29));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040721213), Float.intBitsToFloat(1053342253),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(30));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043619095), Float.intBitsToFloat(1053342253),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(31));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046516979), Float.intBitsToFloat(1053342254),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(32));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049031836), Float.intBitsToFloat(1053254362),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(33));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047511373), Float.intBitsToFloat(1052141913),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(34));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045462260), Float.intBitsToFloat(1051117357),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(35));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043413147), Float.intBitsToFloat(1050092800),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(36));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041364035), Float.intBitsToFloat(1049068244),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(37));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038442451), Float.intBitsToFloat(1047511377),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(38));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041364035), Float.intBitsToFloat(1045462264),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(39));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043413147), Float.intBitsToFloat(1043413151),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(40));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045462259), Float.intBitsToFloat(1041364038),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(41));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047511371), Float.intBitsToFloat(1038442459),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(42));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049068241), Float.intBitsToFloat(1041364038),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(43));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050092798), Float.intBitsToFloat(1043413151),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(44));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051117354), Float.intBitsToFloat(1045462263),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(45));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052141910), Float.intBitsToFloat(1047511375),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(46));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053254360), Float.intBitsToFloat(1049031836),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(47));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342254), Float.intBitsToFloat(1046516978),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(48));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342254), Float.intBitsToFloat(1043619095),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(49));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342254), Float.intBitsToFloat(1040721213),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(50));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342254), Float.intBitsToFloat(1035459267),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(51));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053342254), Float.intBitsToFloat(1027528218),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(52));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054791196), Float.intBitsToFloat(1027528218),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(53));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240137), Float.intBitsToFloat(1027528218),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(54));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057326844), Float.intBitsToFloat(1027528218),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(55));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1027528218),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(56));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1035459267),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(57));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1040721213),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(58));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1043619095),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(59));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1046516978),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(60));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058095260), Float.intBitsToFloat(1049031836),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(61));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058651485), Float.intBitsToFloat(1047511375),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(62));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059163763), Float.intBitsToFloat(1045462261),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(63));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059676041), Float.intBitsToFloat(1043413149),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(64));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060188319), Float.intBitsToFloat(1041364036),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(65));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060700597), Float.intBitsToFloat(1038442453),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(66));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061212875), Float.intBitsToFloat(1041364035),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(67));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061725153), Float.intBitsToFloat(1043413147),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(68));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062237431), Float.intBitsToFloat(1045462259),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(69));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062749709), Float.intBitsToFloat(1047511371),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(70));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062237431), Float.intBitsToFloat(1049068241),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(71));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061725153), Float.intBitsToFloat(1050092798),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(72));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061212875), Float.intBitsToFloat(1051117354),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(73));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060700597), Float.intBitsToFloat(1052141911),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(74));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060206523), Float.intBitsToFloat(1053254361),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(75));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060949197), Float.intBitsToFloat(1053342255),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(76));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061673668), Float.intBitsToFloat(1053342255),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(77));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062398139), Float.intBitsToFloat(1053342255),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(78));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063122609), Float.intBitsToFloat(1053342256),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(79));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063847080), Float.intBitsToFloat(1053342256),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(80));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063847080), Float.intBitsToFloat(1054791198),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(81));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063847080), Float.intBitsToFloat(1056240139),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(82));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063847080), Float.intBitsToFloat(1057326845),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(83));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063847080), Float.intBitsToFloat(1058051315),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(84));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063122609), Float.intBitsToFloat(1058051315),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(85));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062398139), Float.intBitsToFloat(1058051315),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(86));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061673668), Float.intBitsToFloat(1058051315),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(87));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060949197), Float.intBitsToFloat(1058051314),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(88));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060206524), Float.intBitsToFloat(1058095261),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(89));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060700599), Float.intBitsToFloat(1058651487),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(90));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061212877), Float.intBitsToFloat(1059163765),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(91));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061725155), Float.intBitsToFloat(1059676043),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(92));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062237433), Float.intBitsToFloat(1060188321),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(93));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062749711), Float.intBitsToFloat(1060700599),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(94));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062237433), Float.intBitsToFloat(1061212877),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(95));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061725155), Float.intBitsToFloat(1061725155),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(96));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061212877), Float.intBitsToFloat(1062237433),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(97));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060700599), Float.intBitsToFloat(1062749711),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(98));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060188321), Float.intBitsToFloat(1062237433),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(99));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059676043), Float.intBitsToFloat(1061725155),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(100));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059163765), Float.intBitsToFloat(1061212877),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(101));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058651487), Float.intBitsToFloat(1060700599),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(102));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058095261), Float.intBitsToFloat(1060206524),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(103));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1060949197),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(104));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1061673668),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(105));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1062398139),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(106));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1063122609),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(107));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058051314), Float.intBitsToFloat(1063847080),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(108));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057326843), Float.intBitsToFloat(1063847080),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(109));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240136), Float.intBitsToFloat(1063847080),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(110));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054791195), Float.intBitsToFloat(1063847080),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(111));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240136), Float.intBitsToFloat(1063122609),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(112));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240136), Float.intBitsToFloat(1062398139),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(113));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240136), Float.intBitsToFloat(1061673668),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(114));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240136), Float.intBitsToFloat(1060949197),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(115));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045462261), Float.intBitsToFloat(1061212877),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(116));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047511375), Float.intBitsToFloat(1060700599),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(117));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049068243), Float.intBitsToFloat(1060188321),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(118));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050092799), Float.intBitsToFloat(1059676043),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(119));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1035459267), Float.intBitsToFloat(1056240136),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(120));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040721213), Float.intBitsToFloat(1056240136),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(121));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043619095), Float.intBitsToFloat(1056240136),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(122));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046516978), Float.intBitsToFloat(1056240137),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(123));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045462260), Float.intBitsToFloat(1045462263),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(124));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047511373), Float.intBitsToFloat(1047511375),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(125));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049068242), Float.intBitsToFloat(1049068243),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(126));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050092798), Float.intBitsToFloat(1050092800),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(127));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240137), Float.intBitsToFloat(1035459267),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(128));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240137), Float.intBitsToFloat(1040721213),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(129));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240137), Float.intBitsToFloat(1043619095),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(130));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056240137), Float.intBitsToFloat(1046516978),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(131));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061212875), Float.intBitsToFloat(1045462260),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(132));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060700597), Float.intBitsToFloat(1047511373),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(133));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060188319), Float.intBitsToFloat(1049068242),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(134));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059676041), Float.intBitsToFloat(1050092799),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(135));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063122609), Float.intBitsToFloat(1056240139),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(136));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062398139), Float.intBitsToFloat(1056240139),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(137));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061673668), Float.intBitsToFloat(1056240139),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(138));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060949197), Float.intBitsToFloat(1056240137),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(139));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061212877), Float.intBitsToFloat(1061212877),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(140));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060700599), Float.intBitsToFloat(1060700599),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(141));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060188321), Float.intBitsToFloat(1060188321),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(142));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059676043), Float.intBitsToFloat(1059676043),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(143));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054066724), Float.intBitsToFloat(1064571551),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(144));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055515665), Float.intBitsToFloat(1064571551),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(145));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1064571551),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(146));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057689079), Float.intBitsToFloat(1064571551),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(147));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036393343), Float.intBitsToFloat(1061469016),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(148));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040339481), Float.intBitsToFloat(1061981294),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(149));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042388593), Float.intBitsToFloat(1062493572),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(150));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044437706), Float.intBitsToFloat(1063005850),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(151));
+    assertEquals(new Rectangle(Float.intBitsToFloat(996109120), Float.intBitsToFloat(1054066724),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(152));
+    assertEquals(new Rectangle(Float.intBitsToFloat(996109104), Float.intBitsToFloat(1055515665),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(153));
+    assertEquals(new Rectangle(Float.intBitsToFloat(996109088), Float.intBitsToFloat(1056964607),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(154));
+    assertEquals(new Rectangle(Float.intBitsToFloat(996109072), Float.intBitsToFloat(1057689079),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(155));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044437703), Float.intBitsToFloat(1036393347),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(156));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042388591), Float.intBitsToFloat(1040339483),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(157));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040339479), Float.intBitsToFloat(1042388595),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(158));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036393340), Float.intBitsToFloat(1044437708),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(159));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057689079), Float.intBitsToFloat(996109096),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(160));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(996109096),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(161));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055515666), Float.intBitsToFloat(996109096),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(162));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054066725), Float.intBitsToFloat(996109096),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(163));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063005848), Float.intBitsToFloat(1044437701),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(164));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062493570), Float.intBitsToFloat(1042388589),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(165));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061981292), Float.intBitsToFloat(1040339477),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(166));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061469014), Float.intBitsToFloat(1036393337),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(167));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064571551), Float.intBitsToFloat(1057689080),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(168));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064571551), Float.intBitsToFloat(1056964609),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(169));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064571551), Float.intBitsToFloat(1055515668),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(170));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064571551), Float.intBitsToFloat(1054066727),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(171));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061469016), Float.intBitsToFloat(1063005850),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(172));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061981294), Float.intBitsToFloat(1062493572),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(173));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062493572), Float.intBitsToFloat(1061981294),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(174));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063005850), Float.intBitsToFloat(1061469016),
+        Float.intBitsToFloat(1026613099), Float.intBitsToFloat(1026613099)),
+        instance.boardIndexToBoundsMap.get(175));
 
     // test with 10 players
     board = new Board(10);
     instance = new GridBoardLayout(board);
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877599), Float.intBitsToFloat(1063756025),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(0));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877599), Float.intBitsToFloat(1063138623),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(1));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877599), Float.intBitsToFloat(1062521222),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(2));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877599), Float.intBitsToFloat(1061903820),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(3));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877599), Float.intBitsToFloat(1061286419),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(4));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053752533), Float.intBitsToFloat(1060648698),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(5));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052901668), Float.intBitsToFloat(1061127869),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(6));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052175869), Float.intBitsToFloat(1061627357),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(7));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051450070), Float.intBitsToFloat(1062126845),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(8));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050724271), Float.intBitsToFloat(1062626334),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(9));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049998472), Float.intBitsToFloat(1063125822),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(10));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048999495), Float.intBitsToFloat(1062762923),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(11));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047425037), Float.intBitsToFloat(1062400023),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(12));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045427083), Float.intBitsToFloat(1062037123),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(13));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043429130), Float.intBitsToFloat(1061674224),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(14));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044880728), Float.intBitsToFloat(1061174736),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(15));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046332326), Float.intBitsToFloat(1060675247),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(16));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047783925), Float.intBitsToFloat(1060175759),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(17));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048905760), Float.intBitsToFloat(1059676271),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(18));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049554264), Float.intBitsToFloat(1059123588),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(19));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048029201), Float.intBitsToFloat(1059261183),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(20));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045680467), Float.intBitsToFloat(1059451970),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(21));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043331732), Float.intBitsToFloat(1059642758),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(22));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040982997), Float.intBitsToFloat(1059833545),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(23));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1037081132), Float.intBitsToFloat(1060024333),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(24));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035554831), Float.intBitsToFloat(1059437149),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(25));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1034028530), Float.intBitsToFloat(1058849965),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(26));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032502229), Float.intBitsToFloat(1058262781),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(27));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1030153072), Float.intBitsToFloat(1057675597),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(28));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035673398), Float.intBitsToFloat(1057484809),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(29));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040279130), Float.intBitsToFloat(1057294022),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(30));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042627865), Float.intBitsToFloat(1057103234),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(31));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044976600), Float.intBitsToFloat(1056860286),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(32));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047325335), Float.intBitsToFloat(1056347206),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(33));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044976599), Float.intBitsToFloat(1055834128),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(34));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042627865), Float.intBitsToFloat(1055452552),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(35));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040279129), Float.intBitsToFloat(1055070977),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(36));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035673396), Float.intBitsToFloat(1054689402),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(37));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1030153066), Float.intBitsToFloat(1054307827),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(38));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1032502226), Float.intBitsToFloat(1053133460),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(39));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1034028526), Float.intBitsToFloat(1051959092),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(40));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035554826), Float.intBitsToFloat(1050784724),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(41));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1037081127), Float.intBitsToFloat(1049610357),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(42));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040982995), Float.intBitsToFloat(1049991932),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(43));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043331730), Float.intBitsToFloat(1050373507),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(44));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045680465), Float.intBitsToFloat(1050755082),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(45));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048029201), Float.intBitsToFloat(1051136658),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(46));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049554264), Float.intBitsToFloat(1051411844),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(47));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048905761), Float.intBitsToFloat(1050306477),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(48));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047783925), Float.intBitsToFloat(1049307500),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(49));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046332328), Float.intBitsToFloat(1048041047),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(50));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044880731), Float.intBitsToFloat(1046043094),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(51));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043429133), Float.intBitsToFloat(1044045140),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(52));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045427087), Float.intBitsToFloat(1042593543),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(53));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047425041), Float.intBitsToFloat(1041141945),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(54));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048999497), Float.intBitsToFloat(1039193302),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(55));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049998474), Float.intBitsToFloat(1036290108),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(56));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050724273), Float.intBitsToFloat(1040236704),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(57));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051450072), Float.intBitsToFloat(1042234657),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(58));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052175870), Float.intBitsToFloat(1044232611),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(59));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052901669), Float.intBitsToFloat(1046230565),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(60));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053752534), Float.intBitsToFloat(1048147245),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(61));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877600), Float.intBitsToFloat(1045596366),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(62));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877600), Float.intBitsToFloat(1043126760),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(63));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877600), Float.intBitsToFloat(1040657153),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(64));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877600), Float.intBitsToFloat(1036187702),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(65));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053877600), Float.intBitsToFloat(1030698196),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(66));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055112403), Float.intBitsToFloat(1030698196),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(67));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347206), Float.intBitsToFloat(1030698196),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(68));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057273309), Float.intBitsToFloat(1030698196),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(69));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1030698196),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(70));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1036187702),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(71));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1040657153),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(72));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1043126760),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(73));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1045596366),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(74));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057953243), Float.intBitsToFloat(1048147245),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(75));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058378675), Float.intBitsToFloat(1046230565),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(76));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058741575), Float.intBitsToFloat(1044232611),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(77));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059104474), Float.intBitsToFloat(1042234657),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(78));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059467374), Float.intBitsToFloat(1040236704),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(79));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059830273), Float.intBitsToFloat(1036290108),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(80));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060329762), Float.intBitsToFloat(1039193302),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(81));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060829250), Float.intBitsToFloat(1041141945),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(82));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061328738), Float.intBitsToFloat(1042593543),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(83));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061828227), Float.intBitsToFloat(1044045140),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(84));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061465328), Float.intBitsToFloat(1046043094),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(85));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061102428), Float.intBitsToFloat(1048041047),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(86));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060739529), Float.intBitsToFloat(1049307500),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(87));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060376629), Float.intBitsToFloat(1050306477),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(88));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060052378), Float.intBitsToFloat(1051411843),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(89));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060678211), Float.intBitsToFloat(1051136657),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(90));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061265395), Float.intBitsToFloat(1050755082),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(91));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061852578), Float.intBitsToFloat(1050373507),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(92));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062439762), Float.intBitsToFloat(1049991932),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(93));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063026946), Float.intBitsToFloat(1049610357),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(94));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063217733), Float.intBitsToFloat(1050784724),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(95));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063408521), Float.intBitsToFloat(1051959092),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(96));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063599309), Float.intBitsToFloat(1053133460),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(97));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063790096), Float.intBitsToFloat(1054307827),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(98));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063202912), Float.intBitsToFloat(1054689402),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(99));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062615728), Float.intBitsToFloat(1055070977),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(100));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062028545), Float.intBitsToFloat(1055452552),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(101));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061441361), Float.intBitsToFloat(1055834127),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(102));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060854177), Float.intBitsToFloat(1056347205),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(103));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061441361), Float.intBitsToFloat(1056860282),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(104));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062028545), Float.intBitsToFloat(1057103233),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(105));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062615728), Float.intBitsToFloat(1057294020),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(106));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063202912), Float.intBitsToFloat(1057484808),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(107));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063790096), Float.intBitsToFloat(1057675595),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(108));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063599308), Float.intBitsToFloat(1058262779),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(109));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063408521), Float.intBitsToFloat(1058849963),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(110));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063217734), Float.intBitsToFloat(1059437147),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(111));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063026946), Float.intBitsToFloat(1060024331),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(112));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062439762), Float.intBitsToFloat(1059833544),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(113));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061852578), Float.intBitsToFloat(1059642756),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(114));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061265395), Float.intBitsToFloat(1059451969),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(115));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060678211), Float.intBitsToFloat(1059261181),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(116));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060052379), Float.intBitsToFloat(1059123588),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(117));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060376630), Float.intBitsToFloat(1059676270),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(118));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060739529), Float.intBitsToFloat(1060175759),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(119));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061102429), Float.intBitsToFloat(1060675247),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(120));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061465329), Float.intBitsToFloat(1061174736),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(121));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061828228), Float.intBitsToFloat(1061674224),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(122));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061328739), Float.intBitsToFloat(1062037123),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(123));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060829251), Float.intBitsToFloat(1062400023),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(124));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060329763), Float.intBitsToFloat(1062762923),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(125));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059830274), Float.intBitsToFloat(1063125822),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(126));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059467375), Float.intBitsToFloat(1062626334),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(127));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059104475), Float.intBitsToFloat(1062126845),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(128));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058741575), Float.intBitsToFloat(1061627357),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(129));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058378676), Float.intBitsToFloat(1061127868),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(130));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057953244), Float.intBitsToFloat(1060648698),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(131));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1061286419),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(132));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1061903820),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(133));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1062521222),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(134));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1063138623),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(135));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057890710), Float.intBitsToFloat(1063756025),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(136));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057273308), Float.intBitsToFloat(1063756025),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(137));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347205), Float.intBitsToFloat(1063756025),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(138));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055112402), Float.intBitsToFloat(1063756025),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(139));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347205), Float.intBitsToFloat(1063138623),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(140));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347205), Float.intBitsToFloat(1062521222),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(141));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347205), Float.intBitsToFloat(1061903820),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(142));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347205), Float.intBitsToFloat(1061286419),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(143));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048726317), Float.intBitsToFloat(1061900535),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(144));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049452116), Float.intBitsToFloat(1061401046),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(145));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050177915), Float.intBitsToFloat(1060901558),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(146));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050903714), Float.intBitsToFloat(1060402069),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(147));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038726000), Float.intBitsToFloat(1058659177),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(148));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041805431), Float.intBitsToFloat(1058468390),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(149));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044154167), Float.intBitsToFloat(1058277602),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(150));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046502901), Float.intBitsToFloat(1058086815),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(151));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038725996), Float.intBitsToFloat(1052340667),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(152));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041805429), Float.intBitsToFloat(1052722242),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(153));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044154165), Float.intBitsToFloat(1053103817),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(154));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046502900), Float.intBitsToFloat(1053485392),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(155));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048726319), Float.intBitsToFloat(1043139899),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(156));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049452118), Float.intBitsToFloat(1045137853),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(157));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050177916), Float.intBitsToFloat(1047135807),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(158));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050903715), Float.intBitsToFloat(1048854880),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(159));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347206), Float.intBitsToFloat(1036187702),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(160));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347206), Float.intBitsToFloat(1040657153),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(161));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347206), Float.intBitsToFloat(1043126760),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(162));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056347206), Float.intBitsToFloat(1045596366),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(163));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060466351), Float.intBitsToFloat(1043139899),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(164));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060103451), Float.intBitsToFloat(1045137853),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(165));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059740552), Float.intBitsToFloat(1047135807),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(166));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059377652), Float.intBitsToFloat(1048854880),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(167));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062821337), Float.intBitsToFloat(1052340667),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(168));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062234153), Float.intBitsToFloat(1052722242),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(169));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061646969), Float.intBitsToFloat(1053103817),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(170));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061059786), Float.intBitsToFloat(1053485392),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(171));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062821337), Float.intBitsToFloat(1058659176),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(172));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062234153), Float.intBitsToFloat(1058468388),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(173));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061646969), Float.intBitsToFloat(1058277601),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(174));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061059786), Float.intBitsToFloat(1058086813),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(175));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060466351), Float.intBitsToFloat(1061900535),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(176));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060103452), Float.intBitsToFloat(1061401046),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(177));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059740553), Float.intBitsToFloat(1060901558),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(178));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059377653), Float.intBitsToFloat(1060402069),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(179));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054495000), Float.intBitsToFloat(1064373427),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(180));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055729803), Float.intBitsToFloat(1064373427),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(181));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964606), Float.intBitsToFloat(1064373427),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(182));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057582009), Float.intBitsToFloat(1064373427),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(183));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042976509), Float.intBitsToFloat(1062355162),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(184));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044974462), Float.intBitsToFloat(1062718061),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(185));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046972416), Float.intBitsToFloat(1063080961),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(186));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048773184), Float.intBitsToFloat(1063443860),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(187));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1021158683), Float.intBitsToFloat(1058159976),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(188));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1025337030), Float.intBitsToFloat(1058747160),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(189));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1028389632), Float.intBitsToFloat(1059334344),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(190));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031442234), Float.intBitsToFloat(1059921528),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(191));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031442226), Float.intBitsToFloat(1049815966),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(192));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1028389624), Float.intBitsToFloat(1050990333),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(193));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1025337024), Float.intBitsToFloat(1052164701),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(194));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1021158667), Float.intBitsToFloat(1053339068),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(195));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048773186), Float.intBitsToFloat(1033745797),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(196));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046972420), Float.intBitsToFloat(1036648992),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(197));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044974466), Float.intBitsToFloat(1039552188),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(198));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042976512), Float.intBitsToFloat(1041321387),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(199));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057582009), Float.intBitsToFloat(1018229367),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(200));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(1018229367),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(201));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055729804), Float.intBitsToFloat(1018229367),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(202));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054495001), Float.intBitsToFloat(1018229367),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(203));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061941382), Float.intBitsToFloat(1041321387),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(204));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061441893), Float.intBitsToFloat(1039552188),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(205));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060942405), Float.intBitsToFloat(1036648992),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(206));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060442916), Float.intBitsToFloat(1033745797),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(207));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064281886), Float.intBitsToFloat(1053339070),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(208));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064091099), Float.intBitsToFloat(1052164702),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(209));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063900311), Float.intBitsToFloat(1050990334),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(210));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063709524), Float.intBitsToFloat(1049815966),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(211));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063709524), Float.intBitsToFloat(1059921526),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(212));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063900311), Float.intBitsToFloat(1059334342),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(213));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064091099), Float.intBitsToFloat(1058747158),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(214));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064281886), Float.intBitsToFloat(1058159974),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(215));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060442918), Float.intBitsToFloat(1063443861),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(216));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060942407), Float.intBitsToFloat(1063080962),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(217));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061441895), Float.intBitsToFloat(1062718062),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(218));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061941384), Float.intBitsToFloat(1062355163),
-        Float.intBitsToFloat(1024899993), Float.intBitsToFloat(1024899993)),
-        instance.getBoundsForBoardIndex(219));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776936), Float.intBitsToFloat(1063977485),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(0));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776936), Float.intBitsToFloat(1063339951),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(1));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776936), Float.intBitsToFloat(1062702417),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(2));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776936), Float.intBitsToFloat(1062064883),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(3));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776936), Float.intBitsToFloat(1061427348),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(4));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053647791), Float.intBitsToFloat(1060768832),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(5));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052769180), Float.intBitsToFloat(1061263627),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(6));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052019714), Float.intBitsToFloat(1061779403),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(7));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051270248), Float.intBitsToFloat(1062295179),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(8));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050520781), Float.intBitsToFloat(1062810955),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(9));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049771315), Float.intBitsToFloat(1063326731),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(10));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048739763), Float.intBitsToFloat(1062951998),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(11));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046840422), Float.intBitsToFloat(1062577265),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(12));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044777318), Float.intBitsToFloat(1062202532),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(13));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042714214), Float.intBitsToFloat(1061827799),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(14));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044213147), Float.intBitsToFloat(1061312023),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(15));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045712079), Float.intBitsToFloat(1060796247),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(16));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047211012), Float.intBitsToFloat(1060280471),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(17));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048642972), Float.intBitsToFloat(1059764695),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(18));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049312622), Float.intBitsToFloat(1059193990),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(19));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047464288), Float.intBitsToFloat(1059336070),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(20));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045038964), Float.intBitsToFloat(1059533079),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(21));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042613640), Float.intBitsToFloat(1059730088),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(22));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040188316), Float.intBitsToFloat(1059927097),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(23));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1035338590), Float.intBitsToFloat(1060124106),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(24));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033762518), Float.intBitsToFloat(1059517775),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(25));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1032186447), Float.intBitsToFloat(1058911444),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(26));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1029421968), Float.intBitsToFloat(1058305113),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(27));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1026269824), Float.intBitsToFloat(1057698782),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(28));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033884952), Float.intBitsToFloat(1057501773),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(29));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038735599), Float.intBitsToFloat(1057304764),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(30));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041886820), Float.intBitsToFloat(1057107755),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(31));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044312144), Float.intBitsToFloat(1056856884),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(32));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046737469), Float.intBitsToFloat(1056327074),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(33));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044312144), Float.intBitsToFloat(1055797265),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(34));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041886820), Float.intBitsToFloat(1055403247),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(35));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038735599), Float.intBitsToFloat(1055009230),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(36));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033884949), Float.intBitsToFloat(1054615212),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(37));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1026269818), Float.intBitsToFloat(1054221194),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(38));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1029421960), Float.intBitsToFloat(1053008532),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(39));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1032186443), Float.intBitsToFloat(1051795870),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(40));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033762514), Float.intBitsToFloat(1050583208),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(41));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1035338585), Float.intBitsToFloat(1049370546),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(42));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040188313), Float.intBitsToFloat(1049764564),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(43));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042613638), Float.intBitsToFloat(1050158582),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(44));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045038962), Float.intBitsToFloat(1050552599),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(45));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047464286), Float.intBitsToFloat(1050946617),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(46));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049312622), Float.intBitsToFloat(1051230776),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(47));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048642974), Float.intBitsToFloat(1050089364),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(48));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047211014), Float.intBitsToFloat(1049057812),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(49));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045712082), Float.intBitsToFloat(1047476520),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(50));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044213150), Float.intBitsToFloat(1045413416),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(51));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042714218), Float.intBitsToFloat(1043350312),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(52));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044777322), Float.intBitsToFloat(1041851380),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(53));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046840426), Float.intBitsToFloat(1040352448),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(54));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048739765), Float.intBitsToFloat(1037519639),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(55));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049771317), Float.intBitsToFloat(1034521774),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(56));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050520783), Float.intBitsToFloat(1038647983),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(57));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051270249), Float.intBitsToFloat(1041480792),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(58));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052019715), Float.intBitsToFloat(1043543896),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(59));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052769182), Float.intBitsToFloat(1045607000),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(60));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053647792), Float.intBitsToFloat(1047586182),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(61));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776937), Float.intBitsToFloat(1044952121),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(62));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776937), Float.intBitsToFloat(1042401984),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(63));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776937), Float.intBitsToFloat(1039516303),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(64));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776937), Float.intBitsToFloat(1034416029),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(65));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053776937), Float.intBitsToFloat(1026832726),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(66));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055052006), Float.intBitsToFloat(1026832726),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(67));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327074), Float.intBitsToFloat(1026832726),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(68));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057283375), Float.intBitsToFloat(1026832726),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(69));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1026832726),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(70));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1034416029),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(71));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1039516303),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(72));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1042401984),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(73));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1044952121),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(74));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057985482), Float.intBitsToFloat(1047586182),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(75));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058424787), Float.intBitsToFloat(1045607000),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(76));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058799520), Float.intBitsToFloat(1043543896),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(77));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059174253), Float.intBitsToFloat(1041480792),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(78));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059548986), Float.intBitsToFloat(1038647983),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(79));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059923719), Float.intBitsToFloat(1034521774),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(80));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060439495), Float.intBitsToFloat(1037519639),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(81));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060955271), Float.intBitsToFloat(1040352448),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(82));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061471047), Float.intBitsToFloat(1041851380),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(83));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061986823), Float.intBitsToFloat(1043350312),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(84));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061612090), Float.intBitsToFloat(1045413416),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(85));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061237357), Float.intBitsToFloat(1047476520),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(86));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060862624), Float.intBitsToFloat(1049057812),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(87));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060487891), Float.intBitsToFloat(1050089364),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(88));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060153067), Float.intBitsToFloat(1051230776),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(89));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060799307), Float.intBitsToFloat(1050946617),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(90));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061405638), Float.intBitsToFloat(1050552599),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(91));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062011969), Float.intBitsToFloat(1050158581),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(92));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062618300), Float.intBitsToFloat(1049764564),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(93));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063224631), Float.intBitsToFloat(1049370546),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(94));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063421640), Float.intBitsToFloat(1050583208),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(95));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063618649), Float.intBitsToFloat(1051795870),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(96));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063815658), Float.intBitsToFloat(1053008532),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(97));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064012667), Float.intBitsToFloat(1054221194),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(98));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063406336), Float.intBitsToFloat(1054615212),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(99));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062800005), Float.intBitsToFloat(1055009229),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(100));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062193674), Float.intBitsToFloat(1055403247),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(101));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061587343), Float.intBitsToFloat(1055797265),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(102));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060981012), Float.intBitsToFloat(1056327074),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(103));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061587343), Float.intBitsToFloat(1056856882),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(104));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062193674), Float.intBitsToFloat(1057107754),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(105));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062800005), Float.intBitsToFloat(1057304762),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(106));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063406336), Float.intBitsToFloat(1057501771),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(107));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064012667), Float.intBitsToFloat(1057698780),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(108));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063815658), Float.intBitsToFloat(1058305111),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(109));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063618649), Float.intBitsToFloat(1058911442),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(110));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063421640), Float.intBitsToFloat(1059517773),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(111));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063224631), Float.intBitsToFloat(1060124104),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(112));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062618300), Float.intBitsToFloat(1059927095),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(113));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062011969), Float.intBitsToFloat(1059730086),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(114));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061405638), Float.intBitsToFloat(1059533078),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(115));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060799307), Float.intBitsToFloat(1059336069),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(116));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060153067), Float.intBitsToFloat(1059193990),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(117));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060487892), Float.intBitsToFloat(1059764695),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(118));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060862626), Float.intBitsToFloat(1060280471),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(119));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061237359), Float.intBitsToFloat(1060796247),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(120));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061612092), Float.intBitsToFloat(1061312023),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(121));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061986825), Float.intBitsToFloat(1061827799),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(122));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061471049), Float.intBitsToFloat(1062202532),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(123));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060955273), Float.intBitsToFloat(1062577265),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(124));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060439497), Float.intBitsToFloat(1062951998),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(125));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059923721), Float.intBitsToFloat(1063326731),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(126));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059548988), Float.intBitsToFloat(1062810955),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(127));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059174255), Float.intBitsToFloat(1062295179),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(128));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058799522), Float.intBitsToFloat(1061779403),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(129));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058424788), Float.intBitsToFloat(1061263627),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(130));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057985482), Float.intBitsToFloat(1060768832),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(131));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1061427348),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(132));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1062064883),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(133));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1062702417),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(134));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1063339951),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(135));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057920909), Float.intBitsToFloat(1063977485),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(136));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057283375), Float.intBitsToFloat(1063977485),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(137));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327073), Float.intBitsToFloat(1063977485),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(138));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055052005), Float.intBitsToFloat(1063977485),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(139));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327073), Float.intBitsToFloat(1063339951),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(140));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327073), Float.intBitsToFloat(1062702417),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(141));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327073), Float.intBitsToFloat(1062064883),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(142));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327073), Float.intBitsToFloat(1061427348),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(143));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048339354), Float.intBitsToFloat(1062061489),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(144));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049207144), Float.intBitsToFloat(1061545713),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(145));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049956610), Float.intBitsToFloat(1061029937),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(146));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050706076), Float.intBitsToFloat(1060514161),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(147));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1037037095), Float.intBitsToFloat(1058714435),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(148));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041037568), Float.intBitsToFloat(1058517426),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(149));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043462892), Float.intBitsToFloat(1058320417),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(150));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045888216), Float.intBitsToFloat(1058123408),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(151));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1037037091), Float.intBitsToFloat(1052189888),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(152));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041037566), Float.intBitsToFloat(1052583906),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(153));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043462890), Float.intBitsToFloat(1052977923),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(154));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045888215), Float.intBitsToFloat(1053371941),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(155));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048339358), Float.intBitsToFloat(1042415552),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(156));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049207145), Float.intBitsToFloat(1044478656),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(157));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049956611), Float.intBitsToFloat(1046541760),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(158));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050706078), Float.intBitsToFloat(1048590432),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(159));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327074), Float.intBitsToFloat(1034416029),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(160));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327074), Float.intBitsToFloat(1039516303),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(161));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327074), Float.intBitsToFloat(1042401984),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(162));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056327074), Float.intBitsToFloat(1044952121),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(163));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060580538), Float.intBitsToFloat(1042415552),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(164));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060205805), Float.intBitsToFloat(1044478656),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(165));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059831072), Float.intBitsToFloat(1046541760),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(166));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059456339), Float.intBitsToFloat(1048590432),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(167));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063012318), Float.intBitsToFloat(1052189888),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(168));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062405987), Float.intBitsToFloat(1052583905),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(169));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061799656), Float.intBitsToFloat(1052977923),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(170));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061193325), Float.intBitsToFloat(1053371941),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(171));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063012318), Float.intBitsToFloat(1058714433),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(172));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062405987), Float.intBitsToFloat(1058517424),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(173));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061799656), Float.intBitsToFloat(1058320416),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(174));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061193325), Float.intBitsToFloat(1058123407),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(175));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060580540), Float.intBitsToFloat(1062061489),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(176));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060205807), Float.intBitsToFloat(1061545713),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(177));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059831074), Float.intBitsToFloat(1061029937),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(178));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059456340), Float.intBitsToFloat(1060514161),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(179));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054414470), Float.intBitsToFloat(1064615019),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(180));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055689539), Float.intBitsToFloat(1064615019),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(181));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(1064615019),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(182));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057602142), Float.intBitsToFloat(1064615019),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(183));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042246834), Float.intBitsToFloat(1062530941),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(184));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044309938), Float.intBitsToFloat(1062905674),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(185));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046373042), Float.intBitsToFloat(1063280408),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(186));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048436146), Float.intBitsToFloat(1063655141),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(187));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1010736482), Float.intBitsToFloat(1058198957),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(188));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1019183311), Float.intBitsToFloat(1058805287),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(189));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1024448886), Float.intBitsToFloat(1059411619),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(190));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027601028), Float.intBitsToFloat(1060017949),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(191));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027601018), Float.intBitsToFloat(1049582859),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(192));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1024448878), Float.intBitsToFloat(1050795521),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(193));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1019183295), Float.intBitsToFloat(1052008183),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(194));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1010736454), Float.intBitsToFloat(1053220845),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(195));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048436150), Float.intBitsToFloat(1031894499),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(196));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046373046), Float.intBitsToFloat(1034892363),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(197));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044309942), Float.intBitsToFloat(1037890227),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(198));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042246838), Float.intBitsToFloat(1040537742),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(199));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057602142), Float.intBitsToFloat(1002740660),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(200));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(1002740660),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(201));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055689540), Float.intBitsToFloat(1002740660),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(202));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054414472), Float.intBitsToFloat(1002740660),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(203));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062103669), Float.intBitsToFloat(1040537742),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(204));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061587893), Float.intBitsToFloat(1037890227),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(205));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061072117), Float.intBitsToFloat(1034892363),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(206));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060556341), Float.intBitsToFloat(1031894499),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(207));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064520492), Float.intBitsToFloat(1053220845),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(208));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064323483), Float.intBitsToFloat(1052008183),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(209));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064126475), Float.intBitsToFloat(1050795521),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(210));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063929466), Float.intBitsToFloat(1049582859),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(211));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063929467), Float.intBitsToFloat(1060017948),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(212));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064126476), Float.intBitsToFloat(1059411617),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(213));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064323484), Float.intBitsToFloat(1058805285),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(214));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064520493), Float.intBitsToFloat(1058198954),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(215));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060556341), Float.intBitsToFloat(1063655141),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(216));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061072117), Float.intBitsToFloat(1063280408),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(217));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061587893), Float.intBitsToFloat(1062905674),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(218));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062103669), Float.intBitsToFloat(1062530941),
+        Float.intBitsToFloat(1025222115), Float.intBitsToFloat(1025222115)),
+        instance.boardIndexToBoundsMap.get(219));
 
     // test with 12 players
     board = new Board(12);
     instance = new GridBoardLayout(board);
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1063855250),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(0));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1063303999),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(1));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1062752747),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(2));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1062201496),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(3));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1061650244),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(4));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054060644), Float.intBitsToFloat(1061079204),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(5));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053361685), Float.intBitsToFloat(1061536812),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(6));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052810433), Float.intBitsToFloat(1062014210),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(7));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052259182), Float.intBitsToFloat(1062491608),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(8));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051707930), Float.intBitsToFloat(1062969005),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(9));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051156679), Float.intBitsToFloat(1063446403),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(10));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050201883), Float.intBitsToFloat(1063170778),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(11));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049247088), Float.intBitsToFloat(1062895152),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(12));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048008585), Float.intBitsToFloat(1062619526),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(13));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046098993), Float.intBitsToFloat(1062343901),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(14));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047201496), Float.intBitsToFloat(1061866503),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(15));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048303999), Float.intBitsToFloat(1061389106),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(16));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048991251), Float.intBitsToFloat(1060911708),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(17));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049542503), Float.intBitsToFloat(1060434310),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(18));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049985626), Float.intBitsToFloat(1059902847),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(19));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048922701), Float.intBitsToFloat(1060124408),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(20));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047359811), Float.intBitsToFloat(1060400034),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(21));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045450221), Float.intBitsToFloat(1060675660),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(22));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043540630), Float.intBitsToFloat(1060951285),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(23));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041631039), Float.intBitsToFloat(1061226911),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(24));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040528536), Float.intBitsToFloat(1060749514),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(25));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038664674), Float.intBitsToFloat(1060272116),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(26));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1036459668), Float.intBitsToFloat(1059794718),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(27));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1034254662), Float.intBitsToFloat(1059317321),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(28));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038073844), Float.intBitsToFloat(1059041695),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(29));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041040209), Float.intBitsToFloat(1058766070),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(30));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042949799), Float.intBitsToFloat(1058490444),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(31));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044859390), Float.intBitsToFloat(1058214818),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(32));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046689825), Float.intBitsToFloat(1057865338),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(33));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044405663), Float.intBitsToFloat(1057791484),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(34));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042200657), Float.intBitsToFloat(1057791484),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(35));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1039803910), Float.intBitsToFloat(1057791484),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(36));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035393900), Float.intBitsToFloat(1057791484),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(37));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1030168995), Float.intBitsToFloat(1057791484),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(38));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1030168997), Float.intBitsToFloat(1057240233),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(39));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1030168997), Float.intBitsToFloat(1056413356),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(40));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1030168997), Float.intBitsToFloat(1055310853),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(41));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1030168999), Float.intBitsToFloat(1054208351),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(42));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035393902), Float.intBitsToFloat(1054208351),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(43));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1039803914), Float.intBitsToFloat(1054208351),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(44));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042200658), Float.intBitsToFloat(1054208351),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(45));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044405663), Float.intBitsToFloat(1054208351),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(46));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046689826), Float.intBitsToFloat(1054060644),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(47));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044859391), Float.intBitsToFloat(1053361685),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(48));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042949800), Float.intBitsToFloat(1052810434),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(49));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041040209), Float.intBitsToFloat(1052259183),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(50));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038073846), Float.intBitsToFloat(1051707931),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(51));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1034254664), Float.intBitsToFloat(1051156680),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(52));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1036459670), Float.intBitsToFloat(1050201884),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(53));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038664674), Float.intBitsToFloat(1049247089),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(54));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1040528536), Float.intBitsToFloat(1048008587),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(55));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041631038), Float.intBitsToFloat(1046098995),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(56));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043540629), Float.intBitsToFloat(1047201498),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(57));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045450219), Float.intBitsToFloat(1048304001),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(58));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047359810), Float.intBitsToFloat(1048991252),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(59));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048922701), Float.intBitsToFloat(1049542503),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(60));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049985627), Float.intBitsToFloat(1049985626),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(61));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049542505), Float.intBitsToFloat(1048922700),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(62));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048991254), Float.intBitsToFloat(1047359809),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(63));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048304005), Float.intBitsToFloat(1045450218),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(64));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047201501), Float.intBitsToFloat(1043540627),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(65));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1046098999), Float.intBitsToFloat(1041631036),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(66));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1048008591), Float.intBitsToFloat(1040528533),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(67));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049247091), Float.intBitsToFloat(1038664670),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(68));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050201886), Float.intBitsToFloat(1036459666),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(69));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051156682), Float.intBitsToFloat(1034254660),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(70));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051707933), Float.intBitsToFloat(1038073842),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(71));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052259185), Float.intBitsToFloat(1041040208),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(72));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1052810436), Float.intBitsToFloat(1042949799),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(73));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1053361687), Float.intBitsToFloat(1044859389),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(74));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054060645), Float.intBitsToFloat(1046689825),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(75));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1044405663),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(76));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1042200657),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(77));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1039803912),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(78));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1035393902),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(79));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054208351), Float.intBitsToFloat(1030168997),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(80));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055310854), Float.intBitsToFloat(1030168997),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(81));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413357), Float.intBitsToFloat(1030168997),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(82));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057240233), Float.intBitsToFloat(1030168997),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(83));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791485), Float.intBitsToFloat(1030168997),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(84));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791485), Float.intBitsToFloat(1035393902),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(85));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791485), Float.intBitsToFloat(1039803912),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(86));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791485), Float.intBitsToFloat(1042200657),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(87));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791485), Float.intBitsToFloat(1044405663),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(88));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057865338), Float.intBitsToFloat(1046689825),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(89));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058214818), Float.intBitsToFloat(1044859389),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(90));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058490443), Float.intBitsToFloat(1042949799),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(91));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058766069), Float.intBitsToFloat(1041040208),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(92));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059041694), Float.intBitsToFloat(1038073842),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(93));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059317320), Float.intBitsToFloat(1034254660),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(94));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059794717), Float.intBitsToFloat(1036459666),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(95));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060272115), Float.intBitsToFloat(1038664670),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(96));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060749513), Float.intBitsToFloat(1040528533),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(97));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061226910), Float.intBitsToFloat(1041631036),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(98));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060951284), Float.intBitsToFloat(1043540627),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(99));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060675659), Float.intBitsToFloat(1045450218),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(100));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060400033), Float.intBitsToFloat(1047359809),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(101));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060124408), Float.intBitsToFloat(1048922700),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(102));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059902847), Float.intBitsToFloat(1049985626),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(103));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060434309), Float.intBitsToFloat(1049542503),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(104));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060911707), Float.intBitsToFloat(1048991251),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(105));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061389105), Float.intBitsToFloat(1048303999),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(106));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061866502), Float.intBitsToFloat(1047201495),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(107));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062343900), Float.intBitsToFloat(1046098992),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(108));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062619526), Float.intBitsToFloat(1048008583),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(109));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062895152), Float.intBitsToFloat(1049247087),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(110));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063170778), Float.intBitsToFloat(1050201882),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(111));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063446404), Float.intBitsToFloat(1051156678),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(112));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062969006), Float.intBitsToFloat(1051707930),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(113));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062491609), Float.intBitsToFloat(1052259181),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(114));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062014211), Float.intBitsToFloat(1052810433),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(115));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061536813), Float.intBitsToFloat(1053361684),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(116));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061079204), Float.intBitsToFloat(1054060644),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(117));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061650244), Float.intBitsToFloat(1054208352),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(118));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062201496), Float.intBitsToFloat(1054208352),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(119));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062752747), Float.intBitsToFloat(1054208353),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(120));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063303999), Float.intBitsToFloat(1054208353),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(121));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063855250), Float.intBitsToFloat(1054208353),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(122));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063855250), Float.intBitsToFloat(1055310856),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(123));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063855250), Float.intBitsToFloat(1056413359),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(124));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063855250), Float.intBitsToFloat(1057240234),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(125));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063855250), Float.intBitsToFloat(1057791486),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(126));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063303999), Float.intBitsToFloat(1057791486),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(127));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062752747), Float.intBitsToFloat(1057791486),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(128));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062201496), Float.intBitsToFloat(1057791486),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(129));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061650244), Float.intBitsToFloat(1057791486),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(130));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061079204), Float.intBitsToFloat(1057865339),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(131));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061536812), Float.intBitsToFloat(1058214818),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(132));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062014210), Float.intBitsToFloat(1058490444),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(133));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062491608), Float.intBitsToFloat(1058766070),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(134));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062969005), Float.intBitsToFloat(1059041695),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(135));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063446403), Float.intBitsToFloat(1059317321),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(136));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063170778), Float.intBitsToFloat(1059794718),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(137));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062895152), Float.intBitsToFloat(1060272116),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(138));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062619526), Float.intBitsToFloat(1060749514),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(139));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062343901), Float.intBitsToFloat(1061226911),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(140));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061866503), Float.intBitsToFloat(1060951285),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(141));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061389106), Float.intBitsToFloat(1060675660),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(142));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060911708), Float.intBitsToFloat(1060400034),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(143));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060434310), Float.intBitsToFloat(1060124408),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(144));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059902847), Float.intBitsToFloat(1059902847),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(145));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060124408), Float.intBitsToFloat(1060434310),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(146));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060400034), Float.intBitsToFloat(1060911708),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(147));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060675660), Float.intBitsToFloat(1061389106),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(148));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060951285), Float.intBitsToFloat(1061866503),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(149));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061226911), Float.intBitsToFloat(1062343901),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(150));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060749514), Float.intBitsToFloat(1062619526),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(151));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060272116), Float.intBitsToFloat(1062895152),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(152));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059794718), Float.intBitsToFloat(1063170778),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(153));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059317321), Float.intBitsToFloat(1063446403),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(154));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059041695), Float.intBitsToFloat(1062969005),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(155));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058766070), Float.intBitsToFloat(1062491608),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(156));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058490444), Float.intBitsToFloat(1062014210),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(157));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1058214818), Float.intBitsToFloat(1061536812),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(158));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057865338), Float.intBitsToFloat(1061079204),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(159));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791484), Float.intBitsToFloat(1061650244),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(160));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791484), Float.intBitsToFloat(1062201496),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(161));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791484), Float.intBitsToFloat(1062752747),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(162));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791484), Float.intBitsToFloat(1063303999),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(163));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057791484), Float.intBitsToFloat(1063855250),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(164));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057240233), Float.intBitsToFloat(1063855250),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(165));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413356), Float.intBitsToFloat(1063855250),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(166));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055310853), Float.intBitsToFloat(1063855250),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(167));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413356), Float.intBitsToFloat(1063303999),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(168));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413356), Float.intBitsToFloat(1062752747),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(169));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413356), Float.intBitsToFloat(1062201496),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(170));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413356), Float.intBitsToFloat(1061650244),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(171));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049798339), Float.intBitsToFloat(1062417754),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(172));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050349591), Float.intBitsToFloat(1061940357),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(173));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050900842), Float.intBitsToFloat(1061462959),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(174));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051452094), Float.intBitsToFloat(1060985561),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(175));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041335624), Float.intBitsToFloat(1059996490),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(176));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043245215), Float.intBitsToFloat(1059720865),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(177));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045154805), Float.intBitsToFloat(1059445239),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(178));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047064396), Float.intBitsToFloat(1059169613),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(179));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035393902), Float.intBitsToFloat(1056413356),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(180));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1039803912), Float.intBitsToFloat(1056413356),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(181));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1042200657), Float.intBitsToFloat(1056413356),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(182));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1044405663), Float.intBitsToFloat(1056413356),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(183));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1041335624), Float.intBitsToFloat(1049798340),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(184));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1043245215), Float.intBitsToFloat(1050349592),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(185));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045154805), Float.intBitsToFloat(1050900843),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(186));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047064396), Float.intBitsToFloat(1051452094),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(187));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049798342), Float.intBitsToFloat(1041335622),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(188));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050349593), Float.intBitsToFloat(1043245213),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(189));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050900845), Float.intBitsToFloat(1045154803),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(190));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1051452096), Float.intBitsToFloat(1047064395),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(191));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413357), Float.intBitsToFloat(1035393902),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(192));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413357), Float.intBitsToFloat(1039803912),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(193));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413357), Float.intBitsToFloat(1042200657),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(194));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056413357), Float.intBitsToFloat(1044405663),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(195));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059996489), Float.intBitsToFloat(1041335622),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(196));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059720864), Float.intBitsToFloat(1043245213),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(197));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059445238), Float.intBitsToFloat(1045154803),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(198));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059169612), Float.intBitsToFloat(1047064395),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(199));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062417754), Float.intBitsToFloat(1049798339),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(200));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061940357), Float.intBitsToFloat(1050349590),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(201));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061462959), Float.intBitsToFloat(1050900842),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(202));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060985561), Float.intBitsToFloat(1051452093),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(203));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063303999), Float.intBitsToFloat(1056413359),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(204));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062752747), Float.intBitsToFloat(1056413359),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(205));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062201496), Float.intBitsToFloat(1056413359),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(206));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061650244), Float.intBitsToFloat(1056413359),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(207));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062417754), Float.intBitsToFloat(1059996490),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(208));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061940357), Float.intBitsToFloat(1059720865),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(209));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061462959), Float.intBitsToFloat(1059445239),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(210));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060985561), Float.intBitsToFloat(1059169613),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(211));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059996490), Float.intBitsToFloat(1062417754),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(212));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059720865), Float.intBitsToFloat(1061940357),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(213));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059445239), Float.intBitsToFloat(1061462959),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(214));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059169613), Float.intBitsToFloat(1060985561),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(215));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054759602), Float.intBitsToFloat(1064406502),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(216));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055862105), Float.intBitsToFloat(1064406502),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(217));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1064406502),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(218));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057515859), Float.intBitsToFloat(1064406502),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(219));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045951287), Float.intBitsToFloat(1062959111),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(220));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047860877), Float.intBitsToFloat(1063234737),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(221));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049173235), Float.intBitsToFloat(1063510363),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(222));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050128030), Float.intBitsToFloat(1063785989),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(223));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031277179), Float.intBitsToFloat(1059831646),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(224));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1033742988), Float.intBitsToFloat(1060309043),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(225));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035947994), Float.intBitsToFloat(1060786441),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(226));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038152998), Float.intBitsToFloat(1061263838),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(227));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1019287772), Float.intBitsToFloat(1054759602),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(228));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1019287770), Float.intBitsToFloat(1055862105),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(229));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1019287770), Float.intBitsToFloat(1056964607),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(230));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1019287768), Float.intBitsToFloat(1057515859),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(231));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1038152998), Float.intBitsToFloat(1045951289),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(232));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1035947994), Float.intBitsToFloat(1047860879),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(233));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1033742988), Float.intBitsToFloat(1049173236),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(234));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1031277181), Float.intBitsToFloat(1050128031),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(235));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1050128032), Float.intBitsToFloat(1031277173),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(236));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1049173237), Float.intBitsToFloat(1033742984),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(237));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1047860881), Float.intBitsToFloat(1035947988),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(238));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1045951291), Float.intBitsToFloat(1038152994),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(239));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1057515859), Float.intBitsToFloat(1019287770),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(240));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1056964608), Float.intBitsToFloat(1019287770),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(241));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1055862106), Float.intBitsToFloat(1019287770),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(242));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1054759603), Float.intBitsToFloat(1019287770),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(243));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061263838), Float.intBitsToFloat(1038152994),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(244));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060786440), Float.intBitsToFloat(1035947988),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(245));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060309042), Float.intBitsToFloat(1033742984),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(246));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059831644), Float.intBitsToFloat(1031277173),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(247));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063785989), Float.intBitsToFloat(1050128028),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(248));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063510363), Float.intBitsToFloat(1049173233),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(249));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063234737), Float.intBitsToFloat(1047860873),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(250));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062959111), Float.intBitsToFloat(1045951283),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(251));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064406502), Float.intBitsToFloat(1057515860),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(252));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064406502), Float.intBitsToFloat(1056964609),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(253));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064406502), Float.intBitsToFloat(1055862108),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(254));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1064406502), Float.intBitsToFloat(1054759605),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(255));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1062959111), Float.intBitsToFloat(1061263838),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(256));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063234737), Float.intBitsToFloat(1060786441),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(257));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063510363), Float.intBitsToFloat(1060309043),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(258));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1063785989), Float.intBitsToFloat(1059831646),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(259));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1059831646), Float.intBitsToFloat(1063785989),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(260));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060309043), Float.intBitsToFloat(1063510363),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(261));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1060786441), Float.intBitsToFloat(1063234737),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(262));
-    assertEquals(new Rectangle(Float.intBitsToFloat(1061263838), Float.intBitsToFloat(1062959111),
-        Float.intBitsToFloat(1023841590), Float.intBitsToFloat(1023841590)),
-        instance.getBoundsForBoardIndex(263));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118472), Float.intBitsToFloat(1064079945),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(0));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118472), Float.intBitsToFloat(1063510718),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(1));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118472), Float.intBitsToFloat(1062941491),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(2));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118472), Float.intBitsToFloat(1062372264),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(3));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118472), Float.intBitsToFloat(1061803037),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(4));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053965948), Float.intBitsToFloat(1061213376),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(5));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053244197), Float.intBitsToFloat(1061685907),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(6));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052674970), Float.intBitsToFloat(1062178872),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(7));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052105743), Float.intBitsToFloat(1062671837),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(8));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051536516), Float.intBitsToFloat(1063164802),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(9));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050967289), Float.intBitsToFloat(1063657767),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(10));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049981359), Float.intBitsToFloat(1063373153),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(11));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048995429), Float.intBitsToFloat(1063088540),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(12));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047442998), Float.intBitsToFloat(1062803927),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(13));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045471138), Float.intBitsToFloat(1062519313),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(14));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046609592), Float.intBitsToFloat(1062026348),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(15));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047748046), Float.intBitsToFloat(1061533383),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(16));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048731250), Float.intBitsToFloat(1061040418),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(17));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049300477), Float.intBitsToFloat(1060547453),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(18));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049758050), Float.intBitsToFloat(1059998660),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(19));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048660465), Float.intBitsToFloat(1060227447),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(20));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046773070), Float.intBitsToFloat(1060512061),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(21));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044801210), Float.intBitsToFloat(1060796674),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(22));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042829350), Float.intBitsToFloat(1061081287),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(23));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040857490), Float.intBitsToFloat(1061365901),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(24));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1039250680), Float.intBitsToFloat(1060872936),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(25));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036973772), Float.intBitsToFloat(1060379971),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(26));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1034696864), Float.intBitsToFloat(1059887006),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(27));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1032419956), Float.intBitsToFloat(1059394041),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(28));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036363676), Float.intBitsToFloat(1059109427),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(29));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040247394), Float.intBitsToFloat(1058824814),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(30));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042219254), Float.intBitsToFloat(1058540201),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(31));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044191114), Float.intBitsToFloat(1058255587),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(32));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046081236), Float.intBitsToFloat(1057894710),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(33));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043722590), Float.intBitsToFloat(1057818448),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(34));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041445682), Float.intBitsToFloat(1057818448),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(35));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038150158), Float.intBitsToFloat(1057818448),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(36));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033596342), Float.intBitsToFloat(1057818448),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(37));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1026286270), Float.intBitsToFloat(1057818448),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(38));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1026286272), Float.intBitsToFloat(1057249221),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(39));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1026286272), Float.intBitsToFloat(1056395380),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(40));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1026286274), Float.intBitsToFloat(1055256926),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(41));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1026286274), Float.intBitsToFloat(1054118472),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(42));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033596344), Float.intBitsToFloat(1054118472),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(43));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038150160), Float.intBitsToFloat(1054118472),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(44));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041445684), Float.intBitsToFloat(1054118472),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(45));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043722592), Float.intBitsToFloat(1054118472),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(46));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046081237), Float.intBitsToFloat(1053965948),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(47));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044191114), Float.intBitsToFloat(1053244199),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(48));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042219254), Float.intBitsToFloat(1052674972),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(49));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040247394), Float.intBitsToFloat(1052105745),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(50));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036363677), Float.intBitsToFloat(1051536518),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(51));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1032419957), Float.intBitsToFloat(1050967291),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(52));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1034696864), Float.intBitsToFloat(1049981361),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(53));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036973772), Float.intBitsToFloat(1048995431),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(54));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1039250680), Float.intBitsToFloat(1047443002),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(55));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040857490), Float.intBitsToFloat(1045471142),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(56));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042829350), Float.intBitsToFloat(1046609596),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(57));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044801210), Float.intBitsToFloat(1047748050),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(58));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046773070), Float.intBitsToFloat(1048731252),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(59));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048660465), Float.intBitsToFloat(1049300479),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(60));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049758050), Float.intBitsToFloat(1049758049),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(61));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049300479), Float.intBitsToFloat(1048660463),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(62));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048731253), Float.intBitsToFloat(1046773067),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(63));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047748052), Float.intBitsToFloat(1044801207),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(64));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046609598), Float.intBitsToFloat(1042829347),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(65));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045471144), Float.intBitsToFloat(1040857487),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(66));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047443004), Float.intBitsToFloat(1039250676),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(67));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048995432), Float.intBitsToFloat(1036973768),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(68));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049981362), Float.intBitsToFloat(1034696861),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(69));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050967292), Float.intBitsToFloat(1032419954),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(70));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051536519), Float.intBitsToFloat(1036363674),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(71));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052105746), Float.intBitsToFloat(1040247393),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(72));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1052674973), Float.intBitsToFloat(1042219253),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(73));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053244199), Float.intBitsToFloat(1044191113),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(74));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1053965950), Float.intBitsToFloat(1046081236),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(75));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118473), Float.intBitsToFloat(1043722591),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(76));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118473), Float.intBitsToFloat(1041445683),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(77));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118473), Float.intBitsToFloat(1038150160),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(78));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118473), Float.intBitsToFloat(1033596344),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(79));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054118473), Float.intBitsToFloat(1026286272),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(80));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055256927), Float.intBitsToFloat(1026286272),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(81));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395381), Float.intBitsToFloat(1026286272),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(82));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057249222), Float.intBitsToFloat(1026286272),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(83));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818449), Float.intBitsToFloat(1026286272),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(84));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818449), Float.intBitsToFloat(1033596344),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(85));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818449), Float.intBitsToFloat(1038150160),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(86));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818449), Float.intBitsToFloat(1041445683),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(87));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818449), Float.intBitsToFloat(1043722591),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(88));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057894710), Float.intBitsToFloat(1046081236),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(89));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058255585), Float.intBitsToFloat(1044191113),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(90));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058540199), Float.intBitsToFloat(1042219253),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(91));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058824812), Float.intBitsToFloat(1040247393),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(92));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059109426), Float.intBitsToFloat(1036363674),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(93));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059394039), Float.intBitsToFloat(1032419954),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(94));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059887004), Float.intBitsToFloat(1034696861),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(95));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060379969), Float.intBitsToFloat(1036973768),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(96));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060872934), Float.intBitsToFloat(1039250676),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(97));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061365899), Float.intBitsToFloat(1040857487),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(98));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061081286), Float.intBitsToFloat(1042829347),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(99));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060796672), Float.intBitsToFloat(1044801207),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(100));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060512059), Float.intBitsToFloat(1046773067),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(101));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060227445), Float.intBitsToFloat(1048660463),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(102));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059998660), Float.intBitsToFloat(1049758048),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(103));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060547452), Float.intBitsToFloat(1049300477),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(104));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061040417), Float.intBitsToFloat(1048731249),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(105));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061533382), Float.intBitsToFloat(1047748044),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(106));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062026347), Float.intBitsToFloat(1046609590),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(107));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062519312), Float.intBitsToFloat(1045471136),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(108));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062803925), Float.intBitsToFloat(1047442996),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(109));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063088539), Float.intBitsToFloat(1048995428),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(110));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063373153), Float.intBitsToFloat(1049981358),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(111));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063657766), Float.intBitsToFloat(1050967288),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(112));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063164801), Float.intBitsToFloat(1051536515),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(113));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062671836), Float.intBitsToFloat(1052105742),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(114));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062178871), Float.intBitsToFloat(1052674969),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(115));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061685906), Float.intBitsToFloat(1053244197),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(116));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061213376), Float.intBitsToFloat(1053965949),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(117));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061803037), Float.intBitsToFloat(1054118474),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(118));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062372264), Float.intBitsToFloat(1054118474),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(119));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062941491), Float.intBitsToFloat(1054118475),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(120));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063510718), Float.intBitsToFloat(1054118475),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(121));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064079945), Float.intBitsToFloat(1054118475),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(122));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064079945), Float.intBitsToFloat(1055256929),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(123));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064079945), Float.intBitsToFloat(1056395383),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(124));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064079945), Float.intBitsToFloat(1057249223),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(125));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064079945), Float.intBitsToFloat(1057818450),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(126));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063510718), Float.intBitsToFloat(1057818450),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(127));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062941491), Float.intBitsToFloat(1057818450),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(128));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062372264), Float.intBitsToFloat(1057818450),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(129));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061803037), Float.intBitsToFloat(1057818450),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(130));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061213376), Float.intBitsToFloat(1057894712),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(131));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061685907), Float.intBitsToFloat(1058255587),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(132));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062178872), Float.intBitsToFloat(1058540201),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(133));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062671837), Float.intBitsToFloat(1058824814),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(134));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063164802), Float.intBitsToFloat(1059109427),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(135));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063657767), Float.intBitsToFloat(1059394041),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(136));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063373153), Float.intBitsToFloat(1059887006),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(137));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063088540), Float.intBitsToFloat(1060379971),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(138));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062803927), Float.intBitsToFloat(1060872936),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(139));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062519313), Float.intBitsToFloat(1061365901),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(140));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062026348), Float.intBitsToFloat(1061081287),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(141));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061533383), Float.intBitsToFloat(1060796674),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(142));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061040418), Float.intBitsToFloat(1060512061),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(143));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060547453), Float.intBitsToFloat(1060227447),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(144));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059998660), Float.intBitsToFloat(1059998660),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(145));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060227447), Float.intBitsToFloat(1060547453),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(146));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060512061), Float.intBitsToFloat(1061040418),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(147));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060796674), Float.intBitsToFloat(1061533383),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(148));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061081287), Float.intBitsToFloat(1062026348),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(149));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061365901), Float.intBitsToFloat(1062519313),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(150));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060872936), Float.intBitsToFloat(1062803927),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(151));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060379971), Float.intBitsToFloat(1063088540),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(152));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059887006), Float.intBitsToFloat(1063373153),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(153));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059394041), Float.intBitsToFloat(1063657767),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(154));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059109427), Float.intBitsToFloat(1063164802),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(155));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058824814), Float.intBitsToFloat(1062671837),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(156));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058540201), Float.intBitsToFloat(1062178872),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(157));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1058255587), Float.intBitsToFloat(1061685907),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(158));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057894710), Float.intBitsToFloat(1061213376),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(159));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818448), Float.intBitsToFloat(1061803037),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(160));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818448), Float.intBitsToFloat(1062372264),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(161));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818448), Float.intBitsToFloat(1062941491),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(162));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818448), Float.intBitsToFloat(1063510718),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(163));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057818448), Float.intBitsToFloat(1064079945),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(164));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057249221), Float.intBitsToFloat(1064079945),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(165));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395380), Float.intBitsToFloat(1064079945),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(166));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055256926), Float.intBitsToFloat(1064079945),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(167));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395380), Float.intBitsToFloat(1063510718),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(168));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395380), Float.intBitsToFloat(1062941491),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(169));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395380), Float.intBitsToFloat(1062372264),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(170));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395380), Float.intBitsToFloat(1061803037),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(171));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049564656), Float.intBitsToFloat(1062595575),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(172));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050133883), Float.intBitsToFloat(1062102610),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(173));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050703110), Float.intBitsToFloat(1061609645),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(174));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051272337), Float.intBitsToFloat(1061116680),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(175));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040552442), Float.intBitsToFloat(1060095357),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(176));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042524302), Float.intBitsToFloat(1059810744),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(177));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044496162), Float.intBitsToFloat(1059526131),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(178));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046468022), Float.intBitsToFloat(1059241517),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(179));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1033596344), Float.intBitsToFloat(1056395380),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(180));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1038150160), Float.intBitsToFloat(1056395380),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(181));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1041445683), Float.intBitsToFloat(1056395380),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(182));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1043722591), Float.intBitsToFloat(1056395380),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(183));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1040552442), Float.intBitsToFloat(1049564658),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(184));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1042524302), Float.intBitsToFloat(1050133885),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(185));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1044496162), Float.intBitsToFloat(1050703112),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(186));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1046468022), Float.intBitsToFloat(1051272339),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(187));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049564659), Float.intBitsToFloat(1040552440),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(188));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050133886), Float.intBitsToFloat(1042524300),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(189));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1050703113), Float.intBitsToFloat(1044496160),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(190));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1051272339), Float.intBitsToFloat(1046468020),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(191));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395381), Float.intBitsToFloat(1033596344),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(192));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395381), Float.intBitsToFloat(1038150160),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(193));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395381), Float.intBitsToFloat(1041445683),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(194));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056395381), Float.intBitsToFloat(1043722591),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(195));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060095356), Float.intBitsToFloat(1040552440),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(196));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059810742), Float.intBitsToFloat(1042524300),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(197));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059526129), Float.intBitsToFloat(1044496160),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(198));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059241515), Float.intBitsToFloat(1046468020),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(199));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062595574), Float.intBitsToFloat(1049564655),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(200));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062102609), Float.intBitsToFloat(1050133882),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(201));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061609644), Float.intBitsToFloat(1050703109),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(202));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061116679), Float.intBitsToFloat(1051272337),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(203));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063510718), Float.intBitsToFloat(1056395383),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(204));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062941491), Float.intBitsToFloat(1056395383),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(205));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062372264), Float.intBitsToFloat(1056395383),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(206));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061803037), Float.intBitsToFloat(1056395383),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(207));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062595575), Float.intBitsToFloat(1060095357),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(208));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1062102610), Float.intBitsToFloat(1059810744),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(209));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061609645), Float.intBitsToFloat(1059526131),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(210));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061116680), Float.intBitsToFloat(1059241517),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(211));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060095357), Float.intBitsToFloat(1062595575),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(212));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059810744), Float.intBitsToFloat(1062102610),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(213));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059526131), Float.intBitsToFloat(1061609645),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(214));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059241517), Float.intBitsToFloat(1061116680),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(215));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054687699), Float.intBitsToFloat(1064649173),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(216));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055826153), Float.intBitsToFloat(1064649173),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(217));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1064649173),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(218));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057533835), Float.intBitsToFloat(1064649173),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(219));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045318616), Float.intBitsToFloat(1063154585),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(220));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047290476), Float.intBitsToFloat(1063439198),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(221));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048919168), Float.intBitsToFloat(1063723812),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(222));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049905098), Float.intBitsToFloat(1064008425),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(223));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027430596), Float.intBitsToFloat(1059925137),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(224));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1031891598), Float.intBitsToFloat(1060418102),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(225));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1034168506), Float.intBitsToFloat(1060911066),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(226));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036445414), Float.intBitsToFloat(1061404031),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(227));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1006872646), Float.intBitsToFloat(1054687699),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(228));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1006872644), Float.intBitsToFloat(1055826153),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(229));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1006872640), Float.intBitsToFloat(1056964607),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(230));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1006872638), Float.intBitsToFloat(1057533835),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(231));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1036445413), Float.intBitsToFloat(1045318618),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(232));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1034168506), Float.intBitsToFloat(1047290478),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(233));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1031891598), Float.intBitsToFloat(1048919169),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(234));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1027430598), Float.intBitsToFloat(1049905099),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(235));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1049905100), Float.intBitsToFloat(1027430590),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(236));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1048919170), Float.intBitsToFloat(1031891594),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(237));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1047290480), Float.intBitsToFloat(1034168502),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(238));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1045318620), Float.intBitsToFloat(1036445409),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(239));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1057533835), Float.intBitsToFloat(1006872642),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(240));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1056964607), Float.intBitsToFloat(1006872642),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(241));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1055826154), Float.intBitsToFloat(1006872642),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(242));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1054687700), Float.intBitsToFloat(1006872642),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(243));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061404031), Float.intBitsToFloat(1036445409),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(244));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060911065), Float.intBitsToFloat(1034168502),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(245));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060418101), Float.intBitsToFloat(1031891594),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(246));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059925135), Float.intBitsToFloat(1027430590),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(247));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064008425), Float.intBitsToFloat(1049905096),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(248));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063723812), Float.intBitsToFloat(1048919166),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(249));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063439198), Float.intBitsToFloat(1047290472),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(250));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063154585), Float.intBitsToFloat(1045318612),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(251));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064649173), Float.intBitsToFloat(1057533836),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(252));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064649173), Float.intBitsToFloat(1056964609),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(253));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064649173), Float.intBitsToFloat(1055826156),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(254));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064649173), Float.intBitsToFloat(1054687702),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(255));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063154585), Float.intBitsToFloat(1061404031),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(256));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063439198), Float.intBitsToFloat(1060911066),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(257));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1063723812), Float.intBitsToFloat(1060418102),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(258));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1064008425), Float.intBitsToFloat(1059925137),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(259));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1059925137), Float.intBitsToFloat(1064008425),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(260));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060418102), Float.intBitsToFloat(1063723812),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(261));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1060911066), Float.intBitsToFloat(1063439198),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(262));
+    assertEquals(new Rectangle(Float.intBitsToFloat(1061404031), Float.intBitsToFloat(1063154585),
+        Float.intBitsToFloat(1024129199), Float.intBitsToFloat(1024129199)),
+        instance.boardIndexToBoundsMap.get(263));
 
   }
 
@@ -3724,10 +3724,15 @@ public class GridBoardLayoutTest {
 
     Board board = new Board(4);
     GridBoardLayout instance = new GridBoardLayout(board);
-    Rectangle expResult = new Rectangle(Float.intBitsToFloat(1055035228),
-        Float.intBitsToFloat(1054263476), Float.intBitsToFloat(1038845215),
-        Float.intBitsToFloat(1042603311));
+    Rectangle expResult = new Rectangle(Float.intBitsToFloat(1054972314),
+        Float.intBitsToFloat(1054175396), Float.intBitsToFloat(1039348531),
+        Float.intBitsToFloat(1042955633));
     Rectangle result = instance.getBoundsForDiscardPile();
+    /*System.out.printf("Rectangle expResult = new Rectangle(Float.intBitsToFloat(%d),\n"
+        + "Float.intBitsToFloat(%d), Float.intBitsToFloat(%d),\n"
+        + "Float.intBitsToFloat(%d));", Float.floatToIntBits(result.getX()),
+        Float.floatToIntBits(result.getY()), Float.floatToIntBits(result.getWidth()),
+        Float.floatToIntBits(result.getHeight()));*/
     assertEquals(expResult, result);
 
   }
