@@ -29,14 +29,9 @@ public class GridBoardLayout implements BoardLayout {
    */
   protected static final float CARD_SCALE_FACTOR = 0.8f;
   /**
-   * The inner size of the board where the spaces are drawn (this creates a buffer around the
-   * outside of the board.
-   */
-  protected static final float INNER_SIZE = 0.95f;
-  /**
    * The marble scale factor relative to the size of a grid cell.
    */
-  protected static final float MARBLE_SCALE_FACTOR = 0.90f;
+  protected static final float MARBLE_SCALE_FACTOR = 0.85f;
   /**
    * The space scale factor relative to the size of a grid cell.
    */
@@ -65,11 +60,11 @@ public class GridBoardLayout implements BoardLayout {
 
     // populate the grid sizes for each board configuration
     Map<Integer, Float> gridSizes = new TreeMap<>();
-    gridSizes.put(4, 16.0f);
-    gridSizes.put(6, 19.0f);
-    gridSizes.put(8, 22.0f);
-    gridSizes.put(10, 25.0f);
-    gridSizes.put(12, 28.0f);
+    gridSizes.put(4, 14.0f);
+    gridSizes.put(6, 17.0f);
+    gridSizes.put(8, 20.0f);
+    gridSizes.put(10, 23.0f);
+    gridSizes.put(12, 26.0f);
     GRID_SIZES = Collections.unmodifiableMap(gridSizes);
 
   }
@@ -87,120 +82,113 @@ public class GridBoardLayout implements BoardLayout {
 
     this.board = board;
 
-    float gridSize = INNER_SIZE / GRID_SIZES.get(board.getNumberOfPlayers());
-    float radius = INNER_SIZE / 2.0f;
+    float innerSize;
+    switch (board.getNumberOfPlayers()) {
+      case 4:
+        innerSize = 0.93f;
+        break;
+      case 6:
+        innerSize = 0.94f;
+        break;
+      case 8:
+        innerSize = 0.94f;
+        break;
+      case 10:
+        innerSize = 0.94f;
+        break;
+      case 12:
+      // falls through
+      default:
+        innerSize = 0.95f;
+        break;
+    }
+    float gridSize = innerSize / GRID_SIZES.get(board.getNumberOfPlayers());
+    float radius = innerSize / 2.0f;
 
     for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
 
       float playerAngle = (float) (2.0 * Math.PI
           * ((double) playerNumber / (double) board.getNumberOfPlayers()) + Math.PI / 2.0);
 
-      // use and outer ring for the start spaces and an inner ring for the remaining spaces
-      for (int ring = 0; ring <= 1; ring++) {
+      // calculate the center x and y of this vertex
+      float gridCellCenterX = radius * (float) Math.cos(playerAngle) + 0.5f;
+      float gridCellCenterY = radius * (float) Math.sin(playerAngle) + 0.5f;
 
-        // calculate the center x and y of this vertex
-        float gridCellCenterX = (radius - gridSize * ring) * (float) Math.cos(playerAngle) + 0.5f;
-        float gridCellCenterY = (radius - gridSize * ring) * (float) Math.sin(playerAngle) + 0.5f;
+      for (int i = -2; i <= 2; i++) {
 
-        // calculate the angle for this vertex (perpindicular to the player's home spaces)
-        float componentX = (float) Math.cos(playerAngle + Math.PI / 2.0);
-        float componentY = (float) Math.sin(playerAngle + Math.PI / 2.0);
+        float spaceX = gridCellCenterX - (i * gridSize)
+            * (float) Math.cos(playerAngle + Math.PI / 2.0);
+        float spaceY = gridCellCenterY - (i * gridSize)
+            * (float) Math.sin(playerAngle + Math.PI / 2.0);
+        Rectangle rectangle = new Rectangle(spaceX - (gridSize / 2.0f),
+            spaceY - (gridSize / 2.0f), gridSize, gridSize);
 
-        if (ring == 0) {
-
-          // start spaces
-          for (int i = 0; i < 4; i++) {
-            boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + i,
-                playerAngle - (float) Math.PI);
-            boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + i,
-                new Rectangle(
-                    gridCellCenterX - ((i - 1.5f) * gridSize) * componentX - (gridSize / 2.0f),
-                    gridCellCenterY - ((i - 1.5f) * gridSize) * componentY - (gridSize / 2.0f),
-                    gridSize, gridSize));
-          }
-
+        if (i == -2) {
+          // safe space
+          boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber),
+              playerAngle - (float) Math.PI);
+          boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber), rectangle);
         } else {
+          // home entry
+          boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - i,
+              playerAngle - (float) Math.PI);
+          boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - i,
+              rectangle);
+        }
 
-          for (int i = -2; i <= 2; i++) {
+        if (i == 2 || i == 0 || i == -2) {
 
-            float spaceX = gridCellCenterX - (i * gridSize) * componentX;
-            float spaceY = gridCellCenterY - (i * gridSize) * componentY;
-            Rectangle rectangle = new Rectangle(spaceX - (gridSize / 2.0f),
-                spaceY - (gridSize / 2.0f), gridSize, gridSize);
+          for (int j = 1; j <= (i == -2 || i == 2 ? 5 : 4); j++) {
+
+            rectangle = new Rectangle(
+                (spaceX - (j * gridSize) * (float) Math.cos(playerAngle)) - (gridSize / 2.0f),
+                (spaceY - (j * gridSize) * (float) Math.sin(playerAngle)) - (gridSize / 2.0f),
+                gridSize, gridSize);
 
             if (i == -2) {
-              // safe space
-              boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber),
-                  playerAngle - (float) Math.PI);
-              boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber), rectangle);
-            } else {
-              // home entry
-              boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - i,
-                  playerAngle - (float) Math.PI);
-              boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - i,
-                  rectangle);
-            }
-
-            if (i == 2 || i == 0 || i == -2) {
-
-              float componentX2 = (float) Math.cos(playerAngle);
-              float componentY2 = (float) Math.sin(playerAngle);
-
-              for (int j = 1; j <= (i == -2 || i == 2 ? 5 : 4); j++) {
-
-                rectangle = new Rectangle(
-                    (spaceX - (j * gridSize) * componentX2) - (gridSize / 2.0f),
-                    (spaceY - (j * gridSize) * componentY2) - (gridSize / 2.0f), gridSize,
-                    gridSize);
-
-                if (i == -2) {
-                  // left side
-                  if (j != 5) {
-                    boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber) + j,
-                        playerAngle - (float) Math.PI);
-                  }
-                  Rectangle rectangleBefore = boardIndexToBoundsMap.get(
-                      board.getSafeBoardIndex(playerNumber) + j);
-                  if (rectangleBefore != null) {
-                    // for the transition spaces, average the location to make it look smoother
-                    rectangle = new Rectangle((rectangle.getX() + rectangleBefore.getX()) / 2.0f,
-                        (rectangle.getY() + rectangleBefore.getY()) / 2.0f, rectangle.getWidth(),
-                        rectangle.getHeight());
-                  }
-                  boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + j,
-                      rectangle);
-                } else if (i == 0) {
-                  // home spaces
-                  boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
-                      playerAngle - (float) Math.PI);
-                  boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
-                      rectangle);
-                } else {
-                  // right side
-                  if (j == 5) {
-                    float transitionAngle = (float) (2.0 * Math.PI
-                        * ((double) (playerNumber - 0.5) / (double) board.getNumberOfPlayers())
-                        - Math.PI / 2.0);
-                    boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
-                        transitionAngle);
-                  } else {
-                    boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
-                        playerAngle - (float) Math.PI);
-                  }
-                  Rectangle rectangleBefore = boardIndexToBoundsMap.get(
-                      board.getHomeEntryBoardIndex(playerNumber) - 2 - j);
-                  if (rectangleBefore != null) {
-                    // for the transition spaces, average the location to make it look smoother
-                    rectangle = new Rectangle((rectangle.getX() + rectangleBefore.getX()) / 2.0f,
-                        (rectangle.getY() + rectangleBefore.getY()) / 2.0f, rectangle.getWidth(),
-                        rectangle.getHeight());
-                  }
-                  boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
-                      rectangle);
-                }
-
+              // left side
+              if (j != 5) {
+                boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber) + j,
+                    playerAngle - (float) Math.PI);
               }
-
+              Rectangle rectangleBefore = boardIndexToBoundsMap.get(
+                  board.getSafeBoardIndex(playerNumber) + j);
+              if (rectangleBefore != null) {
+                // for the transition spaces, average the location to make it look smoother
+                rectangle = new Rectangle((rectangle.getX() + rectangleBefore.getX()) / 2.0f,
+                    (rectangle.getY() + rectangleBefore.getY()) / 2.0f, rectangle.getWidth(),
+                    rectangle.getHeight());
+              }
+              boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + j,
+                  rectangle);
+            } else if (i == 0) {
+              // home spaces
+              boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
+                  playerAngle - (float) Math.PI);
+              boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + j - 1,
+                  rectangle);
+            } else {
+              // right side
+              if (j == 5) {
+                float transitionAngle = (float) (2.0 * Math.PI
+                    * ((double) (playerNumber - 0.5) / (double) board.getNumberOfPlayers())
+                    - Math.PI / 2.0);
+                boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
+                    transitionAngle);
+              } else {
+                boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
+                    playerAngle - (float) Math.PI);
+              }
+              Rectangle rectangleBefore = boardIndexToBoundsMap.get(
+                  board.getHomeEntryBoardIndex(playerNumber) - 2 - j);
+              if (rectangleBefore != null) {
+                // for the transition spaces, average the location to make it look smoother
+                rectangle = new Rectangle((rectangle.getX() + rectangleBefore.getX()) / 2.0f,
+                    (rectangle.getY() + rectangleBefore.getY()) / 2.0f, rectangle.getWidth(),
+                    rectangle.getHeight());
+              }
+              boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - j,
+                  rectangle);
             }
 
           }
@@ -209,6 +197,52 @@ public class GridBoardLayout implements BoardLayout {
 
       }
 
+    }
+
+    // start spaces
+    float startSpaceScaleFactor;
+    float startSpaceOffset;
+    switch (board.getNumberOfPlayers()) {
+      case 4:
+        startSpaceScaleFactor = 1.0f;
+        startSpaceOffset = 5.5f;
+        break;
+      case 6:
+        startSpaceScaleFactor = 0.87f;
+        startSpaceOffset = 5.2f;
+        break;
+      case 8:
+        startSpaceScaleFactor = 0.9f;
+        startSpaceOffset = 5.8f;
+        break;
+      case 10:
+        startSpaceScaleFactor = 0.85f;
+        startSpaceOffset = 5.8f;
+        break;
+      case 12:
+      // falls through
+      default:
+        startSpaceScaleFactor = 0.85f;
+        startSpaceOffset = 6.2f;
+        break;
+    }
+    for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
+      float playerAngle = (float) (2.0 * Math.PI * ((double) (playerNumber)
+          / (double) board.getNumberOfPlayers()) + Math.PI / 2.0);
+      float nextPlayerAngle = (float) (2.0 * Math.PI * ((double) (playerNumber + 1)
+          / (double) board.getNumberOfPlayers()) + Math.PI / 2.0);
+      float angle = (playerAngle + nextPlayerAngle) / 2.0f;
+      Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber) + 5);
+      for (int i = 0; i < Game.NUMBER_OF_MARBLES_PER_PLAYER; i++) {
+        float spaceX = rectangle.getX() - ((i - startSpaceOffset) * gridSize
+            * startSpaceScaleFactor) * (float) Math.cos(angle);
+        float spaceY = rectangle.getY() - ((i - startSpaceOffset) * gridSize
+            * startSpaceScaleFactor) * (float) Math.sin(angle);
+        boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + i,
+            new Rectangle(spaceX, spaceY, rectangle.getWidth(), rectangle.getHeight()));
+        boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + i,
+            angle - (float) Math.PI);
+      }
     }
 
     // calculate the size of a card on the board based using the size of the marbles
