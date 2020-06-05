@@ -5,6 +5,7 @@
 
 package com.exit104.maurersmarbles;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import org.junit.After;
@@ -117,7 +118,8 @@ public class GridBoardLayout2Test {
 
     Board board = new Board(4);
     GridBoardLayout2 instance = new GridBoardLayout2(board);
-    instance.getBoundsForDiscardPile();
+    Rectangle rectangle = instance.getBoundsForDiscardPile();
+    assertTrue(rectangle != null);
 
   }
 
@@ -151,10 +153,14 @@ public class GridBoardLayout2Test {
       // do nothing
     }
 
-    board = new Board(4);
-    instance = new GridBoardLayout2(board);
-    boardIndex = 0;
-    instance.getBoundsForMarble(boardIndex);
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
+      board = new Board(numberOfPlayers);
+      instance = new GridBoardLayout2(board);
+      for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
+        Rectangle rectangle = instance.getBoundsForMarble(boardIndex);
+        assertTrue(rectangle != null);
+      }
+    }
 
   }
 
@@ -193,7 +199,8 @@ public class GridBoardLayout2Test {
       board = new Board(numberOfPlayers);
       instance = new GridBoardLayout2(board);
       for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
-        instance.getBoundsForSpace(boardIndex);
+        Rectangle rectangle = instance.getBoundsForSpace(boardIndex);
+        assertTrue(rectangle != null);
       }
     }
 
