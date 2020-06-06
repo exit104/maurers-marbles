@@ -61,7 +61,7 @@ public class CurvedBoardLayout implements BoardLayout {
 
   /**
    * Creates a new CurvedBoardLayout for the given board. By default, the width and height of the
-   * board layout are defined to be a unit square (1.0 x 1.0).
+   * board layout is defined to be a unit square (1.0 x 1.0).
    *
    * @param board the board
    * @throws NullPointerException if the given board is null

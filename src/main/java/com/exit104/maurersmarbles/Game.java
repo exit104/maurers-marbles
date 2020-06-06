@@ -464,7 +464,7 @@ public class Game {
    * @return the next player number
    * @throws IllegalArgumentException if the given player number is invalid
    */
-  protected int getNextPlayerNumber(int playerNumber) {
+  public int getNextPlayerNumber(int playerNumber) {
     Preconditions.checkArgument(playerNumber >= 0 && playerNumber < numberOfPlayers,
         "Invalid player number");
     return (playerNumber + 1) % numberOfPlayers;
