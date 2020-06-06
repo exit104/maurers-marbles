@@ -26,7 +26,7 @@ public class CurvedBoardLayout implements BoardLayout {
   /**
    * The card scale factor relative to the size of a grid cell.
    */
-  protected static final float CARD_SCALE_FACTOR = 1.0f;
+  protected static final float CARD_SCALE_FACTOR = 0.65f;
   /**
    * The size of a grid cell on the board.
    */
@@ -188,7 +188,7 @@ public class CurvedBoardLayout implements BoardLayout {
 
       case 4:
 
-        gridSize = 17.0f;
+        gridSize = 15.0f;
         gridCellSize = Math.min(width / gridSize, height / gridSize);
 
         for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
@@ -267,7 +267,7 @@ public class CurvedBoardLayout implements BoardLayout {
 
       case 6:
 
-        gridSize = 20.0f;
+        gridSize = 18.0f;
         gridCellSize = Math.min(width / gridSize, height / gridSize);
 
         for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
@@ -434,7 +434,7 @@ public class CurvedBoardLayout implements BoardLayout {
 
       case 8:
 
-        gridSize = 25.0f;
+        gridSize = 22.0f;
         gridCellSize = Math.min(width / gridSize, height / gridSize);
 
         for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
@@ -559,7 +559,7 @@ public class CurvedBoardLayout implements BoardLayout {
 
       case 10:
 
-        gridSize = 30.0f;
+        gridSize = 26.0f;
         gridCellSize = Math.min(width / gridSize, height / gridSize);
 
         for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
@@ -795,7 +795,7 @@ public class CurvedBoardLayout implements BoardLayout {
 
       case 12:
 
-        gridSize = 30.0f;
+        gridSize = 28.0f;
         gridCellSize = Math.min(width / gridSize, height / gridSize);
 
         for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
