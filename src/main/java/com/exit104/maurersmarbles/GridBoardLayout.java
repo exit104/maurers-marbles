@@ -211,7 +211,7 @@ public class GridBoardLayout implements BoardLayout {
 
     }
 
-    // calculate the size of a card on the board based using the size of the marbles
+    // calculate the size of a card on the board based using the grid size
     float cardWidth = Card.WIDTH * gridSize * CARD_SCALE_FACTOR;
     float cardHeight = Card.HEIGHT * gridSize * CARD_SCALE_FACTOR;
     discardPileRectangle = new Rectangle(0.5f - (cardWidth / 2.0f), 0.5f - (cardHeight / 2.0f),
