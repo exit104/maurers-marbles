@@ -72,6 +72,7 @@ public class RectangleBoardLayout implements BoardLayout {
    * @param width the width of the board
    * @param height the height of the board
    */
+  @SuppressWarnings("PMD.UselessParentheses")
   public final void update(float width, float height) {
 
     // calculate the distance for the perimeter spaces
@@ -105,9 +106,10 @@ public class RectangleBoardLayout implements BoardLayout {
           / (float) board.getNumberOfPlayers()));
 
       for (int i = 1; i < numberOfRows - 1; i++) {
-        float centerX = width / 2.0f - (float) Math.cos(angle) * width / 2.0f - gridCellSize * 1.5f;
-        float centerY = height / 2.0f + (float) Math.cos(angle) * height / 2.0f
-            - gridCellSize * 1.5f - ySpacing * i;
+        float centerX = (width / 2.0f) - (float) Math.cos(angle) * ((width / 2.0f) - (gridCellSize
+            * 1.5f));
+        float centerY = (height / 2.0f) + (float) Math.cos(angle) * ((height / 2.0f)
+            - (gridCellSize * 1.5f) - (ySpacing * i));
         int boardIndex = (board.getHomeEntryBoardIndex(playerNumber) + i + numberOfColumns)
             % board.getNumberOfPerimeterSpaces();
         boardIndexToBoundsMap.put(boardIndex, new Rectangle(
@@ -117,9 +119,9 @@ public class RectangleBoardLayout implements BoardLayout {
       }
 
       for (int i = 0; i <= numberOfColumns; i++) {
-        float centerX = width / 2.0f + (float) Math.cos(angle) * -xSpacing * i;
-        float centerY = height / 2.0f + (float) Math.cos(angle) * height / 2.0f
-            - gridCellSize * 1.5f;
+        float centerX = (width / 2.0f) + (float) Math.cos(angle) * (-xSpacing * i);
+        float centerY = (height / 2.0f) + (float) Math.cos(angle) * ((height / 2.0f)
+            - (gridCellSize * 1.5f));
         int boardIndex = (board.getHomeEntryBoardIndex(playerNumber) + i)
             % board.getNumberOfPerimeterSpaces();
         boardIndexToBoundsMap.put(boardIndex, new Rectangle(
@@ -141,8 +143,9 @@ public class RectangleBoardLayout implements BoardLayout {
           / (float) board.getNumberOfPlayers()));
 
       for (int i = 0; i < numberOfRows; i++) {
-        float centerX = width / 2.0f - (float) Math.sin(angle) * width / 2.0f - gridCellSize * 1.5f;
-        float centerY = height / 2.0f + (float) Math.sin(angle) * -ySpacing * i;
+        float centerX = (width / 2.0f) - (float) Math.sin(angle) * ((width / 2.0f)
+            - (gridCellSize * 1.5f));
+        float centerY = (height / 2.0f) + (float) Math.sin(angle) * (-ySpacing * i);
         int boardIndex = (board.getHomeEntryBoardIndex(playerNumber) + i)
             % board.getNumberOfPerimeterSpaces();
         boardIndexToBoundsMap.put(boardIndex, new Rectangle(
@@ -156,10 +159,10 @@ public class RectangleBoardLayout implements BoardLayout {
       }
 
       for (int i = 1; i < numberOfColumns; i++) {
-        float centerX = width / 2.0f - (float) Math.sin(angle) * width / 2.0f
-            - gridCellSize * 1.5f - xSpacing * i;
-        float centerY = height / 2.0f - (float) Math.sin(angle) * height / 2.0f
-            - gridCellSize * 1.5f;
+        float centerX = (width / 2.0f) - (float) Math.sin(angle) * ((width / 2.0f)
+            - (gridCellSize * 1.5f) - (xSpacing * i));
+        float centerY = (height / 2.0f) - (float) Math.sin(angle) * ((height / 2.0f)
+            - (gridCellSize * 1.5f));
         int boardIndex = (board.getHomeEntryBoardIndex(playerNumber) + i + numberOfRows - 1)
             % board.getNumberOfPerimeterSpaces();
         boardIndexToBoundsMap.put(boardIndex, new Rectangle(
