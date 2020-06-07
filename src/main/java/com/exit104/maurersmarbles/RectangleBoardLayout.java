@@ -108,7 +108,29 @@ public class RectangleBoardLayout implements BoardLayout {
     float spacingY = height / numberOfRows;
 
     // calculate the board index offset for the space in the upper left corner
-    int boardIndex = board.getHomeEntryBoardIndex(2) - ((numberOfColumns - 2) / 2);
+    int boardIndex;
+    if (board.getNumberOfPlayers() == 4) {
+      boardIndex = board.getHomeEntryBoardIndex(2) - ((numberOfColumns - 2) / 2);
+    } else if (board.getNumberOfPlayers() == 6) {
+      if (width > height) {
+        boardIndex = board.getHomeEntryBoardIndex(1) + ((numberOfRows - 2) / 2);
+      } else {
+        boardIndex = board.getHomeEntryBoardIndex(3) - ((numberOfColumns - 2) / 2);
+      }
+    } else if (board.getNumberOfPlayers() == 8) {
+      if (width > height) {
+        boardIndex = board.getHomeEntryBoardIndex(2) + ((numberOfRows - 2) / 2);
+      } else {
+        boardIndex = board.getHomeEntryBoardIndex(4) - ((numberOfColumns - 2) / 2);
+      }
+    } else {
+      if (width > height) {
+        boardIndex = board.getHomeEntryBoardIndex(5) - ((numberOfColumns - 2) / 2);
+      } else {
+        boardIndex = board.getHomeEntryBoardIndex(2) + ((numberOfRows - 2) / 2);
+      }
+    }
+
     int column;
     int row;
 
@@ -118,9 +140,9 @@ public class RectangleBoardLayout implements BoardLayout {
       boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
           gridCellSize, gridCellSize));
       if (column == 1) {
-        boardIndexToAngleMap.put(boardIndex, (float) Math.PI * 0.25f);
+        boardIndexToAngleMap.put(boardIndex, 7.0f * (float) Math.PI / 4.0f);
       } else {
-        boardIndexToAngleMap.put(boardIndex, (float) Math.PI * 0.5f);
+        boardIndexToAngleMap.put(boardIndex, 3.0f * (float) Math.PI / 2.0f);
       }
       boardIndex = (boardIndex + 1) % board.getNumberOfPerimeterSpaces();
     }
@@ -131,7 +153,7 @@ public class RectangleBoardLayout implements BoardLayout {
       boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
           gridCellSize, gridCellSize));
       if (row == 1) {
-        boardIndexToAngleMap.put(boardIndex, (float) Math.PI * 0.75f);
+        boardIndexToAngleMap.put(boardIndex, 5.0f * (float) Math.PI / 4.0f);
       } else {
         boardIndexToAngleMap.put(boardIndex, (float) Math.PI);
       }
@@ -144,9 +166,9 @@ public class RectangleBoardLayout implements BoardLayout {
       boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
           gridCellSize, gridCellSize));
       if (column == numberOfColumns - 2) {
-        boardIndexToAngleMap.put(boardIndex, -(float) Math.PI * 0.75f);
+        boardIndexToAngleMap.put(boardIndex, 3.0f * (float) Math.PI / 4.0f);
       } else {
-        boardIndexToAngleMap.put(boardIndex, -(float) Math.PI * 0.5f);
+        boardIndexToAngleMap.put(boardIndex, (float) Math.PI / 2.0f);
       }
       boardIndex = (boardIndex + 1) % board.getNumberOfPerimeterSpaces();
     }
@@ -157,7 +179,7 @@ public class RectangleBoardLayout implements BoardLayout {
       boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
           gridCellSize, gridCellSize));
       if (row == numberOfRows - 2) {
-        boardIndexToAngleMap.put(boardIndex, -(float) Math.PI * 0.25f);
+        boardIndexToAngleMap.put(boardIndex, (float) Math.PI / 4.0f);
       } else {
         boardIndexToAngleMap.put(boardIndex, 0.0f);
       }
@@ -166,34 +188,32 @@ public class RectangleBoardLayout implements BoardLayout {
 
     for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
 
-      float angle = (float) (2.0 * Math.PI * ((float) playerNumber
-          / (float) board.getNumberOfPlayers()));
+      float angle = boardIndexToAngleMap.get(board.getHomeEntryBoardIndex(playerNumber));
+      Rectangle rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(playerNumber));
 
       // home spaces
-      Rectangle rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(playerNumber));
       for (int offset = 0; offset < 4; offset++) {
-        float homeX = (float) (rectangle.getX() - ((1 + offset) * gridCellSize
-            * Math.cos(angle + (Math.PI / 2.0f))));
-        float homeY = (float) (rectangle.getY() - ((1 + offset) * gridCellSize
-            * Math.sin(angle + (Math.PI / 2.0f))));
+        float homeX = (float) (rectangle.getX() + ((1 + offset) * gridCellSize * Math.cos(angle)));
+        float homeY = (float) (rectangle.getY() - ((1 + offset) * gridCellSize * Math.sin(angle)));
         boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + offset,
             new Rectangle(homeX, homeY, gridCellSize, gridCellSize));
-        boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + offset,
-            angle - (float) Math.PI / 2.0f);
+        boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + offset, angle);
       }
 
-      // start spaces
-      float firstStartX = (float) (rectangle.getX() + (-1.5 * gridCellSize * Math.cos(angle))
-          + (gridCellSize * Math.cos(angle + Math.PI / 2.0f)));
-      float firstStartY = (float) (rectangle.getY() + (-1.5 * gridCellSize * Math.sin(angle))
-          + (gridCellSize * Math.sin(angle + Math.PI / 2.0f)));
+      float firstStartX = (float) (rectangle.getX()
+          + (1.5 * gridCellSize * Math.cos(angle + Math.PI / 2.0f))
+          + (gridCellSize * Math.cos(angle + Math.PI)));
+      float firstStartY = (float) (rectangle.getY()
+          - (1.5 * gridCellSize * Math.sin(angle + Math.PI / 2.0f))
+          - (gridCellSize * Math.sin(angle + Math.PI)));
       for (int offset = 0; offset < 4; offset++) {
-        float startX = (float) (firstStartX + (offset * gridCellSize * Math.cos(angle)));
-        float startY = (float) (firstStartY + (offset * gridCellSize * Math.sin(angle)));
+        float startX = (float) (firstStartX + (offset * gridCellSize * Math.cos(angle - Math.PI
+            / 2.0f)));
+        float startY = (float) (firstStartY - (offset * gridCellSize * Math.sin(angle - Math.PI
+            / 2.0f)));
         boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + offset,
             new Rectangle(startX, startY, gridCellSize, gridCellSize));
-        boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + offset,
-            angle - (float) Math.PI / 2.0f);
+        boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + offset, angle);
       }
 
     }
