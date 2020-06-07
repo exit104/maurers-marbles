@@ -69,7 +69,6 @@ public class GridBoardLayout2Test {
    * Test of getAngleForBoardIndex method, of class GridBoardLayout2.
    */
   @Test
-  @SuppressWarnings("PMD.UseUnderscoresInNumericLiterals")
   public void testGetAngleForBoardIndex() {
 
     System.out.println("getAngleForBoardIndex");
@@ -111,7 +110,6 @@ public class GridBoardLayout2Test {
    * Test of getBoundsForDiscardPile method, of class GridBoardLayout2.
    */
   @Test
-  @SuppressWarnings("PMD.UseUnderscoresInNumericLiterals")
   public void testGetBoundsForDiscardPile() {
 
     System.out.println("getBoundsForDiscardPile");

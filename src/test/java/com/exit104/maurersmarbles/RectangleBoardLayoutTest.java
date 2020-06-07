@@ -81,12 +81,12 @@ public class RectangleBoardLayoutTest {
       // test with valid board in landscape orientation
       board = new Board(numberOfPlayers);
       instance = new RectangleBoardLayout(board);
-      instance.update(2.0f, 1.0f);
+      instance.update(200.0f, 1.0f);
 
       // test with valid board in portrait orientation
       board = new Board(numberOfPlayers);
       instance = new RectangleBoardLayout(board);
-      instance.update(1.0f, 2.0f);
+      instance.update(1.0f, 200.0f);
 
     }
 
@@ -96,7 +96,6 @@ public class RectangleBoardLayoutTest {
    * Test of getAngleForBoardIndex method, of class RectangleBoardLayout.
    */
   @Test
-  @SuppressWarnings("PMD.UseUnderscoresInNumericLiterals")
   public void testGetAngleForBoardIndex() {
 
     System.out.println("getAngleForBoardIndex");
@@ -138,7 +137,6 @@ public class RectangleBoardLayoutTest {
    * Test of getBoundsForDiscardPile method, of class RectangleBoardLayout.
    */
   @Test
-  @SuppressWarnings("PMD.UseUnderscoresInNumericLiterals")
   public void testGetBoundsForDiscardPile() {
 
     System.out.println("getBoundsForDiscardPile");
