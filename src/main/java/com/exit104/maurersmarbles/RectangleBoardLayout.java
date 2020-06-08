@@ -191,29 +191,75 @@ public class RectangleBoardLayout implements BoardLayout {
       float angle = boardIndexToAngleMap.get(board.getHomeEntryBoardIndex(playerNumber));
       Rectangle rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(playerNumber));
 
+      boolean cornerSpace = rectangle.getX() == spacingX && rectangle.getY() == spacingY
+          || rectangle.getX() == spacingX * (numberOfColumns - 2) && rectangle.getY() == spacingY
+          || rectangle.getX() == spacingX * (numberOfColumns - 2)
+          && rectangle.getY() == spacingY * (numberOfRows - 2)
+          || rectangle.getX() == spacingX && rectangle.getY() == spacingY * (numberOfRows - 2);
+
       // home spaces
-      for (int offset = 0; offset < 4; offset++) {
-        float homeX = (float) (rectangle.getX() + ((1 + offset) * gridCellSize * Math.cos(angle)));
-        float homeY = (float) (rectangle.getY() - ((1 + offset) * gridCellSize * Math.sin(angle)));
-        boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + offset,
-            new Rectangle(homeX, homeY, gridCellSize, gridCellSize));
-        boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + offset, angle);
+      if (cornerSpace) {
+        for (int offset = 0; offset < 4; offset++) {
+          float homeX = (float) (rectangle.getX() + ((1 + offset)
+              * Math.sqrt(spacingX * spacingX + spacingY * spacingY) * Math.cos(angle)));
+          float homeY = (float) (rectangle.getY() - ((1 + offset)
+              * Math.sqrt(spacingX * spacingX + spacingY * spacingY) * Math.sin(angle)));
+          boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + offset,
+              new Rectangle(homeX, homeY, gridCellSize, gridCellSize));
+          boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + offset, angle);
+        }
+      } else {
+        for (int offset = 0; offset < 4; offset++) {
+          float homeX = (float) (rectangle.getX()
+              + ((1 + offset) * gridCellSize * Math.cos(angle)));
+          float homeY = (float) (rectangle.getY()
+              - ((1 + offset) * gridCellSize * Math.sin(angle)));
+          boardIndexToBoundsMap.put(board.getHomeMinBoardIndex(playerNumber) + offset,
+              new Rectangle(homeX, homeY, gridCellSize, gridCellSize));
+          boardIndexToAngleMap.put(board.getHomeMinBoardIndex(playerNumber) + offset, angle);
+        }
       }
 
-      float firstStartX = (float) (rectangle.getX()
-          + (1.5 * gridCellSize * Math.cos(angle + Math.PI / 2.0f))
-          + (gridCellSize * Math.cos(angle + Math.PI)));
-      float firstStartY = (float) (rectangle.getY()
-          - (1.5 * gridCellSize * Math.sin(angle + Math.PI / 2.0f))
-          - (gridCellSize * Math.sin(angle + Math.PI)));
-      for (int offset = 0; offset < 4; offset++) {
-        float startX = (float) (firstStartX + (offset * gridCellSize * Math.cos(angle - Math.PI
-            / 2.0f)));
-        float startY = (float) (firstStartY - (offset * gridCellSize * Math.sin(angle - Math.PI
-            / 2.0f)));
-        boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + offset,
-            new Rectangle(startX, startY, gridCellSize, gridCellSize));
-        boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + offset, angle);
+      // start spaces
+      if (cornerSpace) {
+        for (int offset = 0; offset < 2; offset++) {
+          float startX = (float) (rectangle.getX()
+              + (gridCellSize * Math.cos(angle + 3.0f * Math.PI / 4.0f))
+              + (offset * spacingX * Math.cos(angle + Math.PI / 4.0f)));
+          float startY = (float) (rectangle.getY()
+              - (gridCellSize * Math.sin(angle + 3.0f * Math.PI / 4.0f))
+              - (offset * gridCellSize * Math.sin(angle + Math.PI / 4.0f)));
+          boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + 1 - offset,
+              new Rectangle(startX, startY, gridCellSize, gridCellSize));
+          boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + offset, angle);
+        }
+        for (int offset = 2; offset < 4; offset++) {
+          float startX = (float) (rectangle.getX()
+              + (gridCellSize * Math.cos(angle + 5.0f * Math.PI / 4.0f))
+              + ((offset - 2) * gridCellSize * Math.cos(angle + 7.0f * Math.PI / 4.0f)));
+          float startY = (float) (rectangle.getY()
+              - (gridCellSize * Math.sin(angle + 5.0f * Math.PI / 4.0f))
+              - ((offset - 2) * gridCellSize * Math.sin(angle + 7.0f * Math.PI / 4.0f)));
+          boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + offset,
+              new Rectangle(startX, startY, gridCellSize, gridCellSize));
+          boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + offset, angle);
+        }
+      } else {
+        float firstStartX = (float) (rectangle.getX()
+            + (1.5 * gridCellSize * Math.cos(angle + Math.PI / 2.0f))
+            + (gridCellSize * Math.cos(angle + Math.PI)));
+        float firstStartY = (float) (rectangle.getY()
+            - (1.5 * gridCellSize * Math.sin(angle + Math.PI / 2.0f))
+            - (gridCellSize * Math.sin(angle + Math.PI)));
+        for (int offset = 0; offset < 4; offset++) {
+          float startX = (float) (firstStartX + (offset * gridCellSize * Math.cos(angle - Math.PI
+              / 2.0f)));
+          float startY = (float) (firstStartY - (offset * gridCellSize * Math.sin(angle - Math.PI
+              / 2.0f)));
+          boardIndexToBoundsMap.put(board.getStartMinBoardIndex(playerNumber) + offset,
+              new Rectangle(startX, startY, gridCellSize, gridCellSize));
+          boardIndexToAngleMap.put(board.getStartMinBoardIndex(playerNumber) + offset, angle);
+        }
       }
 
     }
