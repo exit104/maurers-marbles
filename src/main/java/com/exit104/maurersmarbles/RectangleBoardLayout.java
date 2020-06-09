@@ -137,7 +137,9 @@ public class RectangleBoardLayout implements BoardLayout {
     // top
     row = 1;
     for (column = 1; column < numberOfColumns - 2; column++) {
-      boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
+      boardIndexToBoundsMap.put(boardIndex, new Rectangle(
+          column * spacingX + (spacingX - gridCellSize) / 2.0f,
+          row * spacingY + (spacingY - gridCellSize) / 2.0f,
           gridCellSize, gridCellSize));
       if (column == 1) {
         boardIndexToAngleMap.put(boardIndex, 7.0f * (float) Math.PI / 4.0f);
@@ -150,7 +152,9 @@ public class RectangleBoardLayout implements BoardLayout {
     // right
     column = numberOfColumns - 2;
     for (row = 1; row <= numberOfRows - 3; row++) {
-      boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
+      boardIndexToBoundsMap.put(boardIndex, new Rectangle(
+          column * spacingX + (spacingX - gridCellSize) / 2.0f,
+          row * spacingY + (spacingY - gridCellSize) / 2.0f,
           gridCellSize, gridCellSize));
       if (row == 1) {
         boardIndexToAngleMap.put(boardIndex, 5.0f * (float) Math.PI / 4.0f);
@@ -163,7 +167,9 @@ public class RectangleBoardLayout implements BoardLayout {
     // bottom
     row = numberOfRows - 2;
     for (column = numberOfColumns - 2; column >= 2; column--) {
-      boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
+      boardIndexToBoundsMap.put(boardIndex, new Rectangle(
+          column * spacingX + (spacingX - gridCellSize) / 2.0f,
+          row * spacingY + (spacingY - gridCellSize) / 2.0f,
           gridCellSize, gridCellSize));
       if (column == numberOfColumns - 2) {
         boardIndexToAngleMap.put(boardIndex, 3.0f * (float) Math.PI / 4.0f);
@@ -176,7 +182,9 @@ public class RectangleBoardLayout implements BoardLayout {
     // left
     column = 1;
     for (row = numberOfRows - 2; row >= 2; row--) {
-      boardIndexToBoundsMap.put(boardIndex, new Rectangle(column * spacingX, row * spacingY,
+      boardIndexToBoundsMap.put(boardIndex, new Rectangle(
+          column * spacingX + (spacingX - gridCellSize) / 2.0f,
+          row * spacingY + (spacingY - gridCellSize) / 2.0f,
           gridCellSize, gridCellSize));
       if (row == numberOfRows - 2) {
         boardIndexToAngleMap.put(boardIndex, (float) Math.PI / 4.0f);
