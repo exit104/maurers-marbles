@@ -1227,7 +1227,7 @@ public class Game {
    * @return the previous player number
    * @throws IllegalArgumentException if the given player number is invalid
    */
-  protected int getPreviousPlayerNumber(int playerNumber) {
+  public int getPreviousPlayerNumber(int playerNumber) {
     Preconditions.checkArgument(playerNumber >= 0 && playerNumber < numberOfPlayers,
         "Invalid player number");
     return (playerNumber - 1) >= 0 ? playerNumber - 1 : numberOfPlayers - 1;

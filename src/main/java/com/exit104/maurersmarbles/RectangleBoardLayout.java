@@ -87,7 +87,7 @@ public class RectangleBoardLayout implements BoardLayout {
     if (numberOfRows % 2 == 0) {
       numberOfRows++;
     }
-    // make sure we have at least 11 rows for the player spaces
+    // make sure we have at least 11 rows for the player spaces, otherwise home spaces overlap
     numberOfRows = Math.max(11, numberOfRows);
     int numberOfColumns = (board.getNumberOfPerimeterSpaces() - (numberOfRows * 2)) / 2 + 2;
     // make sure we have at least 11 columns for the player spaces
