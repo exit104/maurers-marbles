@@ -94,7 +94,7 @@ public class Point {
 
   @Override
   public String toString() {
-    return String.format("(%f, %f)", x, y);
+    return new StringBuilder("(").append(x).append(", ").append(y).append(")").toString();
   }
 
 }

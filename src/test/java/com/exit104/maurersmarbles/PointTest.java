@@ -165,7 +165,7 @@ public class PointTest {
     System.out.println("toString");
 
     Point instance = new Point(1, 2);
-    String expResult = "(1.000000, 2.000000)";
+    String expResult = "(1.0, 2.0)";
     String result = instance.toString();
     assertEquals(expResult, result);
 
