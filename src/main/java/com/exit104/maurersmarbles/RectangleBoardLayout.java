@@ -49,6 +49,10 @@ public class RectangleBoardLayout implements BoardLayout {
    */
   protected final transient Map<Integer, Rectangle> boardIndexToBoundsMap = new TreeMap<>();
   /**
+   * The bounds for the card deck on the board.
+   */
+  protected transient Rectangle cardDeckRectangle;
+  /**
    * The bounds for the discard pile on the board.
    */
   protected transient Rectangle discardPileRectangle;
@@ -275,8 +279,10 @@ public class RectangleBoardLayout implements BoardLayout {
     // calculate the size of a card on the board based using the grid size
     float cardWidth = Card.WIDTH * gridCellSize * CARD_SCALE_FACTOR;
     float cardHeight = Card.HEIGHT * gridCellSize * CARD_SCALE_FACTOR;
-    discardPileRectangle = new Rectangle(width / 2.0f - cardWidth / 2.0f, height / 2.0f
-        - cardHeight / 2.0f, cardWidth, cardHeight);
+    cardDeckRectangle = new Rectangle(width / 2.0f - cardWidth, height / 2.0f - cardHeight,
+        cardWidth, cardHeight);
+    discardPileRectangle = new Rectangle(width / 2.0f + cardWidth, height / 2.0f + cardHeight,
+        cardWidth, cardHeight);
 
   }
 
@@ -292,6 +298,11 @@ public class RectangleBoardLayout implements BoardLayout {
     Preconditions.checkArgument(boardIndex >= 0
         && boardIndex < board.getNumberOfPlayableSpaces(), "Invalid board index");
     return boardIndexToBoundsMap.get(boardIndex);
+  }
+
+  @Override
+  public Rectangle getBoundsForCardDeck() {
+    return cardDeckRectangle;
   }
 
   @Override

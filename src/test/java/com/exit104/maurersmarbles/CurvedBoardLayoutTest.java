@@ -73,22 +73,54 @@ public class CurvedBoardLayoutTest {
 
     System.out.println("update");
 
-    // test with all valid number of players with both screen orientations
-    Board board;
-    CurvedBoardLayout instance;
+    // test with all valid number of players
     for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
-
-      // test with valid board in landscape orientation
-      board = new Board(numberOfPlayers);
-      instance = new CurvedBoardLayout(board);
+      Board board = new Board(numberOfPlayers);
+      CurvedBoardLayout instance = new CurvedBoardLayout(board);
       instance.update(2.0f, 1.0f);
-
-      // test with valid board in portrait orientation
-      board = new Board(numberOfPlayers);
-      instance = new CurvedBoardLayout(board);
-      instance.update(1.0f, 2.0f);
-
     }
+
+  }
+
+  /**
+   * Test of updateEightPlayers method, of class CurvedBoardLayout.
+   */
+  @Test
+  public void testUpdateEightPlayers() {
+
+    System.out.println("updateEightPlayers");
+
+    Board board = new Board(8);
+    CurvedBoardLayout instance = new CurvedBoardLayout(board);
+    instance.updateEightPlayers(2.0f, 1.0f);
+
+  }
+
+  /**
+   * Test of updateFourPlayers method, of class CurvedBoardLayout.
+   */
+  @Test
+  public void testUpdateFourPlayers() {
+
+    System.out.println("updateFourPlayers");
+
+    Board board = new Board(4);
+    CurvedBoardLayout instance = new CurvedBoardLayout(board);
+    instance.updateFourPlayers(2.0f, 1.0f);
+
+  }
+
+  /**
+   * Test of updateSixPlayers method, of class CurvedBoardLayout.
+   */
+  @Test
+  public void testUpdateSixPlayers() {
+
+    System.out.println("updateSixPlayers");
+
+    Board board = new Board(6);
+    CurvedBoardLayout instance = new CurvedBoardLayout(board);
+    instance.updateSixPlayers(2.0f, 1.0f);
 
   }
 
@@ -96,7 +128,6 @@ public class CurvedBoardLayoutTest {
    * Test of getAngleForBoardIndex method, of class CurvedBoardLayout.
    */
   @Test
-  @SuppressWarnings("PMD.UseUnderscoresInNumericLiterals")
   public void testGetAngleForBoardIndex() {
 
     System.out.println("getAngleForBoardIndex");
@@ -135,18 +166,36 @@ public class CurvedBoardLayoutTest {
   }
 
   /**
+   * Test of getBoundsForCardDeck method, of class CurvedBoardLayout.
+   */
+  @Test
+  public void testGetBoundsForCardDeck() {
+
+    System.out.println("getBoundsForCardDeck");
+
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
+      Board board = new Board(numberOfPlayers);
+      CurvedBoardLayout instance = new CurvedBoardLayout(board);
+      Rectangle rectangle = instance.getBoundsForCardDeck();
+      assertTrue(rectangle != null);
+    }
+
+  }
+
+  /**
    * Test of getBoundsForDiscardPile method, of class CurvedBoardLayout.
    */
   @Test
-  @SuppressWarnings("PMD.UseUnderscoresInNumericLiterals")
   public void testGetBoundsForDiscardPile() {
 
     System.out.println("getBoundsForDiscardPile");
 
-    Board board = new Board(4);
-    CurvedBoardLayout instance = new CurvedBoardLayout(board);
-    Rectangle rectangle = instance.getBoundsForDiscardPile();
-    assertTrue(rectangle != null);
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
+      Board board = new Board(numberOfPlayers);
+      CurvedBoardLayout instance = new CurvedBoardLayout(board);
+      Rectangle rectangle = instance.getBoundsForDiscardPile();
+      assertTrue(rectangle != null);
+    }
 
   }
 

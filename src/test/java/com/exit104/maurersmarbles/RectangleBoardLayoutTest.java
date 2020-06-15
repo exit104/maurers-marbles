@@ -134,6 +134,23 @@ public class RectangleBoardLayoutTest {
   }
 
   /**
+   * Test of getBoundsForCardDeck method, of class RectangleBoardLayout.
+   */
+  @Test
+  public void testGetBoundsForCardDeck() {
+
+    System.out.println("getBoundsForCardDeck");
+
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
+      Board board = new Board(numberOfPlayers);
+      RectangleBoardLayout instance = new RectangleBoardLayout(board);
+      Rectangle rectangle = instance.getBoundsForCardDeck();
+      assertTrue(rectangle != null);
+    }
+
+  }
+
+  /**
    * Test of getBoundsForDiscardPile method, of class RectangleBoardLayout.
    */
   @Test
@@ -141,10 +158,12 @@ public class RectangleBoardLayoutTest {
 
     System.out.println("getBoundsForDiscardPile");
 
-    Board board = new Board(4);
-    RectangleBoardLayout instance = new RectangleBoardLayout(board);
-    Rectangle rectangle = instance.getBoundsForDiscardPile();
-    assertTrue(rectangle != null);
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
+      Board board = new Board(numberOfPlayers);
+      RectangleBoardLayout instance = new RectangleBoardLayout(board);
+      Rectangle rectangle = instance.getBoundsForDiscardPile();
+      assertTrue(rectangle != null);
+    }
 
   }
 

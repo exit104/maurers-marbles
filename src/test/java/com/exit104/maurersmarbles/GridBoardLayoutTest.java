@@ -107,6 +107,23 @@ public class GridBoardLayoutTest {
   }
 
   /**
+   * Test of getBoundsForCardDeck method, of class GridBoardLayout.
+   */
+  @Test
+  public void testGetBoundsForCardDeck() {
+
+    System.out.println("getBoundsForCardDeck");
+
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
+      Board board = new Board(numberOfPlayers);
+      GridBoardLayout instance = new GridBoardLayout(board);
+      Rectangle rectangle = instance.getBoundsForCardDeck();
+      assertTrue(rectangle != null);
+    }
+
+  }
+
+  /**
    * Test of getBoundsForDiscardPile method, of class GridBoardLayout.
    */
   @Test
@@ -114,10 +131,12 @@ public class GridBoardLayoutTest {
 
     System.out.println("getBoundsForDiscardPile");
 
-    Board board = new Board(4);
-    GridBoardLayout instance = new GridBoardLayout(board);
-    Rectangle rectangle = instance.getBoundsForDiscardPile();
-    assertTrue(rectangle != null);
+    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
+      Board board = new Board(numberOfPlayers);
+      GridBoardLayout instance = new GridBoardLayout(board);
+      Rectangle rectangle = instance.getBoundsForDiscardPile();
+      assertTrue(rectangle != null);
+    }
 
   }
 

@@ -33,6 +33,13 @@ public interface BoardLayout {
   Rectangle getBoundsForBoardIndex(int boardIndex);
 
   /**
+   * Returns the bounds of the card deck on the board.
+   *
+   * @return the bounds of the card deck on the board
+   */
+  Rectangle getBoundsForCardDeck();
+
+  /**
    * Returns the bounds of the discard pile on the board.
    *
    * @return the bounds of the discard pile on the board
