@@ -40,11 +40,6 @@ public class CurvedBoardLayout implements BoardLayout {
    */
   protected static final float SPACE_SCALE_FACTOR = 0.75f;
   /**
-   * The number of interpolated spaces in between each player's row of spaces and the next player's
-   * row of spaces.
-   */
-  protected static final int NUMBER_OF_INTERPOLATED_SPACES = 11;
-  /**
    * The map that contains the angles for each board index. The key into the map is the board index
    * and the value is the angle.
    */
@@ -86,6 +81,23 @@ public class CurvedBoardLayout implements BoardLayout {
    */
   protected void makeInterpolatedSpaces(int playerNumber, Point point1, Point point2,
       Point point3) {
+    makeInterpolatedSpaces(playerNumber, point1, point2, point3,
+        board.getSafeBoardIndex(playerNumber), 11);
+  }
+
+  /**
+   * Makes the interpolated spaces for the given player number starting with the given board index
+   * and interpolating the given number of spaces.
+   *
+   * @param playerNumber the player number to make the interpolated spaces for
+   * @param point1 the starting point for the given player number
+   * @param point2 the middle control point for the bezier curve
+   * @param point3 the ending point for the next player number
+   * @param boardIndex the board index to start interpolating at
+   * @param numberOfSpaces the number of spaces to interpolate
+   */
+  protected void makeInterpolatedSpaces(int playerNumber, Point point1, Point point2,
+      Point point3, int boardIndex, int numberOfSpaces) {
 
     // TODO preconditions?
     SmoothBezierInterpolator interpolator = new SmoothBezierInterpolator(
@@ -93,12 +105,12 @@ public class CurvedBoardLayout implements BoardLayout {
         point2.getX(), point2.getY(),
         point3.getX(), point3.getY());
 
-    for (int i = 0; i < NUMBER_OF_INTERPOLATED_SPACES; i++) {
+    for (int i = 0; i < numberOfSpaces; i++) {
 
-      float weight = (float) i / (float) (NUMBER_OF_INTERPOLATED_SPACES - 1);
+      float weight = (float) i / (float) (numberOfSpaces - 1);
       float centerX = interpolator.interpolateX(weight);
       float centerY = interpolator.interpolateY(weight);
-      boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + i,
+      boardIndexToBoundsMap.put(boardIndex + i,
           new Rectangle(centerX - (gridCellSize / 2.0f), centerY - (gridCellSize / 2.0f),
               gridCellSize, gridCellSize));
 
@@ -109,8 +121,8 @@ public class CurvedBoardLayout implements BoardLayout {
       float angle = (float) (((angleTo - angleFrom) + (Math.PI * 3.0f)) % (Math.PI * 2.0f)
           - Math.PI);
       // calculate the shortest angle path so the space doesn't spin in a circle
-      angle = angleFrom + angle * ((float) i / (float) (NUMBER_OF_INTERPOLATED_SPACES - 1));
-      boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber) + i, angle);
+      angle = angleFrom + angle * ((float) i / (float) (numberOfSpaces - 1));
+      boardIndexToAngleMap.put(boardIndex + i, angle);
 
     }
 
@@ -188,478 +200,32 @@ public class CurvedBoardLayout implements BoardLayout {
   public final void update(float width, float height) {
 
     // TODO preconditions?
-    float gridSize;
-
     switch (board.getNumberOfPlayers()) {
-
-      case 4: {
-
+      case 4:
         updateFourPlayers(width, height);
-
-        float cardWidth = Card.WIDTH * gridCellSize * CARD_SCALE_FACTOR;
-        float cardHeight = Card.HEIGHT * gridCellSize * CARD_SCALE_FACTOR;
-        cardDeckRectangle = new Rectangle(width / 2.0f - cardWidth * 2.0f, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-        discardPileRectangle = new Rectangle(width / 2.0f + cardWidth, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-
         break;
-
-      }
-      case 6: {
-
+      case 6:
         updateSixPlayers(width, height);
-
-        float cardWidth = Card.WIDTH * gridCellSize * CARD_SCALE_FACTOR;
-        float cardHeight = Card.HEIGHT * gridCellSize * CARD_SCALE_FACTOR;
-        cardDeckRectangle = new Rectangle(width / 4.0f, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-        discardPileRectangle = new Rectangle(3.0f * width / 4.0f - cardWidth, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-
         break;
-
-      }
-      case 8: {
-
+      case 8:
         updateEightPlayers(width, height);
-
-        float cardWidth = Card.WIDTH * gridCellSize * CARD_SCALE_FACTOR;
-        float cardHeight = Card.HEIGHT * gridCellSize * CARD_SCALE_FACTOR;
-        cardDeckRectangle = new Rectangle(width / 4.0f, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-        discardPileRectangle = new Rectangle(3.0f * width / 4.0f - cardWidth, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-
         break;
-
-      }
-
-      case 10: {
-
-        gridSize = 26.0f;
-        gridCellSize = Math.min(width / gridSize, height / gridSize);
-
-        for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
-
-          // define the center point for the player's home entry space
-          float homeEntryCenterX = 0.0f;
-          float homeEntryCenterY = 0.0f;
-          float angle = 0.0f;
-          switch (playerNumber) {
-            case 0:
-              if (width > height) {
-                // bottom center
-                homeEntryCenterX = width / 2.0f;
-                homeEntryCenterY = height - (gridCellSize * 1.5f);
-                angle = (float) (2.0 * Math.PI);
-              } else {
-                // bottom left
-                homeEntryCenterX = width / 3.0f;
-                homeEntryCenterY = height - (gridCellSize * 1.5f);
-                angle = (float) (2.0 * Math.PI);
-              }
-              break;
-            case 1:
-              if (width > height) {
-                // bottom left
-                homeEntryCenterX = width / 4.0f;
-                homeEntryCenterY = height - (gridCellSize * 1.5f);
-                angle = (float) (2.0 * Math.PI);
-              } else {
-                // left bottom
-                homeEntryCenterX = gridCellSize * 1.5f;
-                homeEntryCenterY = height / 4.0f * 3.0f;
-                angle = (float) (2.0 * Math.PI * 0.25f);
-              }
-              break;
-            case 2:
-              if (width > height) {
-                // left bottom
-                homeEntryCenterX = gridCellSize * 1.5f;
-                homeEntryCenterY = height / 3.0f * 2.0f;
-                angle = (float) (2.0 * Math.PI * 0.25f);
-              } else {
-                // left center
-                homeEntryCenterX = gridCellSize * 1.5f;
-                homeEntryCenterY = height / 2.0f;
-                angle = (float) (2.0 * Math.PI * 0.25f);
-              }
-              break;
-            case 3:
-              if (width > height) {
-                // left top
-                homeEntryCenterX = gridCellSize * 1.5f;
-                homeEntryCenterY = height / 3.0f;
-                angle = (float) (2.0 * Math.PI * 0.25f);
-              } else {
-                // left top
-                homeEntryCenterX = gridCellSize * 1.5f;
-                homeEntryCenterY = height / 4.0f;
-                angle = (float) (2.0 * Math.PI * 0.25f);
-              }
-              break;
-            case 4:
-              if (width > height) {
-                // top left
-                homeEntryCenterX = width / 4.0f;
-                homeEntryCenterY = gridCellSize * 1.5f;
-                angle = (float) (2.0 * Math.PI * 0.5f);
-              } else {
-                // top left
-                homeEntryCenterX = width / 3.0f;
-                homeEntryCenterY = gridCellSize * 1.5f;
-                angle = (float) (2.0 * Math.PI * 0.5f);
-              }
-              break;
-            case 5:
-              if (width > height) {
-                // top center
-                homeEntryCenterX = width / 2.0f;
-                homeEntryCenterY = gridCellSize * 1.5f;
-                angle = (float) (2.0 * Math.PI * 0.5f);
-              } else {
-                // top right
-                homeEntryCenterX = width / 3.0f * 2.0f;
-                homeEntryCenterY = gridCellSize * 1.5f;
-                angle = (float) (2.0 * Math.PI * 0.5f);
-              }
-              break;
-            case 6:
-              if (width > height) {
-                // top right
-                homeEntryCenterX = width / 4.0f * 3.0f;
-                homeEntryCenterY = gridCellSize * 1.5f;
-                angle = (float) (2.0 * Math.PI * 0.5f);
-              } else {
-                // right top
-                homeEntryCenterX = width - (gridCellSize * 1.5f);
-                homeEntryCenterY = height / 4.0f;
-                angle = (float) (2.0 * Math.PI * 0.75f);
-              }
-              break;
-            case 7:
-              if (width > height) {
-                // right top
-                homeEntryCenterX = width - (gridCellSize * 1.5f);
-                homeEntryCenterY = height / 3.0f;
-                angle = (float) (2.0 * Math.PI * 0.75f);
-              } else {
-                // right center
-                homeEntryCenterX = width - (gridCellSize * 1.5f);
-                homeEntryCenterY = height / 4.0f * 2.0f;
-                angle = (float) (2.0 * Math.PI * 0.75f);
-              }
-              break;
-            case 8:
-              if (width > height) {
-                // right bottom
-                homeEntryCenterX = width - (gridCellSize * 1.5f);
-                homeEntryCenterY = height / 3.0f * 2.0f;
-                angle = (float) (2.0 * Math.PI * 0.75f);
-              } else {
-                // right bottom
-                homeEntryCenterX = width - (gridCellSize * 1.5f);
-                homeEntryCenterY = height / 4.0f * 3.0f;
-                angle = (float) (2.0 * Math.PI * 0.75f);
-              }
-              break;
-            case 9:
-              if (width > height) {
-                // bottom right
-                homeEntryCenterX = width / 4.0f * 3.0f;
-                homeEntryCenterY = height - (gridCellSize * 1.5f);
-                angle = (float) (2.0 * Math.PI);
-              } else {
-                // bottom right
-                homeEntryCenterX = width / 3.0f * 2.0f;
-                homeEntryCenterY = height - (gridCellSize * 1.5f);
-                angle = (float) (2.0 * Math.PI);
-              }
-              break;
-            default:
-              throw new IllegalStateException("Invalid player number: " + playerNumber);
-
-          }
-
-          makePlayerSpaces(playerNumber, homeEntryCenterX, homeEntryCenterY, angle);
-
-        }
-
-        for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
-
-          // current player's safe space
-          Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber));
-          Point point1 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
-              rectangle.getY() + (rectangle.getHeight() / 2.0f));
-          // next player's right most space along the home entry spaces
-          rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex((playerNumber + 1)
-              % board.getNumberOfPlayers()) - 2);
-          Point point3 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
-              rectangle.getY() + (rectangle.getHeight() / 2.0f));
-
-          // define the middle control point for the bezier curve
-          Point point2 = null;
-          float center = Math.min(width / 2.0f, height / 2.0f);
-          switch (playerNumber) {
-            case 0:
-              if (width > height) {
-                // bottom center
-                point2 = new Point((point1.getX() + point3.getX()) / 2.0f, height - center);
-              } else {
-                // bottom left
-                point2 = new Point(point1.getX(), point3.getY());
-              }
-              break;
-            case 1:
-              if (width > height) {
-                // bottom left
-                point2 = new Point(point1.getX(), point3.getY());
-              } else {
-                point2 = new Point(center, (point1.getY() + point3.getY()) / 2.0f);
-              }
-              break;
-            case 2:
-              // left bottom
-              point2 = new Point(center, (point1.getY() + point3.getY()) / 2.0f);
-              break;
-            case 3:
-              // left top
-              point2 = new Point(point3.getX(), point1.getY());
-              break;
-            case 4:
-              // top left
-              point2 = new Point((point1.getX() + point3.getX()) / 2.0f, center);
-              break;
-            case 5:
-              if (width > height) {
-                // top center
-                point2 = new Point((point1.getX() + point3.getX()) / 2.0f, center);
-              } else {
-                // top right
-                point2 = new Point(point1.getX(), point3.getY());
-              }
-              break;
-            case 6:
-              if (width > height) {
-                // top right
-                point2 = new Point(point1.getX(), point3.getY());
-              } else {
-                // right top
-                point2 = new Point(width - center, (point1.getY() + point3.getY()) / 2.0f);
-              }
-              break;
-            case 7:
-              // right top
-              point2 = new Point(width - center, (point1.getY() + point3.getY()) / 2.0f);
-              break;
-            case 8:
-              // right bottom
-              point2 = new Point(point3.getX(), point1.getY());
-              break;
-            case 9:
-              // bottom right
-              point2 = new Point((point1.getX() + point3.getX()) / 2.0f, height - center);
-              break;
-            default:
-              throw new IllegalStateException("Invalid player number: " + playerNumber);
-          }
-
-          makeInterpolatedSpaces(playerNumber, point1, point2, point3);
-
-        }
-
-        float cardWidth = Card.WIDTH * gridCellSize * CARD_SCALE_FACTOR;
-        float cardHeight = Card.HEIGHT * gridCellSize * CARD_SCALE_FACTOR;
-        cardDeckRectangle = new Rectangle(width / 4.0f, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-        discardPileRectangle = new Rectangle(3.0f * width / 4.0f - cardWidth, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-
+      case 10:
+        updateTenPlayers(width, height);
         break;
-
-      }
-
-      case 12: {
-
-        gridSize = 28.0f;
-        gridCellSize = Math.min(width / gridSize, height / gridSize);
-
-        for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
-
-          // define the center point for the player's home entry space
-          float homeEntryCenterX = 0.0f;
-          float homeEntryCenterY = 0.0f;
-          float angle = 0.0f;
-          switch (playerNumber) {
-            case 0:
-              // bottom center
-              homeEntryCenterX = width / 2.0f;
-              homeEntryCenterY = height - (gridCellSize * 1.5f);
-              angle = (float) (2.0 * Math.PI);
-              break;
-            case 1:
-              // bottom left
-              homeEntryCenterX = width / 4.0f;
-              homeEntryCenterY = height - (gridCellSize * 1.5f);
-              angle = (float) (2.0 * Math.PI);
-              break;
-            case 2:
-              // left bottom
-              homeEntryCenterX = gridCellSize * 1.5f;
-              homeEntryCenterY = height / 4.0f * 3.0f;
-              angle = (float) (2.0 * Math.PI * 0.25f);
-              break;
-            case 3:
-              // left center
-              homeEntryCenterX = gridCellSize * 1.5f;
-              homeEntryCenterY = height / 2.0f;
-              angle = (float) (2.0 * Math.PI * 0.25f);
-              break;
-            case 4:
-              // left top
-              homeEntryCenterX = gridCellSize * 1.5f;
-              homeEntryCenterY = height / 4.0f;
-              angle = (float) (2.0 * Math.PI * 0.25f);
-              break;
-            case 5:
-              // top left
-              homeEntryCenterX = width / 4.0f;
-              homeEntryCenterY = gridCellSize * 1.5f;
-              angle = (float) (2.0 * Math.PI * 0.5f);
-              break;
-            case 6:
-              // top center
-              homeEntryCenterX = width / 2.0f;
-              homeEntryCenterY = gridCellSize * 1.5f;
-              angle = (float) (2.0 * Math.PI * 0.5f);
-              break;
-            case 7:
-              // top right
-              homeEntryCenterX = width / 4.0f * 3.0f;
-              homeEntryCenterY = gridCellSize * 1.5f;
-              angle = (float) (2.0 * Math.PI * 0.5f);
-              break;
-            case 8:
-              // right top
-              homeEntryCenterX = width - (gridCellSize * 1.5f);
-              homeEntryCenterY = height / 4.0f;
-              angle = (float) (2.0 * Math.PI * 0.75f);
-              break;
-            case 9:
-              // right center
-              homeEntryCenterX = width - (gridCellSize * 1.5f);
-              homeEntryCenterY = height / 2.0f;
-              angle = (float) (2.0 * Math.PI * 0.75f);
-              break;
-            case 10:
-              // right bottom
-              homeEntryCenterX = width - (gridCellSize * 1.5f);
-              homeEntryCenterY = height / 4.0f * 3.0f;
-              angle = (float) (2.0 * Math.PI * 0.75f);
-              break;
-            case 11:
-              // bottom right
-              homeEntryCenterX = width / 4.0f * 3.0f;
-              homeEntryCenterY = height - (gridCellSize * 1.5f);
-              angle = (float) (2.0 * Math.PI);
-              break;
-            default:
-              throw new IllegalStateException("Invalid player number: " + playerNumber);
-
-          }
-
-          makePlayerSpaces(playerNumber, homeEntryCenterX, homeEntryCenterY, angle);
-
-        }
-
-        for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
-
-          // current player's safe space
-          Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber));
-          Point point1 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
-              rectangle.getY() + (rectangle.getHeight() / 2.0f));
-          // next player's right most space along the home entry spaces
-          rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex((playerNumber + 1)
-              % board.getNumberOfPlayers()) - 2);
-          Point point3 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
-              rectangle.getY() + (rectangle.getHeight() / 2.0f));
-
-          // define the middle control point for the bezier curve
-          Point point2 = null;
-          float center = Math.min(width / 2.0f, height / 2.0f);
-          switch (playerNumber) {
-            case 0:
-              // bottom center
-              point2 = new Point((point1.getX() + point3.getX()) / 2.0f, height - center);
-              break;
-            case 1:
-              // bottom left
-              point2 = new Point(point1.getX(), point3.getY());
-              break;
-            case 2:
-              // left bottom
-              point2 = new Point(center, (point1.getY() + point3.getY()) / 2.0f);
-              break;
-            case 3:
-              // left center
-              point2 = new Point(center, (point1.getY() + point3.getY()) / 2.0f);
-              break;
-            case 4:
-              // left top
-              point2 = new Point(point3.getX(), point1.getY());
-              break;
-            case 5:
-              // top left
-              point2 = new Point((point1.getX() + point3.getX()) / 2.0f, center);
-              break;
-            case 6:
-              // top center
-              point2 = new Point((point1.getX() + point3.getX()) / 2.0f, center);
-              break;
-            case 7:
-              // top right
-              point2 = new Point(point1.getX(), point3.getY());
-              break;
-            case 8:
-              // right top
-              point2 = new Point(width - center, (point1.getY() + point3.getY()) / 2.0f);
-              break;
-            case 9:
-              // right center
-              point2 = new Point(width - center, (point1.getY() + point3.getY()) / 2.0f);
-              break;
-            case 10:
-              // right bottom
-              point2 = new Point(point3.getX(), point1.getY());
-              break;
-            case 11:
-              // bottom right
-              point2 = new Point((point1.getX() + point3.getX()) / 2.0f, height - center);
-              break;
-            default:
-              throw new IllegalStateException("Invalid player number: " + playerNumber);
-          }
-
-          makeInterpolatedSpaces(playerNumber, point1, point2, point3);
-
-        }
-
-        float cardWidth = Card.WIDTH * gridCellSize * CARD_SCALE_FACTOR;
-        float cardHeight = Card.HEIGHT * gridCellSize * CARD_SCALE_FACTOR;
-        cardDeckRectangle = new Rectangle(width / 4.0f, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-        discardPileRectangle = new Rectangle(3.0f * width / 4.0f - cardWidth, height / 2.0f
-            - cardHeight / 2.0f, cardWidth, cardHeight);
-
+      case 12:
+        updateTwelvePlayers(width, height);
         break;
-
-      }
-
       default:
         throw new IllegalStateException("Invalid player number: " + board.getNumberOfPlayers());
-
     }
+
+    float cardWidth = Card.WIDTH * gridCellSize * CARD_SCALE_FACTOR;
+    float cardHeight = Card.HEIGHT * gridCellSize * CARD_SCALE_FACTOR;
+    cardDeckRectangle = new Rectangle(width / 4.0f, height / 2.0f
+        - cardHeight / 2.0f, cardWidth, cardHeight);
+    discardPileRectangle = new Rectangle(3.0f * width / 4.0f - cardWidth, height / 2.0f
+        - cardHeight / 2.0f, cardWidth, cardHeight);
 
   }
 
@@ -813,7 +379,7 @@ public class CurvedBoardLayout implements BoardLayout {
    */
   protected void updateFourPlayers(float width, float height) {
 
-    float gridSize = 13.0f;
+    float gridSize = 15.0f;
 
     gridCellSize = Math.min(width / gridSize, height / gridSize);
 
@@ -990,6 +556,308 @@ public class CurvedBoardLayout implements BoardLayout {
         rectangle.getY() + (rectangle.getHeight() / 2.0f));
     point2 = new Point(width - (width / 2.3f), height / 2.5f);
     makeInterpolatedSpaces(5, point1, point2, point3);
+
+  }
+
+  /**
+   * Updates the board layout for ten players using the given width and height.
+   *
+   * @param width the width of the board
+   * @param height the height of the board
+   */
+  protected void updateTenPlayers(float width, float height) {
+
+    float gridSize = 16.0f;
+
+    gridCellSize = Math.min(width / gridSize, height / gridSize);
+
+    // player 0, bottom center
+    float homeEntryCenterX = width / 2.0f;
+    float homeEntryCenterY = height - (gridCellSize * 1.5f);
+    float angle = (float) Math.PI / 2.0f;
+    makePlayerSpaces(0, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 1, bottom left center
+    homeEntryCenterX = 3.0f * width / 10.0f;
+    homeEntryCenterY = height - (gridCellSize * 1.5f);
+    angle = (float) Math.PI / 2.0f;
+    makePlayerSpaces(1, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 2, bottom left corner
+    homeEntryCenterX = gridCellSize * 2.45f;
+    homeEntryCenterY = height - (gridCellSize * 1.95f);
+    angle = (float) Math.PI / 2.5f;
+    makePlayerSpaces(2, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 3, top left corner
+    homeEntryCenterX = gridCellSize * 2.45f;
+    homeEntryCenterY = gridCellSize * 1.95f;
+    angle = 4.0f * (float) Math.PI / 2.5f;
+    makePlayerSpaces(3, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 4, top left center
+    homeEntryCenterX = 3.0f * width / 10.0f;
+    homeEntryCenterY = gridCellSize * 1.5f;
+    angle = 3.0f * (float) Math.PI / 2.0f;
+    makePlayerSpaces(4, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 5, top center
+    homeEntryCenterX = 5.0f * width / 10.0f;
+    homeEntryCenterY = gridCellSize * 1.5f;
+    angle = 3.0f * (float) Math.PI / 2.0f;
+    makePlayerSpaces(5, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 6, top right center
+    homeEntryCenterX = 7.0f * width / 10.0f;
+    homeEntryCenterY = gridCellSize * 1.5f;
+    angle = 3.0f * (float) Math.PI / 2.0f;
+    makePlayerSpaces(6, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 7, top right corner
+    homeEntryCenterX = width - (gridCellSize * 2.45f);
+    homeEntryCenterY = gridCellSize * 1.95f;
+    angle = 3.5f * (float) Math.PI / 2.5f;
+    makePlayerSpaces(7, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 8, bottom right corner
+    homeEntryCenterX = width - (gridCellSize * 2.45f);
+    homeEntryCenterY = height - (gridCellSize * 1.95f);
+    angle = 1.5f * (float) Math.PI / 2.5f;
+    makePlayerSpaces(8, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 9, bottom right center
+    homeEntryCenterX = 7.0f * width / 10.0f;
+    homeEntryCenterY = height - (gridCellSize * 1.5f);
+    angle = (float) Math.PI / 2.0f;
+    makePlayerSpaces(9, homeEntryCenterX, homeEntryCenterY, angle);
+
+    for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
+
+      // left side
+      Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber));
+      angle = boardIndexToAngleMap.get(board.getSafeBoardIndex(playerNumber));
+      float spaceCenterX = rectangle.getX() + (rectangle.getWidth() / 2.0f);
+      float spaceCenterY = rectangle.getY() + (rectangle.getHeight() / 2.0f);
+      for (int offset = 1; offset <= 3; offset++) {
+        float centerX = (float) (spaceCenterX + offset * gridCellSize * Math.cos(angle)
+            + offset * 0.15f * gridCellSize * Math.cos(angle - Math.PI / 2.0f));
+        float centerY = (float) (spaceCenterY - offset * gridCellSize * Math.sin(angle));
+        boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + offset,
+            new Rectangle(centerX - (gridCellSize / 2.0f), centerY - (gridCellSize / 2.0f),
+                gridCellSize, gridCellSize));
+        boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber) + offset,
+            angle - (float) Math.PI / 2.0f);
+      }
+
+      // right side
+      rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(playerNumber) - 2);
+      spaceCenterX = rectangle.getX() + (rectangle.getWidth() / 2.0f);
+      spaceCenterY = rectangle.getY() + (rectangle.getHeight() / 2.0f);
+      for (int offset = 1; offset <= 3; offset++) {
+        float centerX = (float) (spaceCenterX + offset * gridCellSize * Math.cos(angle)
+            + offset * 0.15f * gridCellSize * Math.cos(angle + Math.PI / 2.0f));
+        float centerY = (float) (spaceCenterY - offset * gridCellSize * Math.sin(angle));
+        boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - offset,
+            new Rectangle(centerX - (gridCellSize / 2.0f), centerY - (gridCellSize / 2.0f),
+                gridCellSize, gridCellSize));
+        boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - offset,
+            angle - (float) Math.PI / 2.0f);
+      }
+
+    }
+
+    // connector spaces
+    for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
+
+      if (playerNumber == 2 || playerNumber == 7) {
+
+        angle = boardIndexToAngleMap.get(board.getSafeBoardIndex(playerNumber));
+        Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber));
+        Point point1 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(
+            (playerNumber + 1) % board.getNumberOfPlayers()) - 2);
+        Point point3 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        Point point2 = new Point(width / 2.0f - width / 2.5f * (float) Math.sin(angle),
+            height / 2.0f);
+        makeInterpolatedSpaces(playerNumber, point1, point2, point3);
+
+      } else {
+
+        angle = boardIndexToAngleMap.get(board.getSafeBoardIndex(playerNumber));
+        Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber) + 3);
+        Point point1 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(
+            (playerNumber + 1) % board.getNumberOfPlayers()) - 5);
+        Point point3 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        Point point2 = new Point((point1.getX() + point3.getX()) / 2.0f,
+            height / 2.0f + height / 15.0f * (float) Math.sin(angle));
+        makeInterpolatedSpaces(playerNumber, point1, point2, point3,
+            board.getSafeBoardIndex(playerNumber) + 3, 5);
+
+      }
+
+    }
+
+  }
+
+  /**
+   * Updates the board layout for twelve players using the given width and height.
+   *
+   * @param width the width of the board
+   * @param height the height of the board
+   */
+  protected void updateTwelvePlayers(float width, float height) {
+
+    float gridSize = 18.0f;
+
+    gridCellSize = Math.min(width / gridSize, height / gridSize);
+
+    // player 0
+    float homeEntryCenterX = 5.0f * width / 12.0f;
+    float homeEntryCenterY = height - (gridCellSize * 1.5f);
+    float angle = (float) Math.PI / 2.0f;
+    makePlayerSpaces(0, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 1
+    homeEntryCenterX = 3.0f * width / 12.0f;
+    homeEntryCenterY = height - (gridCellSize * 1.5f);
+    angle = (float) Math.PI / 2.0f;
+    makePlayerSpaces(1, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 2
+    homeEntryCenterX = gridCellSize * 2.45f;
+    homeEntryCenterY = height - (gridCellSize * 1.95f);
+    angle = (float) Math.PI / 2.5f;
+    makePlayerSpaces(2, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 3
+    homeEntryCenterX = gridCellSize * 2.45f;
+    homeEntryCenterY = gridCellSize * 1.95f;
+    angle = 4.0f * (float) Math.PI / 2.5f;
+    makePlayerSpaces(3, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 4
+    homeEntryCenterX = 3.0f * width / 12.0f;
+    homeEntryCenterY = gridCellSize * 1.5f;
+    angle = 3.0f * (float) Math.PI / 2.0f;
+    makePlayerSpaces(4, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 5
+    homeEntryCenterX = 5.0f * width / 12.0f;
+    homeEntryCenterY = gridCellSize * 1.5f;
+    angle = 3.0f * (float) Math.PI / 2.0f;
+    makePlayerSpaces(5, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 6
+    homeEntryCenterX = 7.0f * width / 12.0f;
+    homeEntryCenterY = gridCellSize * 1.5f;
+    angle = 3.0f * (float) Math.PI / 2.0f;
+    makePlayerSpaces(6, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 7
+    homeEntryCenterX = 9.0f * width / 12.0f;
+    homeEntryCenterY = gridCellSize * 1.5f;
+    angle = 3.0f * (float) Math.PI / 2.0f;
+    makePlayerSpaces(7, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 8
+    homeEntryCenterX = width - (gridCellSize * 2.45f);
+    homeEntryCenterY = gridCellSize * 1.95f;
+    angle = 3.5f * (float) Math.PI / 2.5f;
+    makePlayerSpaces(8, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 9
+    homeEntryCenterX = width - (gridCellSize * 2.45f);
+    homeEntryCenterY = height - (gridCellSize * 1.95f);
+    angle = 1.5f * (float) Math.PI / 2.5f;
+    makePlayerSpaces(9, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 10
+    homeEntryCenterX = 9.0f * width / 12.0f;
+    homeEntryCenterY = height - (gridCellSize * 1.5f);
+    angle = (float) Math.PI / 2.0f;
+    makePlayerSpaces(10, homeEntryCenterX, homeEntryCenterY, angle);
+
+    // player 11
+    homeEntryCenterX = 7.0f * width / 12.0f;
+    homeEntryCenterY = height - (gridCellSize * 1.5f);
+    angle = (float) Math.PI / 2.0f;
+    makePlayerSpaces(11, homeEntryCenterX, homeEntryCenterY, angle);
+
+    for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
+
+      // left side
+      Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber));
+      angle = boardIndexToAngleMap.get(board.getSafeBoardIndex(playerNumber));
+      float spaceCenterX = rectangle.getX() + (rectangle.getWidth() / 2.0f);
+      float spaceCenterY = rectangle.getY() + (rectangle.getHeight() / 2.0f);
+      for (int offset = 1; offset <= 3; offset++) {
+        float centerX = (float) (spaceCenterX + offset * gridCellSize * Math.cos(angle)
+            + offset * 0.15f * gridCellSize * Math.cos(angle - Math.PI / 2.0f));
+        float centerY = (float) (spaceCenterY - offset * gridCellSize * Math.sin(angle));
+        boardIndexToBoundsMap.put(board.getSafeBoardIndex(playerNumber) + offset,
+            new Rectangle(centerX - (gridCellSize / 2.0f), centerY - (gridCellSize / 2.0f),
+                gridCellSize, gridCellSize));
+        boardIndexToAngleMap.put(board.getSafeBoardIndex(playerNumber) + offset,
+            angle - (float) Math.PI / 2.0f);
+      }
+
+      // right side
+      rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(playerNumber) - 2);
+      spaceCenterX = rectangle.getX() + (rectangle.getWidth() / 2.0f);
+      spaceCenterY = rectangle.getY() + (rectangle.getHeight() / 2.0f);
+      for (int offset = 1; offset <= 3; offset++) {
+        float centerX = (float) (spaceCenterX + offset * gridCellSize * Math.cos(angle)
+            + offset * 0.15f * gridCellSize * Math.cos(angle + Math.PI / 2.0f));
+        float centerY = (float) (spaceCenterY - offset * gridCellSize * Math.sin(angle));
+        boardIndexToBoundsMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - offset,
+            new Rectangle(centerX - (gridCellSize / 2.0f), centerY - (gridCellSize / 2.0f),
+                gridCellSize, gridCellSize));
+        boardIndexToAngleMap.put(board.getHomeEntryBoardIndex(playerNumber) - 2 - offset,
+            angle - (float) Math.PI / 2.0f);
+      }
+
+    }
+
+    // connector spaces
+    for (int playerNumber = 0; playerNumber < board.getNumberOfPlayers(); playerNumber++) {
+
+      if (playerNumber == 2 || playerNumber == 8) {
+
+        angle = boardIndexToAngleMap.get(board.getSafeBoardIndex(playerNumber));
+        Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber));
+        Point point1 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(
+            (playerNumber + 1) % board.getNumberOfPlayers()) - 2);
+        Point point3 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        Point point2 = new Point(width / 2.0f - width / 2.5f * (float) Math.sin(angle),
+            height / 2.0f);
+        makeInterpolatedSpaces(playerNumber, point1, point2, point3);
+
+      } else {
+
+        angle = boardIndexToAngleMap.get(board.getSafeBoardIndex(playerNumber));
+        Rectangle rectangle = boardIndexToBoundsMap.get(board.getSafeBoardIndex(playerNumber) + 3);
+        Point point1 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        rectangle = boardIndexToBoundsMap.get(board.getHomeEntryBoardIndex(
+            (playerNumber + 1) % board.getNumberOfPlayers()) - 5);
+        Point point3 = new Point(rectangle.getX() + (rectangle.getWidth() / 2.0f),
+            rectangle.getY() + (rectangle.getHeight() / 2.0f));
+        Point point2 = new Point((point1.getX() + point3.getX()) / 2.0f,
+            height / 2.0f + height / 15.0f * (float) Math.sin(angle));
+        makeInterpolatedSpaces(playerNumber, point1, point2, point3,
+            board.getSafeBoardIndex(playerNumber) + 3, 5);
+
+      }
+
+    }
 
   }
 

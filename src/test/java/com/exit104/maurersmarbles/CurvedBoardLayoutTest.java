@@ -73,6 +73,21 @@ public class CurvedBoardLayoutTest {
 
     System.out.println("update");
 
+    // test with invalid number of players
+    try {
+      Board board = new Board(4) {
+        @Override
+        public int getNumberOfPlayers() {
+          return 0;
+        }
+      };
+      CurvedBoardLayout instance = new CurvedBoardLayout(board);
+      instance.update(2.0f, 1.0f);
+      fail("Illegal state exception not thrown");
+    } catch (IllegalStateException ex) {
+      // do nothing
+    }
+
     // test with all valid number of players
     for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       Board board = new Board(numberOfPlayers);
@@ -121,6 +136,34 @@ public class CurvedBoardLayoutTest {
     Board board = new Board(6);
     CurvedBoardLayout instance = new CurvedBoardLayout(board);
     instance.updateSixPlayers(2.0f, 1.0f);
+
+  }
+
+  /**
+   * Test of updateTenPlayers method, of class CurvedBoardLayout.
+   */
+  @Test
+  public void testUpdateTenPlayers() {
+
+    System.out.println("updateTenPlayers");
+
+    Board board = new Board(10);
+    CurvedBoardLayout instance = new CurvedBoardLayout(board);
+    instance.updateTenPlayers(2.0f, 1.0f);
+
+  }
+
+  /**
+   * Test of updateTwelvePlayers method, of class CurvedBoardLayout.
+   */
+  @Test
+  public void testUpdateTwelvePlayers() {
+
+    System.out.println("updateTwelvePlayers");
+
+    Board board = new Board(12);
+    CurvedBoardLayout instance = new CurvedBoardLayout(board);
+    instance.updateTwelvePlayers(2.0f, 1.0f);
 
   }
 
