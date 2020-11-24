@@ -6,6 +6,7 @@
 package com.exit104.maurersmarbles;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
 import com.exit104.maurersmarbles.Card.Rank;
@@ -55,7 +56,8 @@ public class PlaySelectorTest {
 
     System.out.println("constructor");
 
-    new PlaySelector();
+    PlaySelector instance = new PlaySelector();
+    assertNotNull(instance);
 
   }
 

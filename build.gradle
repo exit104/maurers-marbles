@@ -5,20 +5,20 @@
 
 plugins {
   id 'checkstyle'
-  id "com.github.spotbugs" version "4.0.7"
+  id "com.github.spotbugs" version "4.5.1"
   id 'jacoco'
   id 'java-library'
   id 'maven-publish'
   id 'pmd'
 }
 
-[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
 
 group = 'com.exit104.maurersmarbles'
-version = '0.0.1'
+project.version = '0.0.1'
 jar {
   manifest {
-    attributes 'Implementation-Version': version
+    attributes 'Implementation-Version': project.version
   }
 }
 
@@ -60,6 +60,12 @@ spotbugsTest {
   reports {
     xml.enabled = false
     html.enabled = true
+  }
+}
+
+gradle.projectsEvaluated {
+  tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
   }
 }
 

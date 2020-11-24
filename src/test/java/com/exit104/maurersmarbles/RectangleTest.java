@@ -6,6 +6,7 @@
 package com.exit104.maurersmarbles;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
 import org.junit.After;
@@ -49,10 +50,12 @@ public class RectangleTest {
     System.out.println("constructor");
 
     // test with int values
-    new Rectangle(1, 2, 3, 4);
+    Rectangle instance = new Rectangle(1, 2, 3, 4);
+    assertNotNull(instance);
 
     // test with float values
-    new Rectangle(1.2f, 2.3f, 3.4f, 4.5f);
+    instance = new Rectangle(1.2f, 2.3f, 3.4f, 4.5f);
+    assertNotNull(instance);
 
   }
 
