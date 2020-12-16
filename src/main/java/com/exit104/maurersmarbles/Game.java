@@ -74,7 +74,7 @@ public class Game {
   /**
    * The set that contains the valid number of players in a game.
    */
-  protected static final Set<Integer> VALID_NUMBER_OF_PLAYERS;
+  public static final Set<Integer> VALID_NUMBER_OF_PLAYERS;
   /**
    * The state the game will execute next.
    */

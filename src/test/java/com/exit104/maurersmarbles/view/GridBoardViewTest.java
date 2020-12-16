@@ -3,10 +3,14 @@
  * outlined in the accompanying LICENSE file.
  */
 
-package com.exit104.maurersmarbles;
+package com.exit104.maurersmarbles.view;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
+
+import com.exit104.maurersmarbles.Board;
+import com.exit104.maurersmarbles.Game;
+import com.exit104.maurersmarbles.Rectangle;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,14 +18,26 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
- * The GridBoardLayoutTest class contains the unit tests for the GridBoardLayout class.
+ * The GridBoardViewTest class contains the unit tests for the GridBoardView class.
  *
  * @author Daniel Uppenkamp
  */
-public class GridBoardLayoutTest {
+public class GridBoardViewTest {
 
-  public GridBoardLayoutTest() {
+  protected static final List<Integer> SUPPORTED_NUMBER_OF_PLAYERS;
+
+  static {
+    List<Integer> supportedNumberOfPlayers = new ArrayList<>();
+    supportedNumberOfPlayers.add(4);
+    SUPPORTED_NUMBER_OF_PLAYERS = Collections.unmodifiableList(supportedNumberOfPlayers);
+  }
+
+  public GridBoardViewTest() {
   }
 
   @BeforeClass
@@ -41,17 +57,17 @@ public class GridBoardLayoutTest {
   }
 
   /**
-   * Test of constructor method, of class GridBoardLayout.
+   * Test of constructor method, of class GridBoardView.
    */
   @Test
-  public void testGridBoardLayout() {
+  public void testGridBoardView() {
 
     System.out.println("constructor");
 
     // test with null board
     Board board = null;
     try {
-      new GridBoardLayout(board);
+      new GridBoardView(board);
       fail("Null pointer exception not thrown");
     } catch (NullPointerException ex) {
       // do nothing
@@ -60,13 +76,22 @@ public class GridBoardLayoutTest {
     // test with all valid number of players
     for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
       board = new Board(numberOfPlayers);
-      new GridBoardLayout(board);
+      if (SUPPORTED_NUMBER_OF_PLAYERS.contains(numberOfPlayers)) {
+        new GridBoardView(board);
+      } else {
+        try {
+          new GridBoardView(board);
+          fail("Unsupported operation exception not thrown");
+        } catch (UnsupportedOperationException ex) {
+          // do nothing
+        }
+      }
     }
 
   }
 
   /**
-   * Test of getAngleForBoardIndex method, of class GridBoardLayout.
+   * Test of getAngleForBoardIndex method, of class GridBoardView.
    */
   @Test
   public void testGetAngleForBoardIndex() {
@@ -75,7 +100,7 @@ public class GridBoardLayoutTest {
 
     // test with invalid board index
     Board board = new Board(4);
-    GridBoardLayout instance = new GridBoardLayout(board);
+    GridBoardView instance = new GridBoardView(board);
     int boardIndex = -1;
     try {
       instance.getAngleForBoardIndex(boardIndex);
@@ -86,7 +111,7 @@ public class GridBoardLayoutTest {
 
     // test with invalid board index
     board = new Board(4);
-    instance = new GridBoardLayout(board);
+    instance = new GridBoardView(board);
     boardIndex = board.getNumberOfPlayableSpaces();
     try {
       instance.getAngleForBoardIndex(boardIndex);
@@ -97,51 +122,19 @@ public class GridBoardLayoutTest {
 
     // test with all valid number of players
     for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
-      board = new Board(numberOfPlayers);
-      instance = new GridBoardLayout(board);
-      for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
-        instance.getAngleForBoardIndex(boardIndex);
+      if (SUPPORTED_NUMBER_OF_PLAYERS.contains(numberOfPlayers)) {
+        board = new Board(numberOfPlayers);
+        instance = new GridBoardView(board);
+        for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
+          instance.getAngleForBoardIndex(boardIndex);
+        }
       }
     }
 
   }
 
   /**
-   * Test of getBoundsForCardDeck method, of class GridBoardLayout.
-   */
-  @Test
-  public void testGetBoundsForCardDeck() {
-
-    System.out.println("getBoundsForCardDeck");
-
-    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
-      Board board = new Board(numberOfPlayers);
-      GridBoardLayout instance = new GridBoardLayout(board);
-      Rectangle rectangle = instance.getBoundsForCardDeck();
-      assertTrue(rectangle != null);
-    }
-
-  }
-
-  /**
-   * Test of getBoundsForDiscardPile method, of class GridBoardLayout.
-   */
-  @Test
-  public void testGetBoundsForDiscardPile() {
-
-    System.out.println("getBoundsForDiscardPile");
-
-    for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
-      Board board = new Board(numberOfPlayers);
-      GridBoardLayout instance = new GridBoardLayout(board);
-      Rectangle rectangle = instance.getBoundsForDiscardPile();
-      assertTrue(rectangle != null);
-    }
-
-  }
-
-  /**
-   * Test of getBoundsForMarble method, of class GridBoardLayout.
+   * Test of getBoundsForMarble method, of class GridBoardView.
    */
   @Test
   public void testGetBoundsForMarble() {
@@ -150,7 +143,7 @@ public class GridBoardLayoutTest {
 
     // test with invalid board index
     Board board = new Board(4);
-    GridBoardLayout instance = new GridBoardLayout(board);
+    GridBoardView instance = new GridBoardView(board);
     int boardIndex = -1;
     try {
       instance.getBoundsForMarble(boardIndex);
@@ -161,7 +154,7 @@ public class GridBoardLayoutTest {
 
     // test with invalid board index
     board = new Board(4);
-    instance = new GridBoardLayout(board);
+    instance = new GridBoardView(board);
     boardIndex = board.getNumberOfPlayableSpaces();
     try {
       instance.getBoundsForMarble(boardIndex);
@@ -171,18 +164,20 @@ public class GridBoardLayoutTest {
     }
 
     for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
-      board = new Board(numberOfPlayers);
-      instance = new GridBoardLayout(board);
-      for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
-        Rectangle rectangle = instance.getBoundsForMarble(boardIndex);
-        assertTrue(rectangle != null);
+      if (SUPPORTED_NUMBER_OF_PLAYERS.contains(numberOfPlayers)) {
+        board = new Board(numberOfPlayers);
+        instance = new GridBoardView(board);
+        for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
+          Rectangle rectangle = instance.getBoundsForMarble(boardIndex);
+          assertTrue(rectangle != null);
+        }
       }
     }
 
   }
 
   /**
-   * Test of getBoundsForSpace method, of class GridBoardLayout.
+   * Test of getBoundsForSpace method, of class GridBoardView.
    */
   @Test
   public void testGetBoundsForSpace() {
@@ -191,7 +186,7 @@ public class GridBoardLayoutTest {
 
     // test with invalid board index
     Board board = new Board(4);
-    GridBoardLayout instance = new GridBoardLayout(board);
+    GridBoardView instance = new GridBoardView(board);
     int boardIndex = -1;
     try {
       instance.getBoundsForSpace(boardIndex);
@@ -202,7 +197,7 @@ public class GridBoardLayoutTest {
 
     // test with invalid board index
     board = new Board(4);
-    instance = new GridBoardLayout(board);
+    instance = new GridBoardView(board);
     boardIndex = board.getNumberOfPlayableSpaces();
     try {
       instance.getBoundsForSpace(boardIndex);
@@ -213,11 +208,13 @@ public class GridBoardLayoutTest {
 
     // test with all valid number of players
     for (int numberOfPlayers : Game.VALID_NUMBER_OF_PLAYERS) {
-      board = new Board(numberOfPlayers);
-      instance = new GridBoardLayout(board);
-      for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
-        Rectangle rectangle = instance.getBoundsForSpace(boardIndex);
-        assertTrue(rectangle != null);
+      if (SUPPORTED_NUMBER_OF_PLAYERS.contains(numberOfPlayers)) {
+        board = new Board(numberOfPlayers);
+        instance = new GridBoardView(board);
+        for (boardIndex = 0; boardIndex < board.getNumberOfPlayableSpaces(); boardIndex++) {
+          Rectangle rectangle = instance.getBoundsForSpace(boardIndex);
+          assertTrue(rectangle != null);
+        }
       }
     }
 
