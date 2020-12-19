@@ -3,7 +3,7 @@
  * outlined in the accompanying LICENSE file.
  */
 
-package com.exit104.maurersmarbles.view;
+package com.exit104.maurersmarbles.ui;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;

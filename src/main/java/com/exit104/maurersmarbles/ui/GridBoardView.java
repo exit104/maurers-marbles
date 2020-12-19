@@ -3,7 +3,7 @@
  * outlined in the accompanying LICENSE file.
  */
 
-package com.exit104.maurersmarbles.view;
+package com.exit104.maurersmarbles.ui;
 
 import com.google.common.base.Preconditions;
 
@@ -125,8 +125,8 @@ public class GridBoardView implements BoardView {
 
   }
 
-  @SuppressWarnings("PMD.AvoidLiteralsInIfCondition")
   @Override
+  @SuppressWarnings("PMD.AvoidLiteralsInIfCondition")
   public final void update(float width, float height) {
 
     boardIndexToAngleMap.clear();
