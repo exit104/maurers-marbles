@@ -72,13 +72,13 @@ public class DefaultScreenLayout implements ScreenLayout {
       boardRectangle = new Rectangle(0, 0, height, height);
 
       // player 0
-      playerNumberToBoundsMap.put(0, new Rectangle(height, height / 3.0f, width - height,
+      playerNumberToBoundsMap.put(0, new Rectangle(height, height / 2.0f, width - height,
           height / 3.0f));
       //player 1-N
       for (int playerNumber = 1; playerNumber < numberOfPlayers; playerNumber++) {
         playerNumberToBoundsMap.put(playerNumber, new Rectangle(
-            height + (width - height) / (numberOfPlayers - 1) * (playerNumber - 1), 0,
-            (width - height) / (numberOfPlayers - 1), height / 3.0f));
+            height + (width - height) / (numberOfPlayers - 1) * (playerNumber - 1), height / 9.0f,
+            (width - height) / (numberOfPlayers - 1), height / 4.5f));
       }
 
     } else {
@@ -92,8 +92,8 @@ public class DefaultScreenLayout implements ScreenLayout {
       //player 1-N
       for (int playerNumber = 1; playerNumber < numberOfPlayers; playerNumber++) {
         playerNumberToBoundsMap.put(playerNumber, new Rectangle(
-            width / (numberOfPlayers - 1) * (playerNumber - 1), 0,
-            width / (numberOfPlayers - 1), (height - width) / 2.0f));
+            width / (numberOfPlayers - 1) * (playerNumber - 1), (height - width) / 6.0f,
+            width / (numberOfPlayers - 1), (height - width) / 3.0f));
       }
 
     }

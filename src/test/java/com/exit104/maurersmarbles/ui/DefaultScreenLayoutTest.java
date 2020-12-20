@@ -131,12 +131,12 @@ public class DefaultScreenLayoutTest {
     playerNumber = 0;
     instance = new DefaultScreenLayout(4);
     instance.update(2.0f, 1.0f);
-    Rectangle expResult = new Rectangle(1.0f, 1.0f / 3.0f, 1.0f, 1.0f / 3.0f);
+    Rectangle expResult = new Rectangle(1.0f, 1.0f / 2.0f, 1.0f, 1.0f / 3.0f);
     Rectangle result = instance.getBoundsForPlayer(playerNumber);
     assertEquals(expResult, result);
     for (playerNumber = 1; playerNumber < 4; playerNumber++) {
-      expResult = new Rectangle(1.0f + (1.0f / 3.0f * (playerNumber - 1)), 0.0f, 1.0f / 3.0f,
-          1.0f / 3.0f);
+      expResult = new Rectangle(1.0f + (1.0f / 3.0f * (playerNumber - 1)), 1 / 9.0f, 1.0f / 3.0f,
+          1.0f / 4.5f);
       result = instance.getBoundsForPlayer(playerNumber);
       assertEquals(expResult, result);
     }
@@ -149,7 +149,8 @@ public class DefaultScreenLayoutTest {
     result = instance.getBoundsForPlayer(playerNumber);
     assertEquals(expResult, result);
     for (playerNumber = 1; playerNumber < 4; playerNumber++) {
-      expResult = new Rectangle(1.0f / 3.0f * (playerNumber - 1), 0.0f, 1.0f / 3.0f, 0.5f);
+      expResult = new Rectangle(1.0f / 3.0f * (playerNumber - 1), 1.0f / 6.0f, 1.0f / 3.0f,
+          1.0f / 3.0f);
       result = instance.getBoundsForPlayer(playerNumber);
       assertEquals(expResult, result);
     }
